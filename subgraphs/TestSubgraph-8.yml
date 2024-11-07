@@ -3,7 +3,4 @@ id: "8"
 name: Test Subgraph
 steps:
   - 034d-33be-d114-f618-3564-1f20-c49c-8a3a
-  - 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
-  - 70db-2137-d0a0-bae3-ea04-c53b-d5dc-f15a
-  - 77cf-5a1d-4aa4-bd8d-3caa-7706-c49d-f6c7
 type: Subgraph
