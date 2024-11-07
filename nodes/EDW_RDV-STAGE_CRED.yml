@@ -12,7 +12,7 @@ operation:
   deployEnabled: true
   description: ""
   isMultisource: false
-  locationName: EDW_STAGE
+  locationName: EDW_RDV
   materializationType: view
   metadata:
     appliedNodeTests: []
