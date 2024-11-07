@@ -1,0 +1,485 @@
+fileVersion: 1
+id: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+name: CC_WORKCOMP_VW_CURR
+operation:
+  config:
+    insertStrategy: NA
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 337e-e2f6-3a53-74ee-86c9-b56b-49f5-99a6
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: char(1)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: TIMELOSSREPORT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 337e-e2f6-3a53-74ee-86c9-b56b-49f5-99a6
+                stepCounter: 3fdc-4d85-1e3e-cce3-94b0-3347-f302-671b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a559-7e89-79d5-ae6e-4c58-a4bc-14ce-fd05
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: RETIRED
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a559-7e89-79d5-ae6e-4c58-a4bc-14ce-fd05
+                stepCounter: 3fdc-4d85-1e3e-cce3-94b0-3347-f302-671b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cf8b-2a14-feae-d436-83af-df2d-63e3-1de0
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: char(1)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DEATHREPORT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cf8b-2a14-feae-d436-83af-df2d-63e3-1de0
+                stepCounter: 3fdc-4d85-1e3e-cce3-94b0-3347-f302-671b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bc2f-2fff-92da-8257-4112-8443-3edd-35df
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: varchar2(1333)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: EQUIPMENTUSED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bc2f-2fff-92da-8257-4112-8443-3edd-35df
+                stepCounter: 3fdc-4d85-1e3e-cce3-94b0-3347-f302-671b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bbd6-d6d1-9a5d-63ff-ec75-4dc4-4ac1-5135
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: LOADCOMMANDID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bbd6-d6d1-9a5d-63ff-ec75-4dc4-4ac1-5135
+                stepCounter: 3fdc-4d85-1e3e-cce3-94b0-3347-f302-671b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bc8e-dd75-00a0-d883-c349-3fea-aa19-b637
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: char(1)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: WAITINGPERIODAPPLIED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bc8e-dd75-00a0-d883-c349-3fea-aa19-b637
+                stepCounter: 3fdc-4d85-1e3e-cce3-94b0-3347-f302-671b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e04-dc2a-bd92-9a9d-02e2-e0fa-41d2-4bf9
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: timestamp(6)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: UPDATETIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3e04-dc2a-bd92-9a9d-02e2-e0fa-41d2-4bf9
+                stepCounter: 3fdc-4d85-1e3e-cce3-94b0-3347-f302-671b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 92ea-df81-e705-43d8-99b7-190c-ebfe-2d40
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: varchar2(20)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: PUBLICID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 92ea-df81-e705-43d8-99b7-190c-ebfe-2d40
+                stepCounter: 3fdc-4d85-1e3e-cce3-94b0-3347-f302-671b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6bf2-dbff-3e16-81e7-66fb-9f97-7279-aed0
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: char(1)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: EMPLOYERLIABILITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6bf2-dbff-3e16-81e7-66fb-9f97-7279-aed0
+                stepCounter: 3fdc-4d85-1e3e-cce3-94b0-3347-f302-671b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5f9f-e5a8-7cbc-f0d3-b395-2224-2620-1773
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: varchar2(1333)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: ACTIVITYPERFORMED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5f9f-e5a8-7cbc-f0d3-b395-2224-2620-1773
+                stepCounter: 3fdc-4d85-1e3e-cce3-94b0-3347-f302-671b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3b66-2f79-dcd7-93f0-9267-054d-5347-eecd
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: ARCHIVEPARTITION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3b66-2f79-dcd7-93f0-9267-054d-5347-eecd
+                stepCounter: 3fdc-4d85-1e3e-cce3-94b0-3347-f302-671b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4ab9-2d77-34d0-5917-1b2c-da64-d2a3-f952
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: CREATEUSERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4ab9-2d77-34d0-5917-1b2c-da64-d2a3-f952
+                stepCounter: 3fdc-4d85-1e3e-cce3-94b0-3347-f302-671b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5216-7dc6-5ac7-3005-7975-488a-8b9a-7dbf
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: COMPENSABLE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5216-7dc6-5ac7-3005-7975-488a-8b9a-7dbf
+                stepCounter: 3fdc-4d85-1e3e-cce3-94b0-3347-f302-671b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 600d-ea83-e9a6-9d24-4a77-ae1d-b2e7-30e7
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: timestamp(6)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: CREATETIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 600d-ea83-e9a6-9d24-4a77-ae1d-b2e7-30e7
+                stepCounter: 3fdc-4d85-1e3e-cce3-94b0-3347-f302-671b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9897-c648-c152-4d70-f735-74ef-fad5-be67
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: BEANVERSION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9897-c648-c152-4d70-f735-74ef-fad5-be67
+                stepCounter: 3fdc-4d85-1e3e-cce3-94b0-3347-f302-671b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fbea-fb3d-9cd8-b3e9-ef88-6cf8-98d5-38c4
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: char(1)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: ILLNESSRELATEDTOEXPOSURE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fbea-fb3d-9cd8-b3e9-ef88-6cf8-98d5-38c4
+                stepCounter: 3fdc-4d85-1e3e-cce3-94b0-3347-f302-671b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c350-4d47-d925-50b3-d21e-5b82-8ad1-8bdf
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: char(1)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: MEDICALREPORT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c350-4d47-d925-50b3-d21e-5b82-8ad1-8bdf
+                stepCounter: 3fdc-4d85-1e3e-cce3-94b0-3347-f302-671b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c4e8-f224-a02a-464b-d0fa-726c-6594-dc27
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: UPDATEUSERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c4e8-f224-a02a-464b-d0fa-726c-6594-dc27
+                stepCounter: 3fdc-4d85-1e3e-cce3-94b0-3347-f302-671b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 68e0-a872-d049-bd95-de2d-3139-279d-5026
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: char(32)
+        description: The changing hash
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_CHANGE_HASH
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 68e0-a872-d049-bd95-de2d-3139-279d-5026
+                stepCounter: 3fdc-4d85-1e3e-cce3-94b0-3347-f302-671b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b3e9-d8b5-ec91-5fe7-177a-2a26-65b5-aa5c
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_CC_WORKCOMP
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b3e9-d8b5-ec91-5fe7-177a-2a26-65b5-aa5c
+                stepCounter: da17-ba24-5533-01b6-164a-0e7a-0e5c-6e1b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7cdf-2c0d-75ee-bdd3-8e68-151a-e867-7867
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: WORKCOMPID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7cdf-2c0d-75ee-bdd3-8e68-151a-e867-7867
+                stepCounter: da17-ba24-5533-01b6-164a-0e7a-0e5c-6e1b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: da17-ba24-5533-01b6-164a-0e7a-0e5c-6e1b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: da17-ba24-5533-01b6-164a-0e7a-0e5c-6e1b
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e3a6-8eda-b013-7325-7e31-d6f1-b7f1-03f8
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row started in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_START_DATE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f0ea-2e52-bc7f-2c10-1018-7bbe-1fb6-ddc9
+          stepCounter: 5e9e-0c65-25e2-82e2-3ffa-3143-1497-d4af
+        config: {}
+        dataType: number
+        defaultValue: ""
+        description: Version number of a business key in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_VERSION
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_RDV
+            nodeName: S_CC_WORKCOMP
+        join:
+          joinCondition: |-
+            FROM {{ref('EDW_RDV','H_CC_WORKCOMP') }} H_CC_WORKCOMP
+            JOIN {{ref('EDW_RDV','S_CC_WORKCOMP') }} S_CC_WORKCOMP
+            ON H_CC_WORKCOMP.HK_H_CC_WORKCOMP = S_CC_WORKCOMP.HK_H_CC_WORKCOMP
+            AND S_CC_WORKCOMP.DSS_START_DATE =
+            ( SELECT MAX(Z.DSS_START_DATE) FROM {{ref('EDW_RDV','S_CC_WORKCOMP') }} Z
+            WHERE Z.HK_H_CC_WORKCOMP = H_CC_WORKCOMP.HK_H_CC_WORKCOMP
+            )
+        name: CC_WORKCOMP_VW_CURR
+        noLinkRefs: []
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_RDV
+            nodeName: H_CC_WORKCOMP
+        join:
+          joinCondition: |-
+            FROM {{ref('EDW_RDV','H_CC_WORKCOMP') }} H_CC_WORKCOMP
+            JOIN {{ref('EDW_RDV','S_CC_WORKCOMP') }} S_CC_WORKCOMP
+            ON H_CC_WORKCOMP.HK_H_CC_WORKCOMP = S_CC_WORKCOMP.HK_H_CC_WORKCOMP
+            AND S_CC_WORKCOMP.DSS_START_DATE =
+            ( SELECT MAX(Z.DSS_START_DATE) FROM {{ref('EDW_RDV','S_CC_WORKCOMP') }} Z
+            WHERE Z.HK_H_CC_WORKCOMP = H_CC_WORKCOMP.HK_H_CC_WORKCOMP
+            )
+        name: CC_WORKCOMP_VW_CURR
+        noLinkRefs: []
+  name: CC_WORKCOMP_VW_CURR
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node

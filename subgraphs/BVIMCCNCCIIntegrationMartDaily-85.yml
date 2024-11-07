@@ -1,0 +1,18 @@
+fileVersion: 1
+id: "85"
+name: BVIM CC NCCI Integration Mart Daily
+steps:
+  - 034d-33be-d114-f618-3564-1f20-c49c-8a3a
+  - 08e0-aaef-d788-8ec0-9c85-af25-70fe-9738
+  - 0f6a-61b3-4e94-2624-d774-6ed0-ee0a-f097
+  - 2c77-df07-5a6b-90ad-e8f0-7387-05b6-73bf
+  - 34b7-0df8-54d4-17f2-1e2f-11e3-93c2-e2f7
+  - 4720-cb7e-6442-35db-376f-10f7-419c-4c43
+  - 65ea-cddb-184b-9b13-5cc0-26a7-6075-2ee5
+  - 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+  - 70db-2137-d0a0-bae3-ea04-c53b-d5dc-f15a
+  - 77cf-5a1d-4aa4-bd8d-3caa-7706-c49d-f6c7
+  - 81c6-12cb-b4c9-ced5-80e6-e869-0580-dfb1
+  - 9d43-6ad6-635b-b884-109c-be49-bc6d-00bb
+  - a0e8-1a34-a2fa-7bf7-331c-a420-58cf-b36f
+type: Subgraph

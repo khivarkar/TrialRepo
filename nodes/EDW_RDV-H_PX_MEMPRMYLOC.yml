@@ -1,0 +1,123 @@
+fileVersion: 1
+id: 0430-254b-c519-6719-f4f4-fa44-f8bd-10a7
+name: H_PX_MEMPRMYLOC
+operation:
+  config:
+    insertStrategy: MERGE
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 468e-f41a-ef3a-0329-8dba-b2c8-b8b4-5d40
+          stepCounter: 0430-254b-c519-6719-f4f4-fa44-f8bd-10a7
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_PX_MEMPRMYLOC
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 468e-f41a-ef3a-0329-8dba-b2c8-b8b4-5d40
+                stepCounter: cd57-5894-415e-b717-6569-1b36-0afa-fb83
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d918-f29a-da34-562c-1a62-0f49-a78b-37ab
+          stepCounter: 0430-254b-c519-6719-f4f4-fa44-f8bd-10a7
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: true
+        isChangeTracking: false
+        name: MEMPRIMARYLOCATIONID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d918-f29a-da34-562c-1a62-0f49-a78b-37ab
+                stepCounter: cd57-5894-415e-b717-6569-1b36-0afa-fb83
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 0430-254b-c519-6719-f4f4-fa44-f8bd-10a7
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: cd57-5894-415e-b717-6569-1b36-0afa-fb83
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 0430-254b-c519-6719-f4f4-fa44-f8bd-10a7
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: cd57-5894-415e-b717-6569-1b36-0afa-fb83
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: 0430-254b-c519-6719-f4f4-fa44-f8bd-10a7
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_STAGE
+            nodeName: STAGE_MEMPRIMARYLOCATION
+        join:
+          joinCondition: FROM {{ref('EDW_STAGE','STAGE_MEMPRIMARYLOCATION') }} STAGE_MEMPRIMARYLOCATION
+        name: H_PX_MEMPRMYLOC
+        noLinkRefs: []
+  name: H_PX_MEMPRMYLOC
+  overrideSQL: false
+  schema: ""
+  sqlType: "6"
+  type: sql
+  version: 1
+type: Node

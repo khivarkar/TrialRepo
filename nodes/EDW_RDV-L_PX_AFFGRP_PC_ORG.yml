@@ -1,0 +1,175 @@
+fileVersion: 1
+id: 97e7-cde8-c5fa-1063-4dd3-9183-1d30-4ed7
+name: L_PX_AFFGRP_PC_ORG
+operation:
+  config:
+    insertStrategy: MERGE
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 761c-6838-440e-2642-997c-ff0f-ae29-1f93
+          stepCounter: 97e7-cde8-c5fa-1063-4dd3-9183-1d30-4ed7
+        config:
+          "0": null
+          is_Link_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_L_PX_AFFGRP_PC_ORG
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 761c-6838-440e-2642-997c-ff0f-ae29-1f93
+                stepCounter: 4124-3209-0829-77e8-209e-15a2-b4e6-8865
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 47e9-2814-f8d5-a24c-9efd-310e-66ad-0f14
+          stepCounter: 97e7-cde8-c5fa-1063-4dd3-9183-1d30-4ed7
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_PC_ORGANIZATION
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 47e9-2814-f8d5-a24c-9efd-310e-66ad-0f14
+                stepCounter: 4124-3209-0829-77e8-209e-15a2-b4e6-8865
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b5b0-538c-9416-5257-e61a-0b69-cc88-9e85
+          stepCounter: 97e7-cde8-c5fa-1063-4dd3-9183-1d30-4ed7
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_PCX_WC7AFFINITYGROUP
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b5b0-538c-9416-5257-e61a-0b69-cc88-9e85
+                stepCounter: 4124-3209-0829-77e8-209e-15a2-b4e6-8865
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: df22-eaf3-cb61-4fe9-b5fd-c535-5cbe-47a5
+          stepCounter: 97e7-cde8-c5fa-1063-4dd3-9183-1d30-4ed7
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: WC7AFFINITYGROUPID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: df22-eaf3-cb61-4fe9-b5fd-c535-5cbe-47a5
+                stepCounter: 4124-3209-0829-77e8-209e-15a2-b4e6-8865
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 96aa-5a7a-cfd8-9dcb-09ce-4345-a837-8cd1
+          stepCounter: 97e7-cde8-c5fa-1063-4dd3-9183-1d30-4ed7
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: ORGANIZATIONID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 96aa-5a7a-cfd8-9dcb-09ce-4345-a837-8cd1
+                stepCounter: 4124-3209-0829-77e8-209e-15a2-b4e6-8865
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 97e7-cde8-c5fa-1063-4dd3-9183-1d30-4ed7
+        config: {}
+        dataType: varchar(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: 4124-3209-0829-77e8-209e-15a2-b4e6-8865
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 97e7-cde8-c5fa-1063-4dd3-9183-1d30-4ed7
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: 4124-3209-0829-77e8-209e-15a2-b4e6-8865
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: 97e7-cde8-c5fa-1063-4dd3-9183-1d30-4ed7
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_STAGE
+            nodeName: STAGE_AFFGRP_ORG
+        join:
+          joinCondition: FROM {{ref('EDW_STAGE','STAGE_AFFGRP_ORG') }} STAGE_AFFGRP_ORG
+        name: L_PX_AFFGRP_PC_ORG
+        noLinkRefs: []
+  name: L_PX_AFFGRP_PC_ORG
+  overrideSQL: false
+  schema: ""
+  sqlType: "7"
+  type: sql
+  version: 1
+type: Node

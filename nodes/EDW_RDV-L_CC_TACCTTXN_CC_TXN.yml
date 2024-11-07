@@ -1,0 +1,175 @@
+fileVersion: 1
+id: d7c5-f241-0c09-c580-1d44-3655-f51b-9a46
+name: L_CC_TACCTTXN_CC_TXN
+operation:
+  config:
+    insertStrategy: MERGE
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3775-e2b2-7601-467a-0b79-9636-614f-a091
+          stepCounter: d7c5-f241-0c09-c580-1d44-3655-f51b-9a46
+        config:
+          "0": null
+          is_Link_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_L_CC_TACCTTXN_CC_TXN
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3775-e2b2-7601-467a-0b79-9636-614f-a091
+                stepCounter: d05a-e166-25a1-edc8-5232-4dee-2c70-8250
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bf6b-a0df-7cf1-8e95-9b5e-3328-6385-da84
+          stepCounter: d7c5-f241-0c09-c580-1d44-3655-f51b-9a46
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_CC_TXN
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bf6b-a0df-7cf1-8e95-9b5e-3328-6385-da84
+                stepCounter: d05a-e166-25a1-edc8-5232-4dee-2c70-8250
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 14c6-9591-262f-78e0-1b73-0d69-035b-f647
+          stepCounter: d7c5-f241-0c09-c580-1d44-3655-f51b-9a46
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_CC_TACCTTXN
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 14c6-9591-262f-78e0-1b73-0d69-035b-f647
+                stepCounter: d05a-e166-25a1-edc8-5232-4dee-2c70-8250
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1fb7-e92f-a52c-0179-c8df-a27b-0a15-2a72
+          stepCounter: d7c5-f241-0c09-c580-1d44-3655-f51b-9a46
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: TACCOUNTTRANSACTIONID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1fb7-e92f-a52c-0179-c8df-a27b-0a15-2a72
+                stepCounter: d05a-e166-25a1-edc8-5232-4dee-2c70-8250
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c46c-0f23-f1c2-e7e5-cdcb-101a-fc4a-5479
+          stepCounter: d7c5-f241-0c09-c580-1d44-3655-f51b-9a46
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: TRANSACTIONID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c46c-0f23-f1c2-e7e5-cdcb-101a-fc4a-5479
+                stepCounter: d05a-e166-25a1-edc8-5232-4dee-2c70-8250
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: d7c5-f241-0c09-c580-1d44-3655-f51b-9a46
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: d05a-e166-25a1-edc8-5232-4dee-2c70-8250
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: d7c5-f241-0c09-c580-1d44-3655-f51b-9a46
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: d05a-e166-25a1-edc8-5232-4dee-2c70-8250
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: d7c5-f241-0c09-c580-1d44-3655-f51b-9a46
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_STAGE
+            nodeName: STAGE_TACCTTXN_TXN
+        join:
+          joinCondition: FROM {{ref('EDW_STAGE','STAGE_TACCTTXN_TXN') }} STAGE_TACCTTXN_TXN
+        name: L_CC_TACCTTXN_CC_TXN
+        noLinkRefs: []
+  name: L_CC_TACCTTXN_CC_TXN
+  overrideSQL: false
+  schema: ""
+  sqlType: "7"
+  type: sql
+  version: 1
+type: Node

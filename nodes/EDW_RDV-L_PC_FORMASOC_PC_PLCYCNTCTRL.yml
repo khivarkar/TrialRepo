@@ -1,0 +1,175 @@
+fileVersion: 1
+id: 3a53-64d1-3246-c987-ba6e-1dc8-f2ee-bef7
+name: L_PC_FORMASOC_PC_PLCYCNTCTRL
+operation:
+  config:
+    insertStrategy: MERGE
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bde9-ea6c-ebef-5a4c-8ed0-5fa1-e5b1-3071
+          stepCounter: 3a53-64d1-3246-c987-ba6e-1dc8-f2ee-bef7
+        config:
+          "0": null
+          is_Link_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_L_PC_FORMASOC_PC_PLCNTRL
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bde9-ea6c-ebef-5a4c-8ed0-5fa1-e5b1-3071
+                stepCounter: d875-2cfe-17b3-69f0-c80a-3267-9785-4cf3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 660d-128c-8c76-14fe-3a34-6dd0-8beb-3b33
+          stepCounter: 3a53-64d1-3246-c987-ba6e-1dc8-f2ee-bef7
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_PC_PLCYCNTCTRL
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 660d-128c-8c76-14fe-3a34-6dd0-8beb-3b33
+                stepCounter: d875-2cfe-17b3-69f0-c80a-3267-9785-4cf3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d0f7-49b6-30b4-99af-7bcb-528a-138f-66f0
+          stepCounter: 3a53-64d1-3246-c987-ba6e-1dc8-f2ee-bef7
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_PC_FORMASOC
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d0f7-49b6-30b4-99af-7bcb-528a-138f-66f0
+                stepCounter: d875-2cfe-17b3-69f0-c80a-3267-9785-4cf3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3694-809d-8268-d1e7-6050-ef5d-8d86-e5ec
+          stepCounter: 3a53-64d1-3246-c987-ba6e-1dc8-f2ee-bef7
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: FORMASSOCIATIONID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3694-809d-8268-d1e7-6050-ef5d-8d86-e5ec
+                stepCounter: d875-2cfe-17b3-69f0-c80a-3267-9785-4cf3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4217-3650-b4c0-4d7c-116a-aad1-a296-bee8
+          stepCounter: 3a53-64d1-3246-c987-ba6e-1dc8-f2ee-bef7
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: POLICYCONTACTROLEID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4217-3650-b4c0-4d7c-116a-aad1-a296-bee8
+                stepCounter: d875-2cfe-17b3-69f0-c80a-3267-9785-4cf3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 3a53-64d1-3246-c987-ba6e-1dc8-f2ee-bef7
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: d875-2cfe-17b3-69f0-c80a-3267-9785-4cf3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 3a53-64d1-3246-c987-ba6e-1dc8-f2ee-bef7
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: d875-2cfe-17b3-69f0-c80a-3267-9785-4cf3
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: 3a53-64d1-3246-c987-ba6e-1dc8-f2ee-bef7
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_STAGE
+            nodeName: STAGE_FORMASOC_PLCYCNTCTRL
+        join:
+          joinCondition: FROM {{ref('EDW_STAGE','STAGE_FORMASOC_PLCYCNTCTRL') }} STAGE_FORMASOC_PLCYCNTCTRL
+        name: L_PC_FORMASOC_PC_PLCYCNTCTRL
+        noLinkRefs: []
+  name: L_PC_FORMASOC_PC_PLCYCNTCTRL
+  overrideSQL: false
+  schema: ""
+  sqlType: "7"
+  type: sql
+  version: 1
+type: Node

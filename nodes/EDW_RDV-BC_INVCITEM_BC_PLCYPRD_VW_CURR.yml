@@ -1,0 +1,176 @@
+fileVersion: 1
+id: 9113-4c9f-4f11-ab9a-2ff1-0e52-f05d-bd4f
+name: BC_INVCITEM_BC_PLCYPRD_VW_CURR
+operation:
+  config:
+    insertStrategy: NA
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ee0b-0cae-e759-8c9b-e79f-74a2-0766-b3b2
+          stepCounter: 9113-4c9f-4f11-ab9a-2ff1-0e52-f05d-bd4f
+        config: {}
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_L_BC_INVCITEM_BC_PLCYPRD
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ee0b-0cae-e759-8c9b-e79f-74a2-0766-b3b2
+                stepCounter: 75a8-614f-1a49-50b9-6eaf-1ec6-e4d1-9733
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6c8a-7e94-54b0-dc9c-7c2c-a90b-107f-0130
+          stepCounter: 9113-4c9f-4f11-ab9a-2ff1-0e52-f05d-bd4f
+        config: {}
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_BC_PLCYPRD
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6c8a-7e94-54b0-dc9c-7c2c-a90b-107f-0130
+                stepCounter: 75a8-614f-1a49-50b9-6eaf-1ec6-e4d1-9733
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0e63-b96c-c46c-11b3-761c-118c-da27-ef01
+          stepCounter: 9113-4c9f-4f11-ab9a-2ff1-0e52-f05d-bd4f
+        config: {}
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_BC_INVCITEM
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0e63-b96c-c46c-11b3-761c-118c-da27-ef01
+                stepCounter: 75a8-614f-1a49-50b9-6eaf-1ec6-e4d1-9733
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 38e2-62bc-b8c3-0b07-e168-790b-34f6-ee0f
+          stepCounter: 9113-4c9f-4f11-ab9a-2ff1-0e52-f05d-bd4f
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: POLICYPERIODID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 38e2-62bc-b8c3-0b07-e168-790b-34f6-ee0f
+                stepCounter: 75a8-614f-1a49-50b9-6eaf-1ec6-e4d1-9733
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 98e4-c349-b9aa-6fe5-9d62-b727-0a74-e478
+          stepCounter: 9113-4c9f-4f11-ab9a-2ff1-0e52-f05d-bd4f
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: INVOICEITEMID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 98e4-c349-b9aa-6fe5-9d62-b727-0a74-e478
+                stepCounter: 75a8-614f-1a49-50b9-6eaf-1ec6-e4d1-9733
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 9113-4c9f-4f11-ab9a-2ff1-0e52-f05d-bd4f
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: 75a8-614f-1a49-50b9-6eaf-1ec6-e4d1-9733
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 9113-4c9f-4f11-ab9a-2ff1-0e52-f05d-bd4f
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: 75a8-614f-1a49-50b9-6eaf-1ec6-e4d1-9733
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: 9113-4c9f-4f11-ab9a-2ff1-0e52-f05d-bd4f
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          L_BC_INVCITEM_BC_PLCYPRD: 75a8-614f-1a49-50b9-6eaf-1ec6-e4d1-9733
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_RDV
+            nodeName: L_BC_INVCITEM_BC_PLCYPRD
+        join:
+          joinCondition: |-
+            FROM {{ref('EDW_RDV','L_BC_INVCITEM_BC_PLCYPRD') }} L_BC_INVCITEM_BC_PLCYPRD
+            JOIN (SELECT HK_H_BC_INVCITEM HK_H_BC_INVCITEMZ, MAX(DSS_LOAD_DATE) DSS_LOAD_DT
+            FROM {{ref('EDW_RDV','L_BC_INVCITEM_BC_PLCYPRD') }}L_BC_INVCITEM_BC_PLCYPRD
+            GROUP BY HK_H_BC_INVCITEM) Z
+            ON L_BC_INVCITEM_BC_PLCYPRD.HK_H_BC_INVCITEM = Z.HK_H_BC_INVCITEMZ
+            AND L_BC_INVCITEM_BC_PLCYPRD.DSS_LOAD_DATE = Z.DSS_LOAD_DT
+        name: BC_INVCITEM_BC_PLCYPRD_VW_CURR
+        noLinkRefs: []
+  name: BC_INVCITEM_BC_PLCYPRD_VW_CURR
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node

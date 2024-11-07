@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "14"
+includeSelector: "{STAGE_ACCCTRL } OR {STAGE_ACCT_ATNUMSEQ } OR { STAGE_ACCT_INDCDE }"
+name: newtest
+type: Job

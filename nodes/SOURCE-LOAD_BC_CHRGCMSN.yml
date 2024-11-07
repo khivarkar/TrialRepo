@@ -1,0 +1,245 @@
+fileVersion: 1
+id: 1c06-932b-4f0f-77b8-9764-ae50-0552-5896
+name: LOAD_BC_CHRGCMSN
+operation:
+  database: SOURCE_DB
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SOURCE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 55d6-7880-24a1-c7cb-cbb1-1625-70b0-9fac
+          stepCounter: 1c06-932b-4f0f-77b8-9764-ae50-0552-5896
+        config: {}
+        dataType: number
+        defaultValue: ""
+        description: ""
+        name: CHARGECOMMISSIONID
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c442-9675-6264-e6fb-8e3d-9791-f18d-73a6
+          stepCounter: 1c06-932b-4f0f-77b8-9764-ae50-0552-5896
+        config: {}
+        dataType: number
+        defaultValue: ""
+        description: ""
+        name: HIDDENTACCOUNTCONTAINERID
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a559-7e89-79d5-ae6e-4c58-a4bc-14ce-fd05
+          stepCounter: 1c06-932b-4f0f-77b8-9764-ae50-0552-5896
+        config: {}
+        dataType: number
+        defaultValue: ""
+        description: ""
+        name: RETIRED
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bbd6-d6d1-9a5d-63ff-ec75-4dc4-4ac1-5135
+          stepCounter: 1c06-932b-4f0f-77b8-9764-ae50-0552-5896
+        config: {}
+        dataType: number
+        defaultValue: ""
+        description: ""
+        name: LOADCOMMANDID
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fe11-a823-1cb2-dd79-a89c-bdd3-bff3-efeb
+          stepCounter: 1c06-932b-4f0f-77b8-9764-ae50-0552-5896
+        config: {}
+        dataType: number
+        defaultValue: ""
+        description: ""
+        name: PAYABLECRITERIA
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e04-dc2a-bd92-9a9d-02e2-e0fa-41d2-4bf9
+          stepCounter: 1c06-932b-4f0f-77b8-9764-ae50-0552-5896
+        config: {}
+        dataType: timestamp(6)
+        defaultValue: ""
+        description: ""
+        name: UPDATETIME
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c223-2c7e-def4-8e03-8ea5-df58-a7c7-42f8
+          stepCounter: 1c06-932b-4f0f-77b8-9764-ae50-0552-5896
+        config: {}
+        dataType: number
+        defaultValue: ""
+        description: ""
+        name: CHARGEID
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 92ea-df81-e705-43d8-99b7-190c-ebfe-2d40
+          stepCounter: 1c06-932b-4f0f-77b8-9764-ae50-0552-5896
+        config: {}
+        dataType: varchar2(20)
+        defaultValue: ""
+        description: ""
+        name: PUBLICID
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4ab9-2d77-34d0-5917-1b2c-da64-d2a3-f952
+          stepCounter: 1c06-932b-4f0f-77b8-9764-ae50-0552-5896
+        config: {}
+        dataType: number
+        defaultValue: ""
+        description: ""
+        name: CREATEUSERID
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 600d-ea83-e9a6-9d24-4a77-ae1d-b2e7-30e7
+          stepCounter: 1c06-932b-4f0f-77b8-9764-ae50-0552-5896
+        config: {}
+        dataType: timestamp(6)
+        defaultValue: ""
+        description: ""
+        name: CREATETIME
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9897-c648-c152-4d70-f735-74ef-fad5-be67
+          stepCounter: 1c06-932b-4f0f-77b8-9764-ae50-0552-5896
+        config: {}
+        dataType: number
+        defaultValue: ""
+        description: ""
+        name: BEANVERSION
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 97f4-0436-f929-8b01-3c84-4b3c-3fb8-8091
+          stepCounter: 1c06-932b-4f0f-77b8-9764-ae50-0552-5896
+        config: {}
+        dataType: number
+        defaultValue: ""
+        description: ""
+        name: POLICYCOMMISSIONID
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c4e8-f224-a02a-464b-d0fa-726c-6594-dc27
+          stepCounter: 1c06-932b-4f0f-77b8-9764-ae50-0552-5896
+        config: {}
+        dataType: number
+        defaultValue: ""
+        description: ""
+        name: UPDATEUSERID
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 1c06-932b-4f0f-77b8-9764-ae50-0552-5896
+        config: {}
+        dataType: varchar2(255)
+        defaultValue: ""
+        description: Record source
+        name: DSS_RECORD_SOURCE
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 1c06-932b-4f0f-77b8-9764-ae50-0552-5896
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was loaded in the data vault
+        name: DSS_LOAD_DATE
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+    join:
+      joinCondition: ""
+  name: LOAD_BC_CHRGCMSN
+  schema: ""
+  sqlType: Source
+  table: LOAD_BC_CHRGCMSN
+  type: sourceInput
+  version: 1
+type: Node

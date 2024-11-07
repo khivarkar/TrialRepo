@@ -1,0 +1,175 @@
+fileVersion: 1
+id: 4f32-ceba-275e-9d25-5c01-a0e9-bd43-e93d
+name: L_PC_PYMNTPLNSMMRY_PC_PP
+operation:
+  config:
+    insertStrategy: MERGE
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3d51-ede0-9e77-6573-6c42-b644-eba5-9218
+          stepCounter: 4f32-ceba-275e-9d25-5c01-a0e9-bd43-e93d
+        config:
+          "0": null
+          is_Link_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_L_PC_PYMNTPLNSMMRY_PC_PP
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3d51-ede0-9e77-6573-6c42-b644-eba5-9218
+                stepCounter: 50a1-3885-c507-9868-87df-47b1-a804-3d32
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a591-abb2-4967-d8f4-7b39-fdc0-4dc8-6b95
+          stepCounter: 4f32-ceba-275e-9d25-5c01-a0e9-bd43-e93d
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_PC_PAYMENTPLANSUMMARY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a591-abb2-4967-d8f4-7b39-fdc0-4dc8-6b95
+                stepCounter: 50a1-3885-c507-9868-87df-47b1-a804-3d32
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ce62-8d75-e787-aba4-cfb1-61d3-5db8-175c
+          stepCounter: 4f32-ceba-275e-9d25-5c01-a0e9-bd43-e93d
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_PC_PLCYPRD
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ce62-8d75-e787-aba4-cfb1-61d3-5db8-175c
+                stepCounter: 50a1-3885-c507-9868-87df-47b1-a804-3d32
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8f90-8fcb-f1dc-ff84-af08-3799-ddf1-da53
+          stepCounter: 4f32-ceba-275e-9d25-5c01-a0e9-bd43-e93d
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: PAYMENTPLANSUMMARYID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8f90-8fcb-f1dc-ff84-af08-3799-ddf1-da53
+                stepCounter: 50a1-3885-c507-9868-87df-47b1-a804-3d32
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 38e2-62bc-b8c3-0b07-e168-790b-34f6-ee0f
+          stepCounter: 4f32-ceba-275e-9d25-5c01-a0e9-bd43-e93d
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: POLICYPERIODID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 38e2-62bc-b8c3-0b07-e168-790b-34f6-ee0f
+                stepCounter: 50a1-3885-c507-9868-87df-47b1-a804-3d32
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 4f32-ceba-275e-9d25-5c01-a0e9-bd43-e93d
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: 50a1-3885-c507-9868-87df-47b1-a804-3d32
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 4f32-ceba-275e-9d25-5c01-a0e9-bd43-e93d
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: 50a1-3885-c507-9868-87df-47b1-a804-3d32
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: 4f32-ceba-275e-9d25-5c01-a0e9-bd43-e93d
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_STAGE
+            nodeName: STAGE_PAYMENTPLANSUM_PLCYPRD
+        join:
+          joinCondition: FROM {{ref('EDW_STAGE','STAGE_PAYMENTPLANSUM_PLCYPRD') }} STAGE_PAYMENTPLANSUM_PLCYPRD
+        name: L_PC_PYMNTPLNSMMRY_PC_PP
+        noLinkRefs: []
+  name: L_PC_PYMNTPLNSMMRY_PC_PP
+  overrideSQL: false
+  schema: ""
+  sqlType: "7"
+  type: sql
+  version: 1
+type: Node

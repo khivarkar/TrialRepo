@@ -1,0 +1,176 @@
+fileVersion: 1
+id: fab4-ff4d-ce28-c3f9-45c5-79eb-ad34-9629
+name: L_PC_PLCYADDR_PC_EFFDTED
+operation:
+  config:
+    insertStrategy: MERGE
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 75cb-0084-7dff-e65e-6826-cd6d-5bd2-a4b7
+          stepCounter: fab4-ff4d-ce28-c3f9-45c5-79eb-ad34-9629
+        config:
+          "0": null
+          is_Link_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_L_PC_PLCYADDR_PC_EFFDTED
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 59f5-a494-c490-2ee5-31cb-5c54-5166-c6ab
+                stepCounter: ce37-c88e-f027-1a6b-8322-9905-9fc0-d4d3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: aac4-a099-393e-e6d1-2fb6-d9ee-1c5f-0581
+          stepCounter: fab4-ff4d-ce28-c3f9-45c5-79eb-ad34-9629
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_PC_PLCYADDR
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aac4-a099-393e-e6d1-2fb6-d9ee-1c5f-0581
+                stepCounter: ce37-c88e-f027-1a6b-8322-9905-9fc0-d4d3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ff59-e2db-8600-1862-49af-a069-fd2f-fd1d
+          stepCounter: fab4-ff4d-ce28-c3f9-45c5-79eb-ad34-9629
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_PC_EFFDTED
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 59f5-a494-c490-2ee5-31cb-5c54-5166-c6ab
+                stepCounter: ce37-c88e-f027-1a6b-8322-9905-9fc0-d4d3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9310-6727-4304-5f14-7c9d-2e6c-840b-3bac
+          stepCounter: fab4-ff4d-ce28-c3f9-45c5-79eb-ad34-9629
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: EFFECTIVEDATEDFIELDSID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9310-6727-4304-5f14-7c9d-2e6c-840b-3bac
+                stepCounter: ce37-c88e-f027-1a6b-8322-9905-9fc0-d4d3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0d2b-d128-7e45-910e-3e54-9ddf-8f62-505c
+          stepCounter: fab4-ff4d-ce28-c3f9-45c5-79eb-ad34-9629
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: POLICYADDRESSID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0d2b-d128-7e45-910e-3e54-9ddf-8f62-505c
+                stepCounter: ce37-c88e-f027-1a6b-8322-9905-9fc0-d4d3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: fab4-ff4d-ce28-c3f9-45c5-79eb-ad34-9629
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: ce37-c88e-f027-1a6b-8322-9905-9fc0-d4d3
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: fab4-ff4d-ce28-c3f9-45c5-79eb-ad34-9629
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: ce37-c88e-f027-1a6b-8322-9905-9fc0-d4d3
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: fab4-ff4d-ce28-c3f9-45c5-79eb-ad34-9629
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          STAGE_PLCYADDR_EFFDTEDFLDS: ce37-c88e-f027-1a6b-8322-9905-9fc0-d4d3
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_STAGE
+            nodeName: STAGE_PLCYADDR_EFFDTEDFLDS
+        join:
+          joinCondition: FROM {{ref('EDW_STAGE','STAGE_PLCYADDR_EFFDTEDFLDS') }} STAGE_PLCYADDR_EFFDTEDFLDS -- column HK_L_PC_PLCYADDR_PC_EFFDTED missing in stage
+        name: L_PC_PLCYADDR_PC_EFFDTED
+        noLinkRefs: []
+  name: L_PC_PLCYADDR_PC_EFFDTED
+  overrideSQL: false
+  schema: ""
+  sqlType: "7"
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,123 @@
+fileVersion: 1
+id: 0555-8fa6-fdc4-e9c7-d968-ff1d-aec8-45b6
+name: H_PX_WC7JDXCV
+operation:
+  config:
+    insertStrategy: MERGE
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c482-1067-f02c-69f4-be78-681e-64b9-9baf
+          stepCounter: 0555-8fa6-fdc4-e9c7-d968-ff1d-aec8-45b6
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_PX_WC7JDXCV
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c482-1067-f02c-69f4-be78-681e-64b9-9baf
+                stepCounter: 333a-c7b7-4a35-989b-64f9-9a67-17c3-7114
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d8cc-72f8-43ac-5a12-7fe6-058c-bbec-5080
+          stepCounter: 0555-8fa6-fdc4-e9c7-d968-ff1d-aec8-45b6
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: true
+        isChangeTracking: false
+        name: WC7JURISDICTIONCOVID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d8cc-72f8-43ac-5a12-7fe6-058c-bbec-5080
+                stepCounter: 333a-c7b7-4a35-989b-64f9-9a67-17c3-7114
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 0555-8fa6-fdc4-e9c7-d968-ff1d-aec8-45b6
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: 333a-c7b7-4a35-989b-64f9-9a67-17c3-7114
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 0555-8fa6-fdc4-e9c7-d968-ff1d-aec8-45b6
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: 333a-c7b7-4a35-989b-64f9-9a67-17c3-7114
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: 0555-8fa6-fdc4-e9c7-d968-ff1d-aec8-45b6
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_STAGE
+            nodeName: STAGE_WC7JDXCV
+        join:
+          joinCondition: FROM {{ref('EDW_STAGE','STAGE_WC7JDXCV') }} STAGE_WC7JDXCV
+        name: H_PX_WC7JDXCV
+        noLinkRefs: []
+  name: H_PX_WC7JDXCV
+  overrideSQL: false
+  schema: ""
+  sqlType: "6"
+  type: sql
+  version: 1
+type: Node

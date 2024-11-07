@@ -1,0 +1,730 @@
+fileVersion: 1
+id: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+name: DS_CC_CLMCNTCTRL
+operation:
+  config:
+    insertStrategy: MERGE
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_IM
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 850c-42e9-255f-cc2f-225c-ffff-3b0f-d2d9
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: INCIDENTID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 850c-42e9-255f-cc2f-225c-ffff-3b0f-d2d9
+                stepCounter: 0417-bdbf-06a6-02b1-cc56-acff-a7e9-26c0
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6e53-79d5-5a85-52b4-2f18-a081-0291-ab6d
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: EXPOSUREID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6e53-79d5-5a85-52b4-2f18-a081-0291-ab6d
+                stepCounter: 53dc-8701-8f90-0043-56e7-8530-84aa-5472
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0704-cb78-24a4-083f-7b0c-3a0e-2b3a-a427
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: MATTERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0704-cb78-24a4-083f-7b0c-3a0e-2b3a-a427
+                stepCounter: 657e-83bd-8393-bff5-767d-651f-6b3c-f146
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e15f-9b88-880b-c195-7117-0832-d656-a80e
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_CC_CLMCNTCTRL
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e15f-9b88-880b-c195-7117-0832-d656-a80e
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d807-90d5-3de1-eecb-ce42-f14f-801a-cba9
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: true
+        isChangeTracking: false
+        name: CLAIMCONTACTROLEID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d807-90d5-3de1-eecb-ce42-f14f-801a-cba9
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d3a1-0c92-7096-66bd-3932-7b61-4cf6-6de2
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: CLAIMCONTACTID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d3a1-0c92-7096-66bd-3932-7b61-4cf6-6de2
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a559-7e89-79d5-ae6e-4c58-a4bc-14ce-fd05
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: RETIRED
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a559-7e89-79d5-ae6e-4c58-a4bc-14ce-fd05
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 92ea-df81-e705-43d8-99b7-190c-ebfe-2d40
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: varchar2(20)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: PUBLICID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 92ea-df81-e705-43d8-99b7-190c-ebfe-2d40
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3b66-2f79-dcd7-93f0-9267-054d-5347-eecd
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: ARCHIVEPARTITION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3b66-2f79-dcd7-93f0-9267-054d-5347-eecd
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2722-a43b-e0e6-ea50-1261-342d-2bdc-daf9
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: EVALUATIONID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2722-a43b-e0e6-ea50-1261-342d-2bdc-daf9
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d6dc-86ac-4d20-70cf-f045-fc62-d441-de48
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: PARTYNUMBER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d6dc-86ac-4d20-70cf-f045-fc62-d441-de48
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4ab9-2d77-34d0-5917-1b2c-da64-d2a3-f952
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: CREATEUSERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4ab9-2d77-34d0-5917-1b2c-da64-d2a3-f952
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9897-c648-c152-4d70-f735-74ef-fad5-be67
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: BEANVERSION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9897-c648-c152-4d70-f735-74ef-fad5-be67
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a397-b294-8767-4e2e-cac8-3350-d364-e2aa
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: NEGOTIATIONID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a397-b294-8767-4e2e-cac8-3350-d364-e2aa
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c4e8-f224-a02a-464b-d0fa-726c-6594-dc27
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: UPDATEUSERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c4e8-f224-a02a-464b-d0fa-726c-6594-dc27
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a5d4-9106-0952-aa8a-d5fd-ee07-1be7-52de
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: varchar2(255)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: COMMENTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a5d4-9106-0952-aa8a-d5fd-ee07-1be7-52de
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bbd6-d6d1-9a5d-63ff-ec75-4dc4-4ac1-5135
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: LOADCOMMANDID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bbd6-d6d1-9a5d-63ff-ec75-4dc4-4ac1-5135
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e04-dc2a-bd92-9a9d-02e2-e0fa-41d2-4bf9
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: timestamp(6)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: UPDATETIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3e04-dc2a-bd92-9a9d-02e2-e0fa-41d2-4bf9
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8de5-afcf-d73a-4898-cd24-7c6e-d19a-5240
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: WITNESSSTATEMENTIND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8de5-afcf-d73a-4898-cd24-7c6e-d19a-5240
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 600d-ea83-e9a6-9d24-4a77-ae1d-b2e7-30e7
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: timestamp(6)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: CREATETIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 600d-ea83-e9a6-9d24-4a77-ae1d-b2e7-30e7
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c76a-5e84-e4bd-ee52-7e27-4ea3-0c68-0d79
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: char(1)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: ACTIVE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c76a-5e84-e4bd-ee52-7e27-4ea3-0c68-0d79
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5a7a-9fae-12d0-2632-f7bb-2413-01a8-90e9
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: COVEREDPARTYTYPE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5a7a-9fae-12d0-2632-f7bb-2413-01a8-90e9
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ee46-bdbd-d0e9-b05d-8cc3-e9c3-3d3a-7565
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: WITNESSPOSITION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ee46-bdbd-d0e9-b05d-8cc3-e9c3-3d3a-7565
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 29a7-e964-67b6-9a9f-5a93-332e-29e9-b0de
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: ROLE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 29a7-e964-67b6-9a9f-5a93-332e-29e9-b0de
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1436-a6b4-f677-b1fc-631e-306b-1d15-e526
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: varchar2(100)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: WITNESSPERSPECTIVE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1436-a6b4-f677-b1fc-631e-306b-1d15-e526
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 68e0-a872-d049-bd95-de2d-3139-279d-5026
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: char(32)
+        description: The changing hash
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_CHANGE_HASH
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 68e0-a872-d049-bd95-de2d-3139-279d-5026
+                stepCounter: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 339b-43f2-7086-2090-fc7a-9993-5fb1-33f1
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: POLICYID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 339b-43f2-7086-2090-fc7a-9993-5fb1-33f1
+                stepCounter: 9873-6318-5b60-6a35-a2dc-b622-e1f4-2704
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 84b4-d240-1f49-7dcb-61cb-a124-fb9e-cc4b
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was updated in the data warehouse.
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_UPDATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: 66f7-8f2c-f19e-e0de-04e0-f142-7752-75c3
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was created in the data warehouse.
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          CC_CLMCNTCTRL_VW_CURR: 730a-98b6-2873-8fc1-c47b-1591-6776-e0ea
+          CC_EXPSUR_VW_CURR: 53dc-8701-8f90-0043-56e7-8530-84aa-5472
+          CC_INCIDENT_VW_CURR: 0417-bdbf-06a6-02b1-cc56-acff-a7e9-26c0
+          CC_MATTER_VW_CURR: 657e-83bd-8393-bff5-767d-651f-6b3c-f146
+          CC_POLICY_VW_CURR: 9873-6318-5b60-6a35-a2dc-b622-e1f4-2704
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_RDV
+            nodeName: CC_CLMCNTCTRL_VW_CURR
+          - locationName: EDW_RDV
+            nodeName: CC_CLMCNTR_CC_INCIDENT_VW_CURR
+          - locationName: EDW_RDV
+            nodeName: CC_CLMCNTRL_CC_EXPSUR_VW_CURR
+          - locationName: EDW_RDV
+            nodeName: CC_CLMCNTRL_CC_MATTER_VW_CURR
+          - locationName: EDW_RDV
+            nodeName: CC_CLMCNTRL_CC_POLICY_VW_CURR
+          - locationName: EDW_RDV
+            nodeName: CC_EXPSUR_VW_CURR
+          - locationName: EDW_RDV
+            nodeName: CC_INCIDENT_VW_CURR
+          - locationName: EDW_RDV
+            nodeName: CC_MATTER_VW_CURR
+          - locationName: EDW_RDV
+            nodeName: CC_POLICY_VW_CURR
+        join:
+          joinCondition: |-
+            FROM {{ref('EDW_RDV','CC_CLMCNTCTRL_VW_CURR') }} CC_CLMCNTCTRL_VW_CURR
+
+            INNER JOIN {{ref('EDW_RDV','CC_CLMCNTR_CC_INCIDENT_VW_CURR') }} CC_CLMCNTR_CC_INCIDENT_VW_CURR
+            ON CC_CLMCNTR_CC_INCIDENT_VW_CURR.HK_H_CC_CLMCNTCTRL = CC_CLMCNTCTRL_VW_CURR.HK_H_CC_CLMCNTCTRL
+
+            LEFT JOIN {{ref('EDW_RDV','CC_INCIDENT_VW_CURR') }} CC_INCIDENT_VW_CURR
+            ON CC_INCIDENT_VW_CURR.HK_H_CC_INCIDENT = CC_CLMCNTR_CC_INCIDENT_VW_CURR.HK_H_CC_INCIDENT
+
+            INNER JOIN {{ref('EDW_RDV','CC_CLMCNTRL_CC_EXPSUR_VW_CURR') }} CC_CLMCNTRL_CC_EXPSUR_VW_CURR
+            ON CC_CLMCNTRL_CC_EXPSUR_VW_CURR.HK_H_CC_CLMCNTCTRL = CC_CLMCNTCTRL_VW_CURR.HK_H_CC_CLMCNTCTRL
+
+            LEFT JOIN {{ref('EDW_RDV','CC_EXPSUR_VW_CURR') }} CC_EXPSUR_VW_CURR
+            ON CC_EXPSUR_VW_CURR.HK_H_CC_EXPSUR = CC_CLMCNTRL_CC_EXPSUR_VW_CURR.HK_H_CC_EXPSUR
+
+            INNER JOIN {{ref('EDW_RDV','CC_CLMCNTRL_CC_MATTER_VW_CURR') }} CC_CLMCNTRL_CC_MATTER_VW_CURR
+            ON CC_CLMCNTRL_CC_MATTER_VW_CURR.HK_H_CC_CLMCNTCTRL = CC_CLMCNTCTRL_VW_CURR.HK_H_CC_CLMCNTCTRL
+
+            LEFT JOIN {{ref('EDW_RDV','CC_MATTER_VW_CURR') }} CC_MATTER_VW_CURR
+            ON CC_MATTER_VW_CURR.HK_H_CC_MATTER = CC_CLMCNTRL_CC_MATTER_VW_CURR.HK_H_CC_MATTER
+
+
+            INNER JOIN {{ref('EDW_RDV','CC_CLMCNTRL_CC_POLICY_VW_CURR') }} CC_CLMCNTRL_CC_POLICY_VW_CURR
+            ON CC_CLMCNTRL_CC_POLICY_VW_CURR.HK_H_CC_CLMCNTCTRL = CC_CLMCNTCTRL_VW_CURR.HK_H_CC_CLMCNTCTRL
+
+            LEFT JOIN {{ref('EDW_RDV','CC_POLICY_VW_CURR') }} CC_POLICY_VW_CURR
+            ON CC_POLICY_VW_CURR.HK_H_CC_POLICY = CC_CLMCNTRL_CC_POLICY_VW_CURR.HK_H_CC_POLICY WHERE CC_CLMCNTCTRL_VW_CURR.UPDATETIME > (SELECT DSS_PARAMETER_VALUE FROM RED_REPO.DSS_PARAMETER WHERE DSS_PARAMETER_NAME = 'HWM_DS_CC_CLMCNTCTRL')
+        name: DS_CC_CLMCNTCTRL
+        noLinkRefs: []
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_RDV
+            nodeName: CC_EXPSUR_VW_CURR
+        join:
+          joinCondition: |-
+            FROM {{ref('EDW_RDV','CC_CLMCNTCTRL_VW_CURR') }} CC_CLMCNTCTRL_VW_CURR
+
+            INNER JOIN {{ref('EDW_RDV','CC_CLMCNTR_CC_INCIDENT_VW_CURR') }} CC_CLMCNTR_CC_INCIDENT_VW_CURR
+            ON CC_CLMCNTR_CC_INCIDENT_VW_CURR.HK_H_CC_CLMCNTCTRL = CC_CLMCNTCTRL_VW_CURR.HK_H_CC_CLMCNTCTRL
+
+            LEFT JOIN {{ref('EDW_RDV','CC_INCIDENT_VW_CURR') }} CC_INCIDENT_VW_CURR
+            ON CC_INCIDENT_VW_CURR.HK_H_CC_INCIDENT = CC_CLMCNTR_CC_INCIDENT_VW_CURR.HK_H_CC_INCIDENT
+
+            INNER JOIN {{ref('EDW_RDV','CC_CLMCNTRL_CC_EXPSUR_VW_CURR') }} CC_CLMCNTRL_CC_EXPSUR_VW_CURR
+            ON CC_CLMCNTRL_CC_EXPSUR_VW_CURR.HK_H_CC_CLMCNTCTRL = CC_CLMCNTCTRL_VW_CURR.HK_H_CC_CLMCNTCTRL
+
+            LEFT JOIN {{ref('EDW_RDV','CC_EXPSUR_VW_CURR') }} CC_EXPSUR_VW_CURR
+            ON CC_EXPSUR_VW_CURR.HK_H_CC_EXPSUR = CC_CLMCNTRL_CC_EXPSUR_VW_CURR.HK_H_CC_EXPSUR
+
+            INNER JOIN {{ref('EDW_RDV','CC_CLMCNTRL_CC_MATTER_VW_CURR') }} CC_CLMCNTRL_CC_MATTER_VW_CURR
+            ON CC_CLMCNTRL_CC_MATTER_VW_CURR.HK_H_CC_CLMCNTCTRL = CC_CLMCNTCTRL_VW_CURR.HK_H_CC_CLMCNTCTRL
+
+            LEFT JOIN {{ref('EDW_RDV','CC_MATTER_VW_CURR') }} CC_MATTER_VW_CURR
+            ON CC_MATTER_VW_CURR.HK_H_CC_MATTER = CC_CLMCNTRL_CC_MATTER_VW_CURR.HK_H_CC_MATTER
+
+
+            INNER JOIN {{ref('EDW_RDV','CC_CLMCNTRL_CC_POLICY_VW_CURR') }} CC_CLMCNTRL_CC_POLICY_VW_CURR
+            ON CC_CLMCNTRL_CC_POLICY_VW_CURR.HK_H_CC_CLMCNTCTRL = CC_CLMCNTCTRL_VW_CURR.HK_H_CC_CLMCNTCTRL
+
+            LEFT JOIN {{ref('EDW_RDV','CC_POLICY_VW_CURR') }} CC_POLICY_VW_CURR
+            ON CC_POLICY_VW_CURR.HK_H_CC_POLICY = CC_CLMCNTRL_CC_POLICY_VW_CURR.HK_H_CC_POLICY WHERE CC_CLMCNTCTRL_VW_CURR.UPDATETIME > (SELECT DSS_PARAMETER_VALUE FROM RED_REPO.DSS_PARAMETER WHERE DSS_PARAMETER_NAME = 'HWM_DS_CC_CLMCNTCTRL')
+        name: DS_CC_CLMCNTCTRL
+        noLinkRefs: []
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_RDV
+            nodeName: CC_MATTER_VW_CURR
+        join:
+          joinCondition: |-
+            FROM {{ref('EDW_RDV','CC_CLMCNTCTRL_VW_CURR') }} CC_CLMCNTCTRL_VW_CURR
+
+            INNER JOIN {{ref('EDW_RDV','CC_CLMCNTR_CC_INCIDENT_VW_CURR') }} CC_CLMCNTR_CC_INCIDENT_VW_CURR
+            ON CC_CLMCNTR_CC_INCIDENT_VW_CURR.HK_H_CC_CLMCNTCTRL = CC_CLMCNTCTRL_VW_CURR.HK_H_CC_CLMCNTCTRL
+
+            LEFT JOIN {{ref('EDW_RDV','CC_INCIDENT_VW_CURR') }} CC_INCIDENT_VW_CURR
+            ON CC_INCIDENT_VW_CURR.HK_H_CC_INCIDENT = CC_CLMCNTR_CC_INCIDENT_VW_CURR.HK_H_CC_INCIDENT
+
+            INNER JOIN {{ref('EDW_RDV','CC_CLMCNTRL_CC_EXPSUR_VW_CURR') }} CC_CLMCNTRL_CC_EXPSUR_VW_CURR
+            ON CC_CLMCNTRL_CC_EXPSUR_VW_CURR.HK_H_CC_CLMCNTCTRL = CC_CLMCNTCTRL_VW_CURR.HK_H_CC_CLMCNTCTRL
+
+            LEFT JOIN {{ref('EDW_RDV','CC_EXPSUR_VW_CURR') }} CC_EXPSUR_VW_CURR
+            ON CC_EXPSUR_VW_CURR.HK_H_CC_EXPSUR = CC_CLMCNTRL_CC_EXPSUR_VW_CURR.HK_H_CC_EXPSUR
+
+            INNER JOIN {{ref('EDW_RDV','CC_CLMCNTRL_CC_MATTER_VW_CURR') }} CC_CLMCNTRL_CC_MATTER_VW_CURR
+            ON CC_CLMCNTRL_CC_MATTER_VW_CURR.HK_H_CC_CLMCNTCTRL = CC_CLMCNTCTRL_VW_CURR.HK_H_CC_CLMCNTCTRL
+
+            LEFT JOIN {{ref('EDW_RDV','CC_MATTER_VW_CURR') }} CC_MATTER_VW_CURR
+            ON CC_MATTER_VW_CURR.HK_H_CC_MATTER = CC_CLMCNTRL_CC_MATTER_VW_CURR.HK_H_CC_MATTER
+
+
+            INNER JOIN {{ref('EDW_RDV','CC_CLMCNTRL_CC_POLICY_VW_CURR') }} CC_CLMCNTRL_CC_POLICY_VW_CURR
+            ON CC_CLMCNTRL_CC_POLICY_VW_CURR.HK_H_CC_CLMCNTCTRL = CC_CLMCNTCTRL_VW_CURR.HK_H_CC_CLMCNTCTRL
+
+            LEFT JOIN {{ref('EDW_RDV','CC_POLICY_VW_CURR') }} CC_POLICY_VW_CURR
+            ON CC_POLICY_VW_CURR.HK_H_CC_POLICY = CC_CLMCNTRL_CC_POLICY_VW_CURR.HK_H_CC_POLICY WHERE CC_CLMCNTCTRL_VW_CURR.UPDATETIME > (SELECT DSS_PARAMETER_VALUE FROM RED_REPO.DSS_PARAMETER WHERE DSS_PARAMETER_NAME = 'HWM_DS_CC_CLMCNTCTRL')
+        name: DS_CC_CLMCNTCTRL
+        noLinkRefs: []
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_RDV
+            nodeName: CC_CLMCNTCTRL_VW_CURR
+        join:
+          joinCondition: |-
+            FROM {{ref('EDW_RDV','CC_CLMCNTCTRL_VW_CURR') }} CC_CLMCNTCTRL_VW_CURR
+
+            INNER JOIN {{ref('EDW_RDV','CC_CLMCNTR_CC_INCIDENT_VW_CURR') }} CC_CLMCNTR_CC_INCIDENT_VW_CURR
+            ON CC_CLMCNTR_CC_INCIDENT_VW_CURR.HK_H_CC_CLMCNTCTRL = CC_CLMCNTCTRL_VW_CURR.HK_H_CC_CLMCNTCTRL
+
+            LEFT JOIN {{ref('EDW_RDV','CC_INCIDENT_VW_CURR') }} CC_INCIDENT_VW_CURR
+            ON CC_INCIDENT_VW_CURR.HK_H_CC_INCIDENT = CC_CLMCNTR_CC_INCIDENT_VW_CURR.HK_H_CC_INCIDENT
+
+            INNER JOIN {{ref('EDW_RDV','CC_CLMCNTRL_CC_EXPSUR_VW_CURR') }} CC_CLMCNTRL_CC_EXPSUR_VW_CURR
+            ON CC_CLMCNTRL_CC_EXPSUR_VW_CURR.HK_H_CC_CLMCNTCTRL = CC_CLMCNTCTRL_VW_CURR.HK_H_CC_CLMCNTCTRL
+
+            LEFT JOIN {{ref('EDW_RDV','CC_EXPSUR_VW_CURR') }} CC_EXPSUR_VW_CURR
+            ON CC_EXPSUR_VW_CURR.HK_H_CC_EXPSUR = CC_CLMCNTRL_CC_EXPSUR_VW_CURR.HK_H_CC_EXPSUR
+
+            INNER JOIN {{ref('EDW_RDV','CC_CLMCNTRL_CC_MATTER_VW_CURR') }} CC_CLMCNTRL_CC_MATTER_VW_CURR
+            ON CC_CLMCNTRL_CC_MATTER_VW_CURR.HK_H_CC_CLMCNTCTRL = CC_CLMCNTCTRL_VW_CURR.HK_H_CC_CLMCNTCTRL
+
+            LEFT JOIN {{ref('EDW_RDV','CC_MATTER_VW_CURR') }} CC_MATTER_VW_CURR
+            ON CC_MATTER_VW_CURR.HK_H_CC_MATTER = CC_CLMCNTRL_CC_MATTER_VW_CURR.HK_H_CC_MATTER
+
+
+            INNER JOIN {{ref('EDW_RDV','CC_CLMCNTRL_CC_POLICY_VW_CURR') }} CC_CLMCNTRL_CC_POLICY_VW_CURR
+            ON CC_CLMCNTRL_CC_POLICY_VW_CURR.HK_H_CC_CLMCNTCTRL = CC_CLMCNTCTRL_VW_CURR.HK_H_CC_CLMCNTCTRL
+
+            LEFT JOIN {{ref('EDW_RDV','CC_POLICY_VW_CURR') }} CC_POLICY_VW_CURR
+            ON CC_POLICY_VW_CURR.HK_H_CC_POLICY = CC_CLMCNTRL_CC_POLICY_VW_CURR.HK_H_CC_POLICY WHERE CC_CLMCNTCTRL_VW_CURR.UPDATETIME > (SELECT DSS_PARAMETER_VALUE FROM RED_REPO.DSS_PARAMETER WHERE DSS_PARAMETER_NAME = 'HWM_DS_CC_CLMCNTCTRL')
+        name: DS_CC_CLMCNTCTRL
+        noLinkRefs: []
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_RDV
+            nodeName: CC_POLICY_VW_CURR
+        join:
+          joinCondition: |-
+            FROM {{ref('EDW_RDV','CC_CLMCNTCTRL_VW_CURR') }} CC_CLMCNTCTRL_VW_CURR
+
+            INNER JOIN {{ref('EDW_RDV','CC_CLMCNTR_CC_INCIDENT_VW_CURR') }} CC_CLMCNTR_CC_INCIDENT_VW_CURR
+            ON CC_CLMCNTR_CC_INCIDENT_VW_CURR.HK_H_CC_CLMCNTCTRL = CC_CLMCNTCTRL_VW_CURR.HK_H_CC_CLMCNTCTRL
+
+            LEFT JOIN {{ref('EDW_RDV','CC_INCIDENT_VW_CURR') }} CC_INCIDENT_VW_CURR
+            ON CC_INCIDENT_VW_CURR.HK_H_CC_INCIDENT = CC_CLMCNTR_CC_INCIDENT_VW_CURR.HK_H_CC_INCIDENT
+
+            INNER JOIN {{ref('EDW_RDV','CC_CLMCNTRL_CC_EXPSUR_VW_CURR') }} CC_CLMCNTRL_CC_EXPSUR_VW_CURR
+            ON CC_CLMCNTRL_CC_EXPSUR_VW_CURR.HK_H_CC_CLMCNTCTRL = CC_CLMCNTCTRL_VW_CURR.HK_H_CC_CLMCNTCTRL
+
+            LEFT JOIN {{ref('EDW_RDV','CC_EXPSUR_VW_CURR') }} CC_EXPSUR_VW_CURR
+            ON CC_EXPSUR_VW_CURR.HK_H_CC_EXPSUR = CC_CLMCNTRL_CC_EXPSUR_VW_CURR.HK_H_CC_EXPSUR
+
+            INNER JOIN {{ref('EDW_RDV','CC_CLMCNTRL_CC_MATTER_VW_CURR') }} CC_CLMCNTRL_CC_MATTER_VW_CURR
+            ON CC_CLMCNTRL_CC_MATTER_VW_CURR.HK_H_CC_CLMCNTCTRL = CC_CLMCNTCTRL_VW_CURR.HK_H_CC_CLMCNTCTRL
+
+            LEFT JOIN {{ref('EDW_RDV','CC_MATTER_VW_CURR') }} CC_MATTER_VW_CURR
+            ON CC_MATTER_VW_CURR.HK_H_CC_MATTER = CC_CLMCNTRL_CC_MATTER_VW_CURR.HK_H_CC_MATTER
+
+
+            INNER JOIN {{ref('EDW_RDV','CC_CLMCNTRL_CC_POLICY_VW_CURR') }} CC_CLMCNTRL_CC_POLICY_VW_CURR
+            ON CC_CLMCNTRL_CC_POLICY_VW_CURR.HK_H_CC_CLMCNTCTRL = CC_CLMCNTCTRL_VW_CURR.HK_H_CC_CLMCNTCTRL
+
+            LEFT JOIN {{ref('EDW_RDV','CC_POLICY_VW_CURR') }} CC_POLICY_VW_CURR
+            ON CC_POLICY_VW_CURR.HK_H_CC_POLICY = CC_CLMCNTRL_CC_POLICY_VW_CURR.HK_H_CC_POLICY WHERE CC_CLMCNTCTRL_VW_CURR.UPDATETIME > (SELECT DSS_PARAMETER_VALUE FROM RED_REPO.DSS_PARAMETER WHERE DSS_PARAMETER_NAME = 'HWM_DS_CC_CLMCNTCTRL')
+        name: DS_CC_CLMCNTCTRL
+        noLinkRefs: []
+  name: DS_CC_CLMCNTCTRL
+  overrideSQL: false
+  schema: ""
+  sqlType: "371"
+  type: sql
+  version: 1
+type: Node

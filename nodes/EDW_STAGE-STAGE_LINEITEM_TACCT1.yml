@@ -1,0 +1,57 @@
+fileVersion: 1
+id: b743-7bbf-6beb-422d-bfd3-e85a-ada9-66e6
+name: STAGE_LINEITEM_TACCT1
+operation:
+  config:
+    insertStrategy: NA
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_STAGE
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: b743-7bbf-6beb-422d-bfd3-e85a-ada9-66e6
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SOURCE
+            nodeName: LOAD_BC_LINEITEM
+        join:
+          joinCondition: FROM {{ref('SOURCE','LOAD_BC_LINEITEM') }} LOAD_BC_LINEITEM
+        name: STAGE_LINEITEM_TACCT1
+        noLinkRefs: []
+  name: STAGE_LINEITEM_TACCT1
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node

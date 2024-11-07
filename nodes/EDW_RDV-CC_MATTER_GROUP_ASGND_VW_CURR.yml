@@ -1,0 +1,181 @@
+fileVersion: 1
+id: c4d9-86f1-474d-a932-65ed-49e5-3d6d-1927
+name: CC_MATTER_GROUP_ASGND_VW_CURR
+operation:
+  config:
+    insertStrategy: NA
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c63e-8f80-4711-1f61-d7a3-d833-c60e-ccc3
+          stepCounter: c4d9-86f1-474d-a932-65ed-49e5-3d6d-1927
+        config: {}
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_L_CC_MATTER_GROUP_ASGND
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c63e-8f80-4711-1f61-d7a3-d833-c60e-ccc3
+                stepCounter: 84b4-fac1-9668-e371-e1c7-3197-fce1-0197
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: afdd-0fa1-7633-1a2f-2e22-28a8-6d59-1103
+          stepCounter: c4d9-86f1-474d-a932-65ed-49e5-3d6d-1927
+        config: {}
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_CC_MATTER
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: afdd-0fa1-7633-1a2f-2e22-28a8-6d59-1103
+                stepCounter: 84b4-fac1-9668-e371-e1c7-3197-fce1-0197
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f6ea-ef45-4f0a-4ab4-a2ed-822c-98c3-fbaa
+          stepCounter: c4d9-86f1-474d-a932-65ed-49e5-3d6d-1927
+        config: {}
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_CC_GROUP
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f6ea-ef45-4f0a-4ab4-a2ed-822c-98c3-fbaa
+                stepCounter: 84b4-fac1-9668-e371-e1c7-3197-fce1-0197
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cf5a-3b0c-4623-6cea-203c-ea29-d0a4-c7d6
+          stepCounter: c4d9-86f1-474d-a932-65ed-49e5-3d6d-1927
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: ASSIGNEDGROUPID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cf5a-3b0c-4623-6cea-203c-ea29-d0a4-c7d6
+                stepCounter: 84b4-fac1-9668-e371-e1c7-3197-fce1-0197
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0704-cb78-24a4-083f-7b0c-3a0e-2b3a-a427
+          stepCounter: c4d9-86f1-474d-a932-65ed-49e5-3d6d-1927
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: MATTERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0704-cb78-24a4-083f-7b0c-3a0e-2b3a-a427
+                stepCounter: 84b4-fac1-9668-e371-e1c7-3197-fce1-0197
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: c4d9-86f1-474d-a932-65ed-49e5-3d6d-1927
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: 84b4-fac1-9668-e371-e1c7-3197-fce1-0197
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: c4d9-86f1-474d-a932-65ed-49e5-3d6d-1927
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: 84b4-fac1-9668-e371-e1c7-3197-fce1-0197
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: c4d9-86f1-474d-a932-65ed-49e5-3d6d-1927
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          L_CC_MATTER_GROUP_ASGND: 84b4-fac1-9668-e371-e1c7-3197-fce1-0197
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_RDV
+            nodeName: L_CC_MATTER_GROUP_ASGND
+        join:
+          joinCondition: |-
+            FROM {{ref('EDW_RDV','L_CC_MATTER_GROUP_ASGND') }} L_CC_MATTER_GROUP_ASGND
+
+            JOIN (SELECT HK_H_CC_MATTER AS HK_H_CC_MATTERZ, MAX(DSS_LOAD_DATE) AS DSS_LOAD_DT
+
+            FROM {{ref('EDW_RDV','L_CC_MATTER_GROUP_ASGND') }}
+
+            GROUP BY HK_H_CC_MATTER) Z
+
+            ON L_CC_MATTER_GROUP_ASGND.HK_H_CC_MATTER = Z.HK_H_CC_MATTERZ
+
+            AND L_CC_MATTER_GROUP_ASGND.DSS_LOAD_DATE = Z.DSS_LOAD_DT
+        name: CC_MATTER_GROUP_ASGND_VW_CURR
+        noLinkRefs: []
+  name: CC_MATTER_GROUP_ASGND_VW_CURR
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node

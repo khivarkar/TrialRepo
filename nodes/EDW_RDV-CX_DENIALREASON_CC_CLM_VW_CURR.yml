@@ -1,0 +1,175 @@
+fileVersion: 1
+id: e7b3-9b88-f73a-f8bb-4121-7dfb-a675-4726
+name: CX_DENIALREASON_CC_CLM_VW_CURR
+operation:
+  config:
+    insertStrategy: NA
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: aa2e-9f15-ad22-3095-671f-0616-dce0-060e
+          stepCounter: e7b3-9b88-f73a-f8bb-4121-7dfb-a675-4726
+        config: {}
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_L_CX_DENIALREASON_CC_CLM
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aa2e-9f15-ad22-3095-671f-0616-dce0-060e
+                stepCounter: 7499-22dd-8886-2005-e19f-8346-6ace-b61c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 23f0-21ce-5d23-fd85-3e39-4a6a-2485-6af6
+          stepCounter: e7b3-9b88-f73a-f8bb-4121-7dfb-a675-4726
+        config: {}
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_CX_DENIALREASON
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 23f0-21ce-5d23-fd85-3e39-4a6a-2485-6af6
+                stepCounter: 7499-22dd-8886-2005-e19f-8346-6ace-b61c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cb3d-a367-a2fd-f88b-9175-9e29-3a22-a664
+          stepCounter: e7b3-9b88-f73a-f8bb-4121-7dfb-a675-4726
+        config: {}
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_CC_CLM
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cb3d-a367-a2fd-f88b-9175-9e29-3a22-a664
+                stepCounter: 7499-22dd-8886-2005-e19f-8346-6ace-b61c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 51b6-8d99-2abd-91f9-488c-60e2-4cba-0b8d
+          stepCounter: e7b3-9b88-f73a-f8bb-4121-7dfb-a675-4726
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: CLAIMID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 51b6-8d99-2abd-91f9-488c-60e2-4cba-0b8d
+                stepCounter: 7499-22dd-8886-2005-e19f-8346-6ace-b61c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 94a6-f106-a3a2-d3b9-16a2-00aa-b9ad-cf80
+          stepCounter: e7b3-9b88-f73a-f8bb-4121-7dfb-a675-4726
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DENIALREASONID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 94a6-f106-a3a2-d3b9-16a2-00aa-b9ad-cf80
+                stepCounter: 7499-22dd-8886-2005-e19f-8346-6ace-b61c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: e7b3-9b88-f73a-f8bb-4121-7dfb-a675-4726
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: 7499-22dd-8886-2005-e19f-8346-6ace-b61c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: e7b3-9b88-f73a-f8bb-4121-7dfb-a675-4726
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: 7499-22dd-8886-2005-e19f-8346-6ace-b61c
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: e7b3-9b88-f73a-f8bb-4121-7dfb-a675-4726
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_RDV
+            nodeName: L_CX_DENIALREASON_CC_CLM
+        join:
+          joinCondition: |-
+            FROM {{ref('EDW_RDV','L_CX_DENIALREASON_CC_CLM') }} L_CX_DENIALREASON_CC_CLM
+            JOIN (SELECT HK_H_CX_DENIALREASON HK_H_CX_DENIALREASONZ, MAX(DSS_LOAD_DATE) DSS_LOAD_DT
+            FROM {{ref('EDW_RDV','L_CX_DENIALREASON_CC_CLM') }}
+            GROUP BY HK_H_CX_DENIALREASON) Z
+            ON L_CX_DENIALREASON_CC_CLM.HK_H_CX_DENIALREASON = Z.HK_H_CX_DENIALREASONZ
+            AND L_CX_DENIALREASON_CC_CLM.DSS_LOAD_DATE = Z.DSS_LOAD_DT
+        name: CX_DENIALREASON_CC_CLM_VW_CURR
+        noLinkRefs: []
+  name: CX_DENIALREASON_CC_CLM_VW_CURR
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node

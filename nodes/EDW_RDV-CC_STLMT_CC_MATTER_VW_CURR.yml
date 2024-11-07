@@ -1,0 +1,180 @@
+fileVersion: 1
+id: 1e5f-e417-4c03-7cd9-98da-d8ec-731a-8ecd
+name: CC_STLMT_CC_MATTER_VW_CURR
+operation:
+  config:
+    insertStrategy: NA
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c7d7-c971-8e9c-5ba5-f0b5-9b0e-fd09-fadd
+          stepCounter: 1e5f-e417-4c03-7cd9-98da-d8ec-731a-8ecd
+        config: {}
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_L_CC_STLMT_CC_MATTER
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c7d7-c971-8e9c-5ba5-f0b5-9b0e-fd09-fadd
+                stepCounter: 70e7-8584-1b83-eb0f-af39-ffb5-1975-c20d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ae1a-1470-c3be-66e2-4764-e479-e1bb-b485
+          stepCounter: 1e5f-e417-4c03-7cd9-98da-d8ec-731a-8ecd
+        config: {}
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_CC_STLMT
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ae1a-1470-c3be-66e2-4764-e479-e1bb-b485
+                stepCounter: 70e7-8584-1b83-eb0f-af39-ffb5-1975-c20d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: afdd-0fa1-7633-1a2f-2e22-28a8-6d59-1103
+          stepCounter: 1e5f-e417-4c03-7cd9-98da-d8ec-731a-8ecd
+        config: {}
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_CC_MATTER
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: afdd-0fa1-7633-1a2f-2e22-28a8-6d59-1103
+                stepCounter: 70e7-8584-1b83-eb0f-af39-ffb5-1975-c20d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b3ab-6b36-b528-baf5-4a32-fcb7-1b8e-ee31
+          stepCounter: 1e5f-e417-4c03-7cd9-98da-d8ec-731a-8ecd
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: SETTLEMENTID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b3ab-6b36-b528-baf5-4a32-fcb7-1b8e-ee31
+                stepCounter: 70e7-8584-1b83-eb0f-af39-ffb5-1975-c20d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0704-cb78-24a4-083f-7b0c-3a0e-2b3a-a427
+          stepCounter: 1e5f-e417-4c03-7cd9-98da-d8ec-731a-8ecd
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: MATTERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0704-cb78-24a4-083f-7b0c-3a0e-2b3a-a427
+                stepCounter: 70e7-8584-1b83-eb0f-af39-ffb5-1975-c20d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 1e5f-e417-4c03-7cd9-98da-d8ec-731a-8ecd
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: 70e7-8584-1b83-eb0f-af39-ffb5-1975-c20d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 1e5f-e417-4c03-7cd9-98da-d8ec-731a-8ecd
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: 70e7-8584-1b83-eb0f-af39-ffb5-1975-c20d
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: 1e5f-e417-4c03-7cd9-98da-d8ec-731a-8ecd
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_RDV
+            nodeName: L_CC_STLMT_CC_MATTER
+        join:
+          joinCondition: |-
+            FROM {{ref('EDW_RDV','L_CC_STLMT_CC_MATTER') }} L_CC_STLMT_CC_MATTER
+
+            JOIN (SELECT HK_H_CC_STLMT HK_H_CC_STLMTZ, MAX(DSS_LOAD_DATE) DSS_LOAD_DT
+
+            FROM {{ref('EDW_RDV','L_CC_STLMT_CC_MATTER') }}
+
+            GROUP BY HK_H_CC_STLMT) Z
+
+            ON L_CC_STLMT_CC_MATTER.HK_H_CC_STLMT = Z.HK_H_CC_STLMTZ
+
+            AND L_CC_STLMT_CC_MATTER.DSS_LOAD_DATE = Z.DSS_LOAD_DT
+        name: CC_STLMT_CC_MATTER_VW_CURR
+        noLinkRefs: []
+  name: CC_STLMT_CC_MATTER_VW_CURR
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node

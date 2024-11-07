@@ -1,0 +1,143 @@
+fileVersion: 1
+id: 0814-cd72-2d65-45dd-0e00-45aa-b279-a030
+name: L_CC_COVERAGE_CC_POLICY
+operation:
+  config:
+    insertStrategy: MERGE
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32f1-2cbd-81d7-8e93-d1ba-7d1a-e75f-55fe
+          stepCounter: 0814-cd72-2d65-45dd-0e00-45aa-b279-a030
+        config:
+          "0": null
+          is_Link_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_L_CC_COVERAGE_CC_POLICY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32f1-2cbd-81d7-8e93-d1ba-7d1a-e75f-55fe
+                stepCounter: 146f-6931-6acf-3b28-733b-adce-d571-061b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 121a-9cbe-0ba1-c379-7d7b-6da9-8d79-700e
+          stepCounter: 0814-cd72-2d65-45dd-0e00-45aa-b279-a030
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_CC_POLICY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 121a-9cbe-0ba1-c379-7d7b-6da9-8d79-700e
+                stepCounter: 146f-6931-6acf-3b28-733b-adce-d571-061b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: da71-94d8-6f26-948e-54b8-47d7-d33b-f0de
+          stepCounter: 0814-cd72-2d65-45dd-0e00-45aa-b279-a030
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_CC_COVERAGE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: da71-94d8-6f26-948e-54b8-47d7-d33b-f0de
+                stepCounter: 146f-6931-6acf-3b28-733b-adce-d571-061b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 0814-cd72-2d65-45dd-0e00-45aa-b279-a030
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: 146f-6931-6acf-3b28-733b-adce-d571-061b
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 0814-cd72-2d65-45dd-0e00-45aa-b279-a030
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: 146f-6931-6acf-3b28-733b-adce-d571-061b
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: 0814-cd72-2d65-45dd-0e00-45aa-b279-a030
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_STAGE
+            nodeName: STAGE_COVERAGE_POLICY
+        join:
+          joinCondition: FROM {{ref('EDW_STAGE','STAGE_COVERAGE_POLICY') }} STAGE_COVERAGE_POLICY
+        name: L_CC_COVERAGE_CC_POLICY
+        noLinkRefs: []
+  name: L_CC_COVERAGE_CC_POLICY
+  overrideSQL: false
+  schema: ""
+  sqlType: "7"
+  type: sql
+  version: 1
+type: Node

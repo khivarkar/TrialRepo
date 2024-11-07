@@ -1,0 +1,275 @@
+fileVersion: 1
+id: 114a-4655-030b-8c91-0761-674f-0b4b-4a1f
+name: LOAD_BC_CLTRL
+operation:
+  database: SOURCE_DB
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SOURCE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6dcc-db4b-c386-7092-7042-fbdf-8d77-36f6
+          stepCounter: 114a-4655-030b-8c91-0761-674f-0b4b-4a1f
+        config: {}
+        dataType: number
+        defaultValue: ""
+        description: ""
+        name: COLLATERALID
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c442-9675-6264-e6fb-8e3d-9791-f18d-73a6
+          stepCounter: 114a-4655-030b-8c91-0761-674f-0b4b-4a1f
+        config: {}
+        dataType: number
+        defaultValue: ""
+        description: ""
+        name: HIDDENTACCOUNTCONTAINERID
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a559-7e89-79d5-ae6e-4c58-a4bc-14ce-fd05
+          stepCounter: 114a-4655-030b-8c91-0761-674f-0b4b-4a1f
+        config: {}
+        dataType: number
+        defaultValue: ""
+        description: ""
+        name: RETIRED
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a62-a9a1-5ff2-bc7e-bc03-103a-2801-382b
+          stepCounter: 114a-4655-030b-8c91-0761-674f-0b4b-4a1f
+        config: {}
+        dataType: number(18,2)
+        defaultValue: ""
+        description: ""
+        name: TOTALCASHVALUEATREQUIREMENTS
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bbd6-d6d1-9a5d-63ff-ec75-4dc4-4ac1-5135
+          stepCounter: 114a-4655-030b-8c91-0761-674f-0b4b-4a1f
+        config: {}
+        dataType: number
+        defaultValue: ""
+        description: ""
+        name: LOADCOMMANDID
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e9ae-cb86-8cc4-e8b0-0a5c-d8cb-e00f-7680
+          stepCounter: 114a-4655-030b-8c91-0761-674f-0b4b-4a1f
+        config: {}
+        dataType: number
+        defaultValue: ""
+        description: ""
+        name: COMPLIANCE
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4e61-657c-7901-a24c-4f93-efc8-a388-cf3c
+          stepCounter: 114a-4655-030b-8c91-0761-674f-0b4b-4a1f
+        config: {}
+        dataType: char(1)
+        defaultValue: ""
+        description: ""
+        name: CHARGEHELD
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: babe-019f-aab8-3b1e-8f00-798a-51af-46a0
+          stepCounter: 114a-4655-030b-8c91-0761-674f-0b4b-4a1f
+        config: {}
+        dataType: number
+        defaultValue: ""
+        description: ""
+        name: ACCOUNTID
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e04-dc2a-bd92-9a9d-02e2-e0fa-41d2-4bf9
+          stepCounter: 114a-4655-030b-8c91-0761-674f-0b4b-4a1f
+        config: {}
+        dataType: timestamp
+        defaultValue: ""
+        description: ""
+        name: UPDATETIME
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 92ea-df81-e705-43d8-99b7-190c-ebfe-2d40
+          stepCounter: 114a-4655-030b-8c91-0761-674f-0b4b-4a1f
+        config: {}
+        dataType: varchar2(20)
+        defaultValue: ""
+        description: ""
+        name: PUBLICID
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a89b-561e-2ba9-76b8-c47e-4de9-4cd5-7d38
+          stepCounter: 114a-4655-030b-8c91-0761-674f-0b4b-4a1f
+        config: {}
+        dataType: number(18,2)
+        defaultValue: ""
+        description: ""
+        name: TOTALLOCVALUE
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4ab9-2d77-34d0-5917-1b2c-da64-d2a3-f952
+          stepCounter: 114a-4655-030b-8c91-0761-674f-0b4b-4a1f
+        config: {}
+        dataType: number
+        defaultValue: ""
+        description: ""
+        name: CREATEUSERID
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 600d-ea83-e9a6-9d24-4a77-ae1d-b2e7-30e7
+          stepCounter: 114a-4655-030b-8c91-0761-674f-0b4b-4a1f
+        config: {}
+        dataType: timestamp
+        defaultValue: ""
+        description: ""
+        name: CREATETIME
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9897-c648-c152-4d70-f735-74ef-fad5-be67
+          stepCounter: 114a-4655-030b-8c91-0761-674f-0b4b-4a1f
+        config: {}
+        dataType: number
+        defaultValue: ""
+        description: ""
+        name: BEANVERSION
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c4e8-f224-a02a-464b-d0fa-726c-6594-dc27
+          stepCounter: 114a-4655-030b-8c91-0761-674f-0b4b-4a1f
+        config: {}
+        dataType: number
+        defaultValue: ""
+        description: ""
+        name: UPDATEUSERID
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 114a-4655-030b-8c91-0761-674f-0b4b-4a1f
+        config: {}
+        dataType: varchar2(255)
+        defaultValue: ""
+        description: Record source
+        name: DSS_RECORD_SOURCE
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 114a-4655-030b-8c91-0761-674f-0b4b-4a1f
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was loaded in the data vault
+        name: DSS_LOAD_DATE
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+    join:
+      joinCondition: ""
+  name: LOAD_BC_CLTRL
+  schema: ""
+  sqlType: Source
+  table: LOAD_BC_CLTRL
+  type: sourceInput
+  version: 1
+type: Node

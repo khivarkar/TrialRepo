@@ -1,0 +1,143 @@
+fileVersion: 1
+id: 6576-9d41-cfcd-7b13-5475-1dd0-774f-bc48
+name: L_PC_RTETBL_PC_RTEBK
+operation:
+  config:
+    insertStrategy: MERGE
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0ce9-ebf5-a9fe-8ef5-1152-a98d-c487-6523
+          stepCounter: 6576-9d41-cfcd-7b13-5475-1dd0-774f-bc48
+        config:
+          "0": null
+          is_Link_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_L_PC_RTETBL_PC_RTEBK
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0ce9-ebf5-a9fe-8ef5-1152-a98d-c487-6523
+                stepCounter: 9f2a-44c5-6d52-0440-3e4a-ec93-7223-27ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d3b2-6e30-d808-659b-f97f-52c0-d799-34c6
+          stepCounter: 6576-9d41-cfcd-7b13-5475-1dd0-774f-bc48
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_PC_RTETBL
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d3b2-6e30-d808-659b-f97f-52c0-d799-34c6
+                stepCounter: 9f2a-44c5-6d52-0440-3e4a-ec93-7223-27ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3c09-136d-adbd-6b31-b7fe-0748-80d3-9991
+          stepCounter: 6576-9d41-cfcd-7b13-5475-1dd0-774f-bc48
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_PC_RTEBK
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3c09-136d-adbd-6b31-b7fe-0748-80d3-9991
+                stepCounter: 9f2a-44c5-6d52-0440-3e4a-ec93-7223-27ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 6576-9d41-cfcd-7b13-5475-1dd0-774f-bc48
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: 9f2a-44c5-6d52-0440-3e4a-ec93-7223-27ce
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 6576-9d41-cfcd-7b13-5475-1dd0-774f-bc48
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: 9f2a-44c5-6d52-0440-3e4a-ec93-7223-27ce
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: 6576-9d41-cfcd-7b13-5475-1dd0-774f-bc48
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_STAGE
+            nodeName: STAGE_RTETBL_RTEBK
+        join:
+          joinCondition: FROM {{ref('EDW_STAGE','STAGE_RTETBL_RTEBK') }} STAGE_RTETBL_RTEBK
+        name: L_PC_RTETBL_PC_RTEBK
+        noLinkRefs: []
+  name: L_PC_RTETBL_PC_RTEBK
+  overrideSQL: false
+  schema: ""
+  sqlType: "7"
+  type: sql
+  version: 1
+type: Node

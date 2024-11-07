@@ -1,0 +1,123 @@
+fileVersion: 1
+id: 0360-ac7e-be12-3143-9c9b-e42b-773d-b672
+name: H_PX_WC7MEMAVWK
+operation:
+  config:
+    insertStrategy: MERGE
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e523-011e-4fc4-bf1d-6a3b-4c07-7092-89eb
+          stepCounter: 0360-ac7e-be12-3143-9c9b-e42b-773d-b672
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_PX_WC7MEMAVWK
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e523-011e-4fc4-bf1d-6a3b-4c07-7092-89eb
+                stepCounter: 41d9-58b2-1d49-85b1-0de6-3dbd-088b-99ed
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 19bf-f38e-35be-6efc-eb49-1f28-df9b-4194
+          stepCounter: 0360-ac7e-be12-3143-9c9b-e42b-773d-b672
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: true
+        isChangeTracking: false
+        name: WC7MEMAUTHVOLWORKERID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 19bf-f38e-35be-6efc-eb49-1f28-df9b-4194
+                stepCounter: 41d9-58b2-1d49-85b1-0de6-3dbd-088b-99ed
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 0360-ac7e-be12-3143-9c9b-e42b-773d-b672
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: 41d9-58b2-1d49-85b1-0de6-3dbd-088b-99ed
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 0360-ac7e-be12-3143-9c9b-e42b-773d-b672
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: 41d9-58b2-1d49-85b1-0de6-3dbd-088b-99ed
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: 0360-ac7e-be12-3143-9c9b-e42b-773d-b672
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_STAGE
+            nodeName: STAGE_WC7MEMAUTHVOLWORKER
+        join:
+          joinCondition: FROM {{ref('EDW_STAGE','STAGE_WC7MEMAUTHVOLWORKER') }} STAGE_WC7MEMAUTHVOLWORKER
+        name: H_PX_WC7MEMAVWK
+        noLinkRefs: []
+  name: H_PX_WC7MEMAVWK
+  overrideSQL: false
+  schema: ""
+  sqlType: "6"
+  type: sql
+  version: 1
+type: Node

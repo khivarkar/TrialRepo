@@ -1,0 +1,175 @@
+fileVersion: 1
+id: 91be-5a6d-2885-fa3b-a0a4-fadb-8914-8196
+name: CX_BDINJPT_CC_INCIDENT_VW_CURR
+operation:
+  config:
+    insertStrategy: NA
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e2ec-a474-52df-da68-7140-a898-ca8e-45d2
+          stepCounter: 91be-5a6d-2885-fa3b-a0a4-fadb-8914-8196
+        config: {}
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_L_CX_BDINJPT_CC_INCIDENT
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e2ec-a474-52df-da68-7140-a898-ca8e-45d2
+                stepCounter: e55a-e10a-eee5-520c-9d97-1b83-0ad1-236d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b78f-94bb-9048-b779-71ec-5c68-c0a1-e515
+          stepCounter: 91be-5a6d-2885-fa3b-a0a4-fadb-8914-8196
+        config: {}
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_CX_BDINJPT
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b78f-94bb-9048-b779-71ec-5c68-c0a1-e515
+                stepCounter: e55a-e10a-eee5-520c-9d97-1b83-0ad1-236d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4b8b-6d3e-fcaa-8a8f-502e-e5c8-8e4c-872c
+          stepCounter: 91be-5a6d-2885-fa3b-a0a4-fadb-8914-8196
+        config: {}
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_CC_INCIDENT
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4b8b-6d3e-fcaa-8a8f-502e-e5c8-8e4c-872c
+                stepCounter: e55a-e10a-eee5-520c-9d97-1b83-0ad1-236d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 841a-7ed1-92e3-159f-443b-f74e-87de-ff8c
+          stepCounter: 91be-5a6d-2885-fa3b-a0a4-fadb-8914-8196
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: BODILYINJURYPOINT_EXTID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 841a-7ed1-92e3-159f-443b-f74e-87de-ff8c
+                stepCounter: e55a-e10a-eee5-520c-9d97-1b83-0ad1-236d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 850c-42e9-255f-cc2f-225c-ffff-3b0f-d2d9
+          stepCounter: 91be-5a6d-2885-fa3b-a0a4-fadb-8914-8196
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: INCIDENTID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 850c-42e9-255f-cc2f-225c-ffff-3b0f-d2d9
+                stepCounter: e55a-e10a-eee5-520c-9d97-1b83-0ad1-236d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 91be-5a6d-2885-fa3b-a0a4-fadb-8914-8196
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: e55a-e10a-eee5-520c-9d97-1b83-0ad1-236d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 91be-5a6d-2885-fa3b-a0a4-fadb-8914-8196
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: e55a-e10a-eee5-520c-9d97-1b83-0ad1-236d
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: 91be-5a6d-2885-fa3b-a0a4-fadb-8914-8196
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_RDV
+            nodeName: L_CX_BDINJPT_CC_INCIDENT
+        join:
+          joinCondition: |-
+            FROM {{ref('EDW_RDV','L_CX_BDINJPT_CC_INCIDENT') }} L_CX_BDINJPT_CC_INCIDENT
+            JOIN (SELECT HK_H_CX_BDINJPT HK_H_CX_BDINJPTZ, MAX(DSS_LOAD_DATE) DSS_LOAD_DT
+            FROM {{ref('EDW_RDV','L_CX_BDINJPT_CC_INCIDENT') }}
+            GROUP BY HK_H_CX_BDINJPT) Z
+            ON L_CX_BDINJPT_CC_INCIDENT.HK_H_CX_BDINJPT = Z.HK_H_CX_BDINJPTZ
+            AND L_CX_BDINJPT_CC_INCIDENT.DSS_LOAD_DATE = Z.DSS_LOAD_DT
+        name: CX_BDINJPT_CC_INCIDENT_VW_CURR
+        noLinkRefs: []
+  name: CX_BDINJPT_CC_INCIDENT_VW_CURR
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node

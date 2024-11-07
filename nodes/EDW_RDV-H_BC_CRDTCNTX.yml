@@ -1,0 +1,123 @@
+fileVersion: 1
+id: 043a-44d0-d7f9-3b00-e7e5-2cb2-99b0-b459
+name: H_BC_CRDTCNTX
+operation:
+  config:
+    insertStrategy: MERGE
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c7ab-9cf1-c8bf-872c-a393-887d-a344-8938
+          stepCounter: 043a-44d0-d7f9-3b00-e7e5-2cb2-99b0-b459
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_BC_CRDTCNTX
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c7ab-9cf1-c8bf-872c-a393-887d-a344-8938
+                stepCounter: c2d3-e7fc-49ef-c2fb-d5cf-4b06-525d-1d31
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 521a-bf82-ce3f-314f-f825-abca-1d26-f1ef
+          stepCounter: 043a-44d0-d7f9-3b00-e7e5-2cb2-99b0-b459
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: true
+        isChangeTracking: false
+        name: CREDITCONTEXTID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 521a-bf82-ce3f-314f-f825-abca-1d26-f1ef
+                stepCounter: c2d3-e7fc-49ef-c2fb-d5cf-4b06-525d-1d31
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 043a-44d0-d7f9-3b00-e7e5-2cb2-99b0-b459
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: c2d3-e7fc-49ef-c2fb-d5cf-4b06-525d-1d31
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 043a-44d0-d7f9-3b00-e7e5-2cb2-99b0-b459
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: c2d3-e7fc-49ef-c2fb-d5cf-4b06-525d-1d31
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: 043a-44d0-d7f9-3b00-e7e5-2cb2-99b0-b459
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_STAGE
+            nodeName: STAGE_CRDTCNTX
+        join:
+          joinCondition: FROM {{ref('EDW_STAGE','STAGE_CRDTCNTX') }} STAGE_CRDTCNTX
+        name: H_BC_CRDTCNTX
+        noLinkRefs: []
+  name: H_BC_CRDTCNTX
+  overrideSQL: false
+  schema: ""
+  sqlType: "6"
+  type: sql
+  version: 1
+type: Node

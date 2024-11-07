@@ -1,0 +1,187 @@
+fileVersion: 1
+id: 03f8-6927-25db-4937-687f-1117-5e1b-e278
+name: REF_CCTL_PAYMENTTYPE
+operation:
+  config:
+    insertStrategy: MERGE
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1c7b-3025-074d-dcc9-78f3-9f38-2ade-328c
+          stepCounter: 03f8-6927-25db-4937-687f-1117-5e1b-e278
+        config: {}
+        dataType: number(38)
+        description: ""
+        isBusinessKey: true
+        isChangeTracking: false
+        name: CCTL_PAYMENTTYPE_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9819-7cac-5184-6d92-a77b-d1f3-2990-9501
+                stepCounter: e363-ff1c-7e69-77ba-0b91-1598-7804-5cec
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b068-931c-c450-442b-63f5-b3d2-76ea-4297
+          stepCounter: 03f8-6927-25db-4937-687f-1117-5e1b-e278
+        config: {}
+        dataType: varchar2(256)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b068-931c-c450-442b-63f5-b3d2-76ea-4297
+                stepCounter: e363-ff1c-7e69-77ba-0b91-1598-7804-5cec
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 67da-f92c-833c-41c9-5db8-74e1-8fcb-2786
+          stepCounter: 03f8-6927-25db-4937-687f-1117-5e1b-e278
+        config: {}
+        dataType: varchar2(512)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DESCRIPTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 67da-f92c-833c-41c9-5db8-74e1-8fcb-2786
+                stepCounter: e363-ff1c-7e69-77ba-0b91-1598-7804-5cec
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c934-31b4-15af-f13b-bab9-fa4e-7d7e-ec56
+          stepCounter: 03f8-6927-25db-4937-687f-1117-5e1b-e278
+        config: {}
+        dataType: varchar2(256)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: L_EN_US
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c934-31b4-15af-f13b-bab9-fa4e-7d7e-ec56
+                stepCounter: e363-ff1c-7e69-77ba-0b91-1598-7804-5cec
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b988-295c-2680-25b4-9dfb-3df2-6171-ddc3
+          stepCounter: 03f8-6927-25db-4937-687f-1117-5e1b-e278
+        config: {}
+        dataType: number(38)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: PRIORITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b988-295c-2680-25b4-9dfb-3df2-6171-ddc3
+                stepCounter: e363-ff1c-7e69-77ba-0b91-1598-7804-5cec
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0fda-70d7-93a8-ec33-1189-ea92-db06-05d8
+          stepCounter: 03f8-6927-25db-4937-687f-1117-5e1b-e278
+        config: {}
+        dataType: varchar2(50)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: TYPECODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0fda-70d7-93a8-ec33-1189-ea92-db06-05d8
+                stepCounter: e363-ff1c-7e69-77ba-0b91-1598-7804-5cec
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a559-7e89-79d5-ae6e-4c58-a4bc-14ce-fd05
+          stepCounter: 03f8-6927-25db-4937-687f-1117-5e1b-e278
+        config: {}
+        dataType: char(1)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: RETIRED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a559-7e89-79d5-ae6e-4c58-a4bc-14ce-fd05
+                stepCounter: e363-ff1c-7e69-77ba-0b91-1598-7804-5cec
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 84b4-d240-1f49-7dcb-61cb-a124-fb9e-cc4b
+          stepCounter: 03f8-6927-25db-4937-687f-1117-5e1b-e278
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was updated in the data warehouse.
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_UPDATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: 03f8-6927-25db-4937-687f-1117-5e1b-e278
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was created in the data warehouse.
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SOURCE
+            nodeName: LOAD_REF_CCTL_PAYMENTTYPE
+        join:
+          joinCondition: FROM {{ref('SOURCE','LOAD_REF_CCTL_PAYMENTTYPE') }} LOAD_REF_CCTL_PAYMENTTYPE
+        name: REF_CCTL_PAYMENTTYPE
+        noLinkRefs: []
+  name: REF_CCTL_PAYMENTTYPE
+  overrideSQL: false
+  schema: ""
+  sqlType: "352"
+  type: sql
+  version: 1
+type: Node

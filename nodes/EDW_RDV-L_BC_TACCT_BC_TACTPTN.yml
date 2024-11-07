@@ -1,0 +1,143 @@
+fileVersion: 1
+id: 0fb8-d5e5-1564-0a0f-7911-96d6-8f28-9892
+name: L_BC_TACCT_BC_TACTPTN
+operation:
+  config:
+    insertStrategy: MERGE
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 10ce-c021-285b-7127-c901-11f7-3a86-158e
+          stepCounter: 0fb8-d5e5-1564-0a0f-7911-96d6-8f28-9892
+        config:
+          "0": null
+          is_Link_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_L_BC_TACCT_BC_TACTPTN
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 10ce-c021-285b-7127-c901-11f7-3a86-158e
+                stepCounter: d004-d950-472a-ce85-b5f1-d85c-9038-64ad
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a393-6958-7c9d-5e1e-271f-d1e2-a8fb-be0e
+          stepCounter: 0fb8-d5e5-1564-0a0f-7911-96d6-8f28-9892
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_BC_TACTPTN
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a393-6958-7c9d-5e1e-271f-d1e2-a8fb-be0e
+                stepCounter: d004-d950-472a-ce85-b5f1-d85c-9038-64ad
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1912-bf37-08c3-278e-cb08-385a-3ee2-350c
+          stepCounter: 0fb8-d5e5-1564-0a0f-7911-96d6-8f28-9892
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_BC_TACCT
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1912-bf37-08c3-278e-cb08-385a-3ee2-350c
+                stepCounter: d004-d950-472a-ce85-b5f1-d85c-9038-64ad
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 0fb8-d5e5-1564-0a0f-7911-96d6-8f28-9892
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: d004-d950-472a-ce85-b5f1-d85c-9038-64ad
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 0fb8-d5e5-1564-0a0f-7911-96d6-8f28-9892
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: d004-d950-472a-ce85-b5f1-d85c-9038-64ad
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: 0fb8-d5e5-1564-0a0f-7911-96d6-8f28-9892
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_STAGE
+            nodeName: STAGE_TACCT_TACTPTN
+        join:
+          joinCondition: FROM {{ref('EDW_STAGE','STAGE_TACCT_TACTPTN') }} STAGE_TACCT_TACTPTN
+        name: L_BC_TACCT_BC_TACTPTN
+        noLinkRefs: []
+  name: L_BC_TACCT_BC_TACTPTN
+  overrideSQL: false
+  schema: ""
+  sqlType: "7"
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,141 @@
+{% set has_business_key = columns | selectattr("isBusinessKey") | list | length > 0 %}
+    {% for test in node.tests if config.testsEnabled %}
+        {% if test.runOrder == 'Before' %}
+            {{ test_stage(test.name, test.continueOnFailure) }}
+            {{ test.templateString }}
+        {% endif %}
+    {% endfor %}
+
+{% if node.materializationType == 'table' %}
+	{% if config.preSQL %}
+		{{ stage('Pre-SQL') }}
+		{{ config.preSQL }}
+	{% endif %}
+	
+    {% for source in sources %}
+	
+	   {% if config.insertStrategy == 'INSERT' %}
+				{{ stage('Insert ' + source.name | string ) }}
+	
+				INSERT INTO {{ ref_no_link(node.location.name, node.name) }}
+				(
+					{% for col in source.columns %}
+						"{{ col.name }}"
+						{%- if not loop.last -%},{% endif %}
+					{% endfor %}
+				)
+	
+     			SELECT
+     			{% for col in source.columns %}
+                     {{ get_source_transform(col) }} AS "{{ col.name }}"
+     				{%- if not loop.last -%}, {% endif %}
+     			{% endfor %}
+     	
+     			{{ source.join }}
+     	{% endif %}
+		{% if config.insertStrategy == 'MERGE' %}	
+            {{ stage('MERGE ' + source.name | string) }}
+            MERGE INTO {{ ref_no_link(node.location.name, node.name) }} "TGT"
+            USING (
+            /* New Rows That Don't Exist */
+            SELECT
+            {% for col in source.columns %}
+                   {{ get_source_transform(col) }}
+                AS "{{ col.name }}",
+			{% endfor %}	
+                'INSERT_INITAL_VERSION_ROWS' AS "DML_OPERATION"
+			{{ source.join }}
+            LEFT JOIN {{ ref_no_link(node.location.name, node.name) }} "DIM" ON
+            {% for col in source.columns if col.isBusinessKey -%}
+                {% if not loop.first %}
+                    AND
+                {% endif %}
+                    {{ get_source_transform(col) }} = "DIM"."{{ col.name }}"
+            {% endfor %}
+            WHERE
+            {% for col in source.columns if col.isBusinessKey -%}
+                {% if not loop.first %}
+                    AND
+                {% endif %}
+                "DIM"."{{ col.name }}" IS NULL
+            {% endfor %}
+			  {{ get_clause(joinclause) }}
+            UNION ALL
+            /* Rows Needing To Be Updated Due To Changes To Non-Type-2 source.columns
+            This case merges only when there are changes in non-type-2 column updates, but no changes in type-2 columns*/
+            SELECT
+            {%- for col in source.columns %}
+                    {{ get_source_transform(col) }}
+                AS "{{ col.name }}",
+            {% endfor -%}
+                'UPDATE_NON_TYPE2_ROWS' AS "DML_OPERATION"
+            {{ source.join }}
+            INNER JOIN {{ ref_no_link(node.location.name, node.name) }} "DIM" ON
+            {% for col in source.columns if col.isBusinessKey -%}
+                {% if not loop.first %}
+                    AND
+                {% endif %}
+                {{ get_source_transform(col) }} = "DIM"."{{ col.name }}"
+            {% endfor %}
+            WHERE  
+            {% for col in source.columns if not (col.isBusinessKey) -%}
+                {% if loop.first %}
+                     (
+                {% endif %}
+                {% if not loop.first %}
+                    OR
+                {% endif %}
+                NVL( CAST({{ get_source_transform(col) }} as STRING), '**NULL**') <> NVL( CAST("DIM"."{{ col.name }}" as STRING), '**NULL**')
+                {% if loop.last %}
+                    )
+                {% endif %}
+            {% endfor %}
+        ) AS "SRC"
+        ON
+        {% for col in source.columns if col.isBusinessKey -%}
+            {% if not loop.first %}
+                AND
+            {% endif %}
+            "TGT"."{{ col.name }}" = "SRC"."{{ col.name }}"
+        {% endfor %}
+        WHEN MATCHED THEN UPDATE SET
+        {%- for col in source.columns if not (col.isBusinessKey ) %}
+            "TGT"."{{ col.name }}" = "SRC"."{{ col.name }}"
+            {% if not loop.last %}, {% endif %}
+        {% endfor -%}
+        WHEN NOT MATCHED THEN INSERT (
+        {%- for col in source.columns %}
+            "{{ col.name }}"
+            {% if not loop.last %}, {% endif %}
+        {% endfor -%}
+        )
+        VALUES (
+        {%- for col in source.columns%}
+            "SRC"."{{ col.name }}"
+            {% if not loop.last %}, {% endif %}
+        {% endfor -%}
+        )
+	{% endif %}
+    {% endfor %}
+		{% endif %}
+	
+	{% if config.postSQL %}
+		{{ stage('Post-SQL') }}
+		{{ config.postSQL }}
+	{% endif %}
+	
+{% if config.testsEnabled %}
+	{% for test in node.tests %}
+		{% if test.runOrder == 'After' %}
+			{{ test_stage(test.name, test.continueOnFailure) }}
+			{{ test.templateString }}
+        {% endif %}
+	{% endfor %}
+
+	{% for column in columns %}
+		{% for test in column.tests %}
+			{{ test_stage(column.name + ": " + test.name) }}
+			{{ test.templateString }}
+		{% endfor %}
+	{% endfor %}
+{% endif %}

@@ -1,0 +1,123 @@
+fileVersion: 1
+id: 03db-385a-afea-f319-37e2-6f9e-a252-7f32
+name: H_BC_ACCTCNTX
+operation:
+  config:
+    insertStrategy: MERGE
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c9a0-ee80-585b-88a7-f66d-d282-0f43-ce81
+          stepCounter: 03db-385a-afea-f319-37e2-6f9e-a252-7f32
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_BC_ACCTCNTX
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c9a0-ee80-585b-88a7-f66d-d282-0f43-ce81
+                stepCounter: 4690-ef65-d18d-29d0-faee-9989-dab5-f2d1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ad0f-2075-fb0a-d522-53bf-f185-48d8-45c1
+          stepCounter: 03db-385a-afea-f319-37e2-6f9e-a252-7f32
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: true
+        isChangeTracking: false
+        name: ACCOUNTCONTEXTID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ad0f-2075-fb0a-d522-53bf-f185-48d8-45c1
+                stepCounter: 4690-ef65-d18d-29d0-faee-9989-dab5-f2d1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 03db-385a-afea-f319-37e2-6f9e-a252-7f32
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: 4690-ef65-d18d-29d0-faee-9989-dab5-f2d1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 03db-385a-afea-f319-37e2-6f9e-a252-7f32
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: 4690-ef65-d18d-29d0-faee-9989-dab5-f2d1
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: 03db-385a-afea-f319-37e2-6f9e-a252-7f32
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_STAGE
+            nodeName: STAGE_ACCTCNTX
+        join:
+          joinCondition: FROM {{ref('EDW_STAGE','STAGE_ACCTCNTX') }} STAGE_ACCTCNTX
+        name: H_BC_ACCTCNTX
+        noLinkRefs: []
+  name: H_BC_ACCTCNTX
+  overrideSQL: false
+  schema: ""
+  sqlType: "6"
+  type: sql
+  version: 1
+type: Node

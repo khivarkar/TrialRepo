@@ -1,0 +1,143 @@
+fileVersion: 1
+id: 8366-dc6b-c279-533f-3100-8341-9bf2-7978
+name: L_CC_SUBROSUM_CC_CLM
+operation:
+  config:
+    insertStrategy: MERGE
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 160f-f8ea-fb9b-33bd-98f3-c005-9d1d-dcaa
+          stepCounter: 8366-dc6b-c279-533f-3100-8341-9bf2-7978
+        config:
+          "0": null
+          is_Link_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_L_CC_SUBROSUM_CC_CLM
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 160f-f8ea-fb9b-33bd-98f3-c005-9d1d-dcaa
+                stepCounter: 4d71-8021-d367-415e-7bd2-2eb9-d436-cff4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fad1-b7a4-b881-1f6f-b4a3-28a6-1ddc-1c56
+          stepCounter: 8366-dc6b-c279-533f-3100-8341-9bf2-7978
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_CC_SUBROSUM
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fad1-b7a4-b881-1f6f-b4a3-28a6-1ddc-1c56
+                stepCounter: 4d71-8021-d367-415e-7bd2-2eb9-d436-cff4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cb3d-a367-a2fd-f88b-9175-9e29-3a22-a664
+          stepCounter: 8366-dc6b-c279-533f-3100-8341-9bf2-7978
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_CC_CLM
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cb3d-a367-a2fd-f88b-9175-9e29-3a22-a664
+                stepCounter: 4d71-8021-d367-415e-7bd2-2eb9-d436-cff4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 8366-dc6b-c279-533f-3100-8341-9bf2-7978
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: 4d71-8021-d367-415e-7bd2-2eb9-d436-cff4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 8366-dc6b-c279-533f-3100-8341-9bf2-7978
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: 4d71-8021-d367-415e-7bd2-2eb9-d436-cff4
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: 8366-dc6b-c279-533f-3100-8341-9bf2-7978
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_STAGE
+            nodeName: STAGE_SUBROSUM_CLM
+        join:
+          joinCondition: FROM {{ref('EDW_STAGE','STAGE_SUBROSUM_CLM') }} STAGE_SUBROSUM_CLM
+        name: L_CC_SUBROSUM_CC_CLM
+        noLinkRefs: []
+  name: L_CC_SUBROSUM_CC_CLM
+  overrideSQL: false
+  schema: ""
+  sqlType: "7"
+  type: sql
+  version: 1
+type: Node

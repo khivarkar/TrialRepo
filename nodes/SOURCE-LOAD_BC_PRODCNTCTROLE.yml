@@ -1,0 +1,215 @@
+fileVersion: 1
+id: 0240-81f4-3635-e4d8-74ab-6fca-e2de-c44a
+name: LOAD_BC_PRODCNTCTROLE
+operation:
+  database: SOURCE_DB
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: SOURCE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4ab9-2d77-34d0-5917-1b2c-da64-d2a3-f952
+          stepCounter: 0240-81f4-3635-e4d8-74ab-6fca-e2de-c44a
+        config: {}
+        dataType: number(38)
+        defaultValue: ""
+        description: ""
+        name: CREATEUSERID
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a559-7e89-79d5-ae6e-4c58-a4bc-14ce-fd05
+          stepCounter: 0240-81f4-3635-e4d8-74ab-6fca-e2de-c44a
+        config: {}
+        dataType: number(38)
+        defaultValue: ""
+        description: ""
+        name: RETIRED
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bbd6-d6d1-9a5d-63ff-ec75-4dc4-4ac1-5135
+          stepCounter: 0240-81f4-3635-e4d8-74ab-6fca-e2de-c44a
+        config: {}
+        dataType: number(38)
+        defaultValue: ""
+        description: ""
+        name: LOADCOMMANDID
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 600d-ea83-e9a6-9d24-4a77-ae1d-b2e7-30e7
+          stepCounter: 0240-81f4-3635-e4d8-74ab-6fca-e2de-c44a
+        config: {}
+        dataType: timestamp
+        defaultValue: ""
+        description: ""
+        name: CREATETIME
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d96b-5925-ca75-134e-96fb-a178-a331-4de3
+          stepCounter: 0240-81f4-3635-e4d8-74ab-6fca-e2de-c44a
+        config: {}
+        dataType: number(38)
+        defaultValue: ""
+        description: ""
+        name: PRODCNTCTROLEID
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e04-dc2a-bd92-9a9d-02e2-e0fa-41d2-4bf9
+          stepCounter: 0240-81f4-3635-e4d8-74ab-6fca-e2de-c44a
+        config: {}
+        dataType: timestamp
+        defaultValue: ""
+        description: ""
+        name: UPDATETIME
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 29a7-e964-67b6-9a9f-5a93-332e-29e9-b0de
+          stepCounter: 0240-81f4-3635-e4d8-74ab-6fca-e2de-c44a
+        config: {}
+        dataType: number(38)
+        defaultValue: ""
+        description: ""
+        name: ROLE
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9897-c648-c152-4d70-f735-74ef-fad5-be67
+          stepCounter: 0240-81f4-3635-e4d8-74ab-6fca-e2de-c44a
+        config: {}
+        dataType: number(38)
+        defaultValue: ""
+        description: ""
+        name: BEANVERSION
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 92ea-df81-e705-43d8-99b7-190c-ebfe-2d40
+          stepCounter: 0240-81f4-3635-e4d8-74ab-6fca-e2de-c44a
+        config: {}
+        dataType: varchar2(64)
+        defaultValue: ""
+        description: ""
+        name: PUBLICID
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fd79-53eb-fb48-d7ca-6d8c-d2a3-c8dd-dba6
+          stepCounter: 0240-81f4-3635-e4d8-74ab-6fca-e2de-c44a
+        config: {}
+        dataType: number(38)
+        defaultValue: ""
+        description: ""
+        name: PRODUCERCONTACTID
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c4e8-f224-a02a-464b-d0fa-726c-6594-dc27
+          stepCounter: 0240-81f4-3635-e4d8-74ab-6fca-e2de-c44a
+        config: {}
+        dataType: number(38)
+        defaultValue: ""
+        description: ""
+        name: UPDATEUSERID
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 0240-81f4-3635-e4d8-74ab-6fca-e2de-c44a
+        config: {}
+        dataType: varchar2(255)
+        defaultValue: ""
+        description: Record source.
+        name: DSS_RECORD_SOURCE
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: false
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 0240-81f4-3635-e4d8-74ab-6fca-e2de-c44a
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Load date.
+        name: DSS_LOAD_DATE
+        nullable: false
+        primaryKey: false
+        uniqueKey: false
+    join:
+      joinCondition: ""
+  name: LOAD_BC_PRODCNTCTROLE
+  schema: ""
+  sqlType: Source
+  table: LOAD_BC_PRODCNTCTROLE
+  type: sourceInput
+  version: 1
+type: Node

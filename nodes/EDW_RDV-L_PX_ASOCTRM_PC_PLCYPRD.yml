@@ -1,0 +1,143 @@
+fileVersion: 1
+id: 6911-7d89-2d8f-dcc5-6fbe-8c97-f5fd-9632
+name: L_PX_ASOCTRM_PC_PLCYPRD
+operation:
+  config:
+    insertStrategy: MERGE
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 11db-437a-47ca-47d5-973c-2d77-17e3-a750
+          stepCounter: 6911-7d89-2d8f-dcc5-6fbe-8c97-f5fd-9632
+        config:
+          "0": null
+          is_Link_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_L_PX_ASOCTRM_PC_PLCYPRD
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 11db-437a-47ca-47d5-973c-2d77-17e3-a750
+                stepCounter: 16e6-be72-59d1-0a61-8b96-693c-4985-7da1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ad62-4219-ddba-0d79-4fa9-864c-32b6-1715
+          stepCounter: 6911-7d89-2d8f-dcc5-6fbe-8c97-f5fd-9632
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_PX_ASOCTRM
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ad62-4219-ddba-0d79-4fa9-864c-32b6-1715
+                stepCounter: 16e6-be72-59d1-0a61-8b96-693c-4985-7da1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ce62-8d75-e787-aba4-cfb1-61d3-5db8-175c
+          stepCounter: 6911-7d89-2d8f-dcc5-6fbe-8c97-f5fd-9632
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_PC_PLCYPRD
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ce62-8d75-e787-aba4-cfb1-61d3-5db8-175c
+                stepCounter: 16e6-be72-59d1-0a61-8b96-693c-4985-7da1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 6911-7d89-2d8f-dcc5-6fbe-8c97-f5fd-9632
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: 16e6-be72-59d1-0a61-8b96-693c-4985-7da1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 6911-7d89-2d8f-dcc5-6fbe-8c97-f5fd-9632
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: 16e6-be72-59d1-0a61-8b96-693c-4985-7da1
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: 6911-7d89-2d8f-dcc5-6fbe-8c97-f5fd-9632
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_STAGE
+            nodeName: STAGE_ASOCTRM_PLCYPRD
+        join:
+          joinCondition: FROM {{ref('EDW_STAGE','STAGE_ASOCTRM_PLCYPRD') }} STAGE_ASOCTRM_PLCYPRD
+        name: L_PX_ASOCTRM_PC_PLCYPRD
+        noLinkRefs: []
+  name: L_PX_ASOCTRM_PC_PLCYPRD
+  overrideSQL: false
+  schema: ""
+  sqlType: "7"
+  type: sql
+  version: 1
+type: Node

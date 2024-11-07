@@ -1,0 +1,445 @@
+fileVersion: 1
+id: 4f669374-e179-443d-93f7-6bad37af9473
+name: STGDIM__CX_BDINJPT
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SOURCE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 82cdd862-1513-45c1-9abe-73deb4c327d0
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: DIM_CX_BDINJPT_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0957567d-e52e-4ab8-85ad-60e901271c74
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0fcc5553-16ea-4b4d-be75-a5e825b8d967
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: number
+        description: ""
+        name: INCIDENTID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 64aa0363-5632-42f0-89f1-919fca4d5a9f
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 674ea2a1-97e5-493d-a65a-147ae4d93260
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: char(32)
+        description: ""
+        name: HK_H_CX_BDINJPT
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6f0ac46e-81dd-4669-831c-7d8c8589fa10
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d65b77ab-10c8-449f-961c-ba2416a2ae88
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: number
+        description: ""
+        name: BODILYINJURYPOINT_EXTID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: de90ee18-ca3c-4163-a0cb-5cd818cba037
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 05dc7785-e37f-42b2-9cd8-c7f5cb8dc56f
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: number
+        description: ""
+        name: BEANVERSION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d865151b-306d-401e-868b-8e5a6527e26c
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4de24d8f-34ec-476b-899e-045461a091a5
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: number(4,1)
+        description: ""
+        name: IMPAIRMENTVALUE_EXT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c89cd42b-91f9-413a-a732-2c669ff2614d
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6d864669-6142-43e5-b86d-ea06ff935174
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: number
+        description: ""
+        name: LOADCOMMANDID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7b8240fd-d79d-4a84-b31e-7dd6656a8847
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a5e53c18-ddb8-4303-9b27-091ddd7746f1
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: number
+        description: ""
+        name: INJURYPOINT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ebc599bb-5b77-45ad-ad75-136ba24fc48e
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 836f80ea-a8a1-4950-b9df-82f5129843d0
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: number
+        description: ""
+        name: INJURYSEVERITY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4f265b35-1a7b-448b-a0f5-5697a5bfcea7
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a7bcf8c-d9d7-49ff-b7f5-552d0d8d4e7a
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: varchar2(200)
+        description: ""
+        name: BODILYINJURYCOMMENT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 65ced112-8b98-408d-bfcd-49e7a2c15999
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 22eb5a4c-5324-4667-ae51-dbeaad86584a
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: char(1)
+        description: ""
+        name: SCHEDULEDMEMBER_EXT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e43dec50-5236-4f89-955e-48d0d98f0258
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e5f39980-b302-441c-b989-29b2a64bfa4e
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: number(18,2)
+        description: ""
+        name: IMPAIRMENTOFWHOLEMAN_EXT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 390ab7e4-02ef-4a39-a3e5-df2689206826
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 132995d9-d2c4-4428-afcd-7c524acbbc2c
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: varchar2(20)
+        description: ""
+        name: PUBLICID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 29f62e5d-dd6e-4b13-a2f9-e3312bf3a383
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5d337835-5e99-4c77-bc94-5e6e970b2d76
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: number
+        description: ""
+        name: IMPAIRMENTWEEKS_EXT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 97ad6b13-4d80-4460-920c-4b302f0ebf7b
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 19c855db-9355-4c8f-ae5c-bbd0cf77e670
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: number
+        description: ""
+        name: ARCHIVEPARTITION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 73e82814-bdbe-48f8-aef3-6f1a9d8b7891
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 12c96701-c93b-4d32-942e-7edbf878187a
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: char(1)
+        description: ""
+        name: COMPENSABLE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4020a5d2-1be9-45d3-9e9b-e5dd0764d28f
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4787b1b8-7ea7-499d-bd18-dbca2c3b0b03
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: number
+        description: ""
+        name: EVALUATIONKEY_EXT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c29230ef-2606-49a4-bd77-121d6d740ac8
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f3d93b52-b4b3-49b7-9257-441486e8d157
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: varchar2(255)
+        description: ""
+        name: TPA_KEY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 86f22906-2d2d-40be-a653-aee0ddaa2294
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ff757d2b-82cb-4426-bf90-6959f5b6ac42
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1b71250e-589c-4e6e-ba47-b4151fca5a15
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6b8ebaed-f6e8-4ff0-82b0-286ef292b855
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 591b5ec8-edce-4fcc-b6d6-c3d9e7c63202
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e06b73e1-1b2e-43c9-be3f-bcb7b39cb26b
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: char(32)
+        description: The changing hash
+        name: DSS_CHANGE_HASH
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b9ce3191-e66e-4b16-8899-1b2f31a13a3b
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 581ab4b8-6ccf-43d9-ab2c-307f346f393f
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: date
+        description: Date and time the row was updated in the data warehouse.
+        name: DSS_UPDATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7cf57fa1-475d-4f41-a889-8cdd5b7023aa
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2995d659-489a-4f27-8234-4910d492b4cc
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: date
+        description: Date and time the row was created in the data warehouse.
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 47ec28e5-a836-4f57-b4cd-183c9576482c
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2cad306c-b4a4-4ce1-bd47-1360cd30125d
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: NUMBER
+        description: ""
+        name: SYSTEM_VERSION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 04a83fce-4fd3-4d05-8ad4-9199d30e0d86
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 757bab4a-6558-4c64-86ef-0c9082037158
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: VARCHAR
+        description: ""
+        name: SYSTEM_CURRENT_FLAG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 824a5c5c-d316-48d6-bc7c-ad8e4a9c6b0a
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 00a9e574-0b22-4461-8afb-25584a377b30
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SYSTEM_START_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 62e1a58c-9264-4d3a-8cd8-4207c94ffaf0
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 63599b50-197d-4aec-bbfd-7b9f3a0a4701
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SYSTEM_END_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1195b171-696f-4dd1-ba76-1a41e6dba911
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 68cc7d39-893b-45ca-b9f1-d902aeebcaaa
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 39936a56-0992-466e-b294-eb461e2b098f
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9d1c6411-4265-4f8e-bc22-df212ffe8c15
+          stepCounter: 4f669374-e179-443d-93f7-6bad37af9473
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2b25f4e9-1415-4663-bb3d-b62bbb89adc9
+                stepCounter: 7c033799-c2f9-4264-8e97-92f80ec9b69f
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_RDV
+            nodeName: DIM_CX_BDINJPT
+        join:
+          joinCondition: FROM {{ ref('EDW_RDV', 'DIM_CX_BDINJPT') }} "DIM_CX_BDINJPT"
+        name: STGDIM__CX_BDINJPT
+        noLinkRefs: []
+  name: STGDIM__CX_BDINJPT
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

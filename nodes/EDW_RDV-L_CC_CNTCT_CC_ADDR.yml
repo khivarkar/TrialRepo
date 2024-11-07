@@ -1,0 +1,175 @@
+fileVersion: 1
+id: 9f97-0772-66dc-831a-8ab1-7567-6df1-f885
+name: L_CC_CNTCT_CC_ADDR
+operation:
+  config:
+    insertStrategy: MERGE
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1ef1-0a92-f187-111b-1c59-a63c-e430-29ef
+          stepCounter: 9f97-0772-66dc-831a-8ab1-7567-6df1-f885
+        config:
+          "0": null
+          is_Link_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_L_CC_CNTCT_CC_ADDR
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1ef1-0a92-f187-111b-1c59-a63c-e430-29ef
+                stepCounter: 3b43-f2be-40c0-73b3-c03b-47a5-8b65-e643
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 751d-1145-c7a0-af21-6a4a-a118-a8b7-7515
+          stepCounter: 9f97-0772-66dc-831a-8ab1-7567-6df1-f885
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_CC_CNTCT
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 751d-1145-c7a0-af21-6a4a-a118-a8b7-7515
+                stepCounter: 3b43-f2be-40c0-73b3-c03b-47a5-8b65-e643
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9b1b-7b6d-292a-5c07-43b8-1488-7729-b56a
+          stepCounter: 9f97-0772-66dc-831a-8ab1-7567-6df1-f885
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_CC_ADDR
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9b1b-7b6d-292a-5c07-43b8-1488-7729-b56a
+                stepCounter: 3b43-f2be-40c0-73b3-c03b-47a5-8b65-e643
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8c51-5159-334f-e918-cc27-4681-e7b9-3fc9
+          stepCounter: 9f97-0772-66dc-831a-8ab1-7567-6df1-f885
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: CONTACTID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8c51-5159-334f-e918-cc27-4681-e7b9-3fc9
+                stepCounter: 3b43-f2be-40c0-73b3-c03b-47a5-8b65-e643
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9ff4-bb2b-f7e4-3b3d-b087-3fac-28d4-a510
+          stepCounter: 9f97-0772-66dc-831a-8ab1-7567-6df1-f885
+        config: {}
+        dataType: number
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: ADDRESSID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9ff4-bb2b-f7e4-3b3d-b087-3fac-28d4-a510
+                stepCounter: 3b43-f2be-40c0-73b3-c03b-47a5-8b65-e643
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 9f97-0772-66dc-831a-8ab1-7567-6df1-f885
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: 3b43-f2be-40c0-73b3-c03b-47a5-8b65-e643
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 9f97-0772-66dc-831a-8ab1-7567-6df1-f885
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: 3b43-f2be-40c0-73b3-c03b-47a5-8b65-e643
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: 9f97-0772-66dc-831a-8ab1-7567-6df1-f885
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_STAGE
+            nodeName: STAGE_CC_CNTCT_ADDR
+        join:
+          joinCondition: FROM {{ref('EDW_STAGE','STAGE_CC_CNTCT_ADDR') }} STAGE_CC_CNTCT_ADDR
+        name: L_CC_CNTCT_CC_ADDR
+        noLinkRefs: []
+  name: L_CC_CNTCT_CC_ADDR
+  overrideSQL: false
+  schema: ""
+  sqlType: "7"
+  type: sql
+  version: 1
+type: Node

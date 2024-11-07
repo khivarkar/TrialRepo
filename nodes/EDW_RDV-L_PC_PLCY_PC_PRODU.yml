@@ -1,0 +1,143 @@
+fileVersion: 1
+id: 499c-0b59-9590-f138-e9fa-5dff-03b6-5116
+name: L_PC_PLCY_PC_PRODU
+operation:
+  config:
+    insertStrategy: MERGE
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ae8c-b1ef-c70f-f00c-2429-96ce-9df9-9001
+          stepCounter: 499c-0b59-9590-f138-e9fa-5dff-03b6-5116
+        config:
+          "0": null
+          is_Link_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_L_PC_PLCY_PC_PRODU
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ae8c-b1ef-c70f-f00c-2429-96ce-9df9-9001
+                stepCounter: c43d-3925-6cf3-6926-2c7a-dffb-8d16-54ec
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec5b-fe3f-d106-d4ef-2229-2eff-6845-d3e3
+          stepCounter: 499c-0b59-9590-f138-e9fa-5dff-03b6-5116
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_PC_PRODU
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ec5b-fe3f-d106-d4ef-2229-2eff-6845-d3e3
+                stepCounter: c43d-3925-6cf3-6926-2c7a-dffb-8d16-54ec
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3893-06fc-bf7f-813c-65f8-ff97-7c25-c5b1
+          stepCounter: 499c-0b59-9590-f138-e9fa-5dff-03b6-5116
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_PC_PLCY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3893-06fc-bf7f-813c-65f8-ff97-7c25-c5b1
+                stepCounter: c43d-3925-6cf3-6926-2c7a-dffb-8d16-54ec
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 499c-0b59-9590-f138-e9fa-5dff-03b6-5116
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: c43d-3925-6cf3-6926-2c7a-dffb-8d16-54ec
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 499c-0b59-9590-f138-e9fa-5dff-03b6-5116
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: c43d-3925-6cf3-6926-2c7a-dffb-8d16-54ec
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: 499c-0b59-9590-f138-e9fa-5dff-03b6-5116
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was inserted in the data vault
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_STAGE
+            nodeName: STAGE_PLCY_PRODU
+        join:
+          joinCondition: FROM {{ref('EDW_STAGE','STAGE_PLCY_PRODU') }} STAGE_PLCY_PRODU
+        name: L_PC_PLCY_PC_PRODU
+        noLinkRefs: []
+  name: L_PC_PLCY_PC_PRODU
+  overrideSQL: false
+  schema: ""
+  sqlType: "7"
+  type: sql
+  version: 1
+type: Node

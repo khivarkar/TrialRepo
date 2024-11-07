@@ -1,0 +1,667 @@
+fileVersion: 1
+id: b541-3437-b68c-b831-57ad-43b0-4688-4073
+name: REF_CC_WCBENEFITPARAMETERSET
+operation:
+  config:
+    insertStrategy: MERGE
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6406-a8fd-e5af-a5de-341d-000f-f0f2-7748
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: number(38)
+        description: ""
+        isBusinessKey: true
+        isChangeTracking: false
+        name: WCBENEFITPARAMETERSETID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6406-a8fd-e5af-a5de-341d-000f-f0f2-7748
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b240-a695-ed8d-b6f0-190a-7de1-ebdf-5472
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: char(1)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: PTDMINADJTOAWW
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b240-a695-ed8d-b6f0-190a-7de1-ebdf-5472
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a559-7e89-79d5-ae6e-4c58-a4bc-14ce-fd05
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: number(38)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: RETIRED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a559-7e89-79d5-ae6e-4c58-a4bc-14ce-fd05
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 535d-7e3d-89ef-30bd-6ec2-6e4c-908e-cc12
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: decimal(18,2)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: PTDMAX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 535d-7e3d-89ef-30bd-6ec2-6e4c-908e-cc12
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bfad-f08e-5ddf-2f9a-cefa-e152-cc14-c9b7
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: number(38)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: WAITINGPERIODDAYS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bfad-f08e-5ddf-2f9a-cefa-e152-cc14-c9b7
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6122-8ff6-2824-0125-82ea-1742-9f27-8fe7
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: decimal(10,4)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: MAXTPDPAYABLEPERCENT_EXT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6122-8ff6-2824-0125-82ea-1742-9f27-8fe7
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 92ea-df81-e705-43d8-99b7-190c-ebfe-2d40
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: varchar2(64)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: PUBLICID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 92ea-df81-e705-43d8-99b7-190c-ebfe-2d40
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0aca-f5fa-5fd6-462e-05a0-7a5a-cf2d-7e6d
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: decimal(10,4)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: PTDPERCENTOFWAGES
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0aca-f5fa-5fd6-462e-05a0-7a5a-cf2d-7e6d
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 83cb-a0a5-bdae-4ef4-1d00-4a2f-1652-28ff
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: decimal(18,2)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: TTDMIN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 83cb-a0a5-bdae-4ef4-1d00-4a2f-1652-28ff
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5864-6cff-a639-dad5-f2e3-3560-9487-6ed8
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: char(1)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: PPDMINADJTOAWW
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5864-6cff-a639-dad5-f2e3-3560-9487-6ed8
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4ab9-2d77-34d0-5917-1b2c-da64-d2a3-f952
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: number(38)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: CREATEUSERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4ab9-2d77-34d0-5917-1b2c-da64-d2a3-f952
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 49e7-8016-ba18-2e97-bd82-817d-2ae7-4c6a
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: decimal(10,4)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: TENTATIVETPDRATEPERCENT_EXT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 49e7-8016-ba18-2e97-bd82-817d-2ae7-4c6a
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4e30-b6d6-aa33-492d-a947-b4c6-ab31-c7ca
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: timestamp
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: STARTDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4e30-b6d6-aa33-492d-a947-b4c6-ab31-c7ca
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b86d-40ee-2e4b-58c8-eedb-4495-379e-a16f
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: char(1)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: WPNOTAPPLIEDTOPTD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b86d-40ee-2e4b-58c8-eedb-4495-379e-a16f
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f979-6bc0-a642-e4e8-2d34-13fb-85cf-9895
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: decimal(10,4)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: PPDPERCENTOFWAGES
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f979-6bc0-a642-e4e8-2d34-13fb-85cf-9895
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f6ea-8ad6-aa9e-425f-35d5-fa50-3157-0a5e
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: number(38)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: RETROACTIVEPERIOD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f6ea-8ad6-aa9e-425f-35d5-fa50-3157-0a5e
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9897-c648-c152-4d70-f735-74ef-fad5-be67
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: number(38)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: BEANVERSION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9897-c648-c152-4d70-f735-74ef-fad5-be67
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 20cf-ade6-524c-1dc5-97d3-1c20-7e32-d197
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: decimal(10,4)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: TPDPERCENTOFWAGES
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 20cf-ade6-524c-1dc5-97d3-1c20-7e32-d197
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7af5-73fc-f2cf-4c62-14c3-3ea1-b41d-bb9b
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: decimal(18,2)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: PPDMAX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7af5-73fc-f2cf-4c62-14c3-3ea1-b41d-bb9b
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c4e8-f224-a02a-464b-d0fa-726c-6594-dc27
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: number(38)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: UPDATEUSERID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c4e8-f224-a02a-464b-d0fa-726c-6594-dc27
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 125d-3053-1a81-a6fa-5fe7-bf77-52b3-ec2b
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: varchar2(1333)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: RATECOMMENTS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 125d-3053-1a81-a6fa-5fe7-bf77-52b3-ec2b
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 603f-8dde-6270-42c9-626c-fb61-1813-e031
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: decimal(18,2)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: TPDMIN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 603f-8dde-6270-42c9-626c-fb61-1813-e031
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4305-3792-eba7-bbd0-6fca-8c4d-4b5c-14c0
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: char(1)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: TPDMINADJTOAWW
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4305-3792-eba7-bbd0-6fca-8c4d-4b5c-14c0
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bbd6-d6d1-9a5d-63ff-ec75-4dc4-4ac1-5135
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: number(38)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: LOADCOMMANDID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bbd6-d6d1-9a5d-63ff-ec75-4dc4-4ac1-5135
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c0d7-6141-c552-1182-f5fa-d8f2-705e-2cd6
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: decimal(18,2)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: TPDMAX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c0d7-6141-c552-1182-f5fa-d8f2-705e-2cd6
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e04-dc2a-bd92-9a9d-02e2-e0fa-41d2-4bf9
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: timestamp
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: UPDATETIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3e04-dc2a-bd92-9a9d-02e2-e0fa-41d2-4bf9
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7d4c-2203-7114-039b-226a-944c-6776-cd6d
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: decimal(10,4)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: TTDPERCENTOFWAGES
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7d4c-2203-7114-039b-226a-944c-6776-cd6d
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1fd6-78d2-54b2-4a52-9ed0-2b32-f9b1-9ef7
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: char(1)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: TTDMINADJTOAWW
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1fd6-78d2-54b2-4a52-9ed0-2b32-f9b1-9ef7
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3ac2-9045-6851-d53a-789f-3be3-7b5f-9b99
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: decimal(18,2)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: PPDMIN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3ac2-9045-6851-d53a-789f-3be3-7b5f-9b99
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 654c-a632-b0b0-6d0e-ebbb-3f47-772e-462e
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: decimal(18,2)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: TTDMAX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 654c-a632-b0b0-6d0e-ebbb-3f47-772e-462e
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7b6-1738-4bfa-7276-ba45-813c-996b-f751
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: decimal(18,2)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: PTDMIN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b7b6-1738-4bfa-7276-ba45-813c-996b-f751
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4001-9f7d-acdb-532b-c05c-1a53-297f-dcc5
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: char(1)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: WPNOTAPPLIEDTOPPD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4001-9f7d-acdb-532b-c05c-1a53-297f-dcc5
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4e16-a8b8-407f-1d12-c4ac-30ae-fdfb-dfa6
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: number(38)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: JURISDICTIONSTATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4e16-a8b8-407f-1d12-c4ac-30ae-fdfb-dfa6
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e0a1-86d8-a0d8-f936-632f-d1bf-3999-1398
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: timestamp
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: ENDDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e0a1-86d8-a0d8-f936-632f-d1bf-3999-1398
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 600d-ea83-e9a6-9d24-4a77-ae1d-b2e7-30e7
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: timestamp
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: CREATETIME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 600d-ea83-e9a6-9d24-4a77-ae1d-b2e7-30e7
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: varchar2(255)
+        description: Record source.
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: date
+        description: Load date.
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: abca-e507-7832-2452-0475-2319-772b-8cc2
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 84b4-d240-1f49-7dcb-61cb-a124-fb9e-cc4b
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was updated in the data warehouse.
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_UPDATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: b541-3437-b68c-b831-57ad-43b0-4688-4073
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was created in the data warehouse.
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SOURCE
+            nodeName: LOAD_CC_WCBENEFITPARAMETERSET
+        join:
+          joinCondition: FROM {{ref('SOURCE','LOAD_CC_WCBENEFITPARAMETERSET') }} LOAD_CC_WCBENEFITPARAMETERSET
+        name: REF_CC_WCBENEFITPARAMETERSET
+        noLinkRefs: []
+  name: REF_CC_WCBENEFITPARAMETERSET
+  overrideSQL: false
+  schema: ""
+  sqlType: "352"
+  type: sql
+  version: 1
+type: Node

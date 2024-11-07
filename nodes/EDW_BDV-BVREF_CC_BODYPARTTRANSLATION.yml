@@ -1,0 +1,187 @@
+fileVersion: 1
+id: d831-a44f-5607-1085-944d-c162-70d7-1c40
+name: BVREF_CC_BODYPARTTRANSLATION
+operation:
+  config:
+    insertStrategy: MERGE
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_BDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3f44-0bb6-1839-b5c4-818d-446a-a966-6005
+          stepCounter: d831-a44f-5607-1085-944d-c162-70d7-1c40
+        config: {}
+        dataType: integer
+        description: ""
+        isBusinessKey: true
+        isChangeTracking: false
+        name: BODILYINJURYPOINTSID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3f44-0bb6-1839-b5c4-818d-446a-a966-6005
+                stepCounter: 7008-8c8d-4ccf-e678-e8fc-5de2-088f-03ef
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0fda-70d7-93a8-ec33-1189-ea92-db06-05d8
+          stepCounter: d831-a44f-5607-1085-944d-c162-70d7-1c40
+        config: {}
+        dataType: varchar2(64)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: TYPECODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0fda-70d7-93a8-ec33-1189-ea92-db06-05d8
+                stepCounter: 7008-8c8d-4ccf-e678-e8fc-5de2-088f-03ef
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b068-931c-c450-442b-63f5-b3d2-76ea-4297
+          stepCounter: d831-a44f-5607-1085-944d-c162-70d7-1c40
+        config: {}
+        dataType: varchar2(255)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: NAME
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b068-931c-c450-442b-63f5-b3d2-76ea-4297
+                stepCounter: 7008-8c8d-4ccf-e678-e8fc-5de2-088f-03ef
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eeb5-255f-2159-0481-0840-8a61-4fec-4b12
+          stepCounter: d831-a44f-5607-1085-944d-c162-70d7-1c40
+        config: {}
+        dataType: integer
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: BODYPARTIMPAIRTYPEID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: eeb5-255f-2159-0481-0840-8a61-4fec-4b12
+                stepCounter: 7008-8c8d-4ccf-e678-e8fc-5de2-088f-03ef
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1473-3fee-6679-b4f0-7861-46fc-eda0-f6c1
+          stepCounter: d831-a44f-5607-1085-944d-c162-70d7-1c40
+        config: {}
+        dataType: varchar2(64)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: BODYPARTIMPAIRTYPECODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1473-3fee-6679-b4f0-7861-46fc-eda0-f6c1
+                stepCounter: 7008-8c8d-4ccf-e678-e8fc-5de2-088f-03ef
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: d831-a44f-5607-1085-944d-c162-70d7-1c40
+        config: {}
+        dataType: varchar2(255)
+        description: Record source.
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: 7008-8c8d-4ccf-e678-e8fc-5de2-088f-03ef
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: d831-a44f-5607-1085-944d-c162-70d7-1c40
+        config: {}
+        dataType: date
+        description: Load date.
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: 7008-8c8d-4ccf-e678-e8fc-5de2-088f-03ef
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 84b4-d240-1f49-7dcb-61cb-a124-fb9e-cc4b
+          stepCounter: d831-a44f-5607-1085-944d-c162-70d7-1c40
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was updated in the data warehouse.
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_UPDATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: d831-a44f-5607-1085-944d-c162-70d7-1c40
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was created in the data warehouse.
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SOURCE
+            nodeName: LOAD_CC_BODYPARTTRANSLATION
+        join:
+          joinCondition: FROM {{ref('SOURCE','LOAD_CC_BODYPARTTRANSLATION') }} LOAD_CC_BODYPARTTRANSLATION
+        name: BVREF_CC_BODYPARTTRANSLATION
+        noLinkRefs: []
+  name: BVREF_CC_BODYPARTTRANSLATION
+  overrideSQL: false
+  schema: ""
+  sqlType: "352"
+  type: sql
+  version: 1
+type: Node

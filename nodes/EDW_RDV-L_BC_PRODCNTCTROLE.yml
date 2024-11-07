@@ -1,0 +1,191 @@
+fileVersion: 1
+id: e19d-e460-2002-9ec6-f2ec-b1ff-8990-f1d7
+name: L_BC_PRODCNTCTROLE
+operation:
+  config:
+    insertStrategy: MERGE
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: false
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_RDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a8f6-8002-a6c1-1e79-2b5e-4dd9-13bb-8d3f
+          stepCounter: e19d-e460-2002-9ec6-f2ec-b1ff-8990-f1d7
+        config:
+          "0": null
+          is_Link_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_L_BC_PRODCNTCTROLE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a8f6-8002-a6c1-1e79-2b5e-4dd9-13bb-8d3f
+                stepCounter: 798b-3ec8-e95e-0df1-f30a-069b-e2f1-afb1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2e95-106f-a1b5-8cf1-8963-2b58-64e6-a75d
+          stepCounter: e19d-e460-2002-9ec6-f2ec-b1ff-8990-f1d7
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_BC_PRODCNTCTROLE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2e95-106f-a1b5-8cf1-8963-2b58-64e6-a75d
+                stepCounter: 798b-3ec8-e95e-0df1-f30a-069b-e2f1-afb1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b0a6-7a5c-54cd-f57b-c398-e029-bc83-1f3f
+          stepCounter: e19d-e460-2002-9ec6-f2ec-b1ff-8990-f1d7
+        config:
+          "0": null
+          is_Hub_hk: true
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_PRODCNTCT
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b0a6-7a5c-54cd-f57b-c398-e029-bc83-1f3f
+                stepCounter: 798b-3ec8-e95e-0df1-f30a-069b-e2f1-afb1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d96b-5925-ca75-134e-96fb-a178-a331-4de3
+          stepCounter: e19d-e460-2002-9ec6-f2ec-b1ff-8990-f1d7
+        config: {}
+        dataType: number(38)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: PRODCNTCTROLEID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d96b-5925-ca75-134e-96fb-a178-a331-4de3
+                stepCounter: 798b-3ec8-e95e-0df1-f30a-069b-e2f1-afb1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fd79-53eb-fb48-d7ca-6d8c-d2a3-c8dd-dba6
+          stepCounter: e19d-e460-2002-9ec6-f2ec-b1ff-8990-f1d7
+        config: {}
+        dataType: number(38)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: PRODUCERCONTACTID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fd79-53eb-fb48-d7ca-6d8c-d2a3-c8dd-dba6
+                stepCounter: 798b-3ec8-e95e-0df1-f30a-069b-e2f1-afb1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 29a7-e964-67b6-9a9f-5a93-332e-29e9-b0de
+          stepCounter: e19d-e460-2002-9ec6-f2ec-b1ff-8990-f1d7
+        config: {}
+        dataType: number(38)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: ROLE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 29a7-e964-67b6-9a9f-5a93-332e-29e9-b0de
+                stepCounter: 798b-3ec8-e95e-0df1-f30a-069b-e2f1-afb1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: e19d-e460-2002-9ec6-f2ec-b1ff-8990-f1d7
+        config: {}
+        dataType: varchar2(255)
+        description: Record source.
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: 798b-3ec8-e95e-0df1-f30a-069b-e2f1-afb1
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: e19d-e460-2002-9ec6-f2ec-b1ff-8990-f1d7
+        config: {}
+        dataType: date
+        description: Load date.
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: 798b-3ec8-e95e-0df1-f30a-069b-e2f1-afb1
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: e19d-e460-2002-9ec6-f2ec-b1ff-8990-f1d7
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was created in the data warehouse.
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_STAGE
+            nodeName: STAGE_BC_PRODCNTCTROLE
+        join:
+          joinCondition: FROM {{ref('EDW_STAGE','STAGE_BC_PRODCNTCTROLE') }} STAGE_BC_PRODCNTCTROLE
+        name: L_BC_PRODCNTCTROLE
+        noLinkRefs: []
+  name: L_BC_PRODCNTCTROLE
+  overrideSQL: false
+  schema: ""
+  sqlType: "7"
+  type: sql
+  version: 1
+type: Node

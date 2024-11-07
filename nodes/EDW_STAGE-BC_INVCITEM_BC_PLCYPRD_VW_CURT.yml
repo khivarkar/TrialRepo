@@ -1,0 +1,155 @@
+fileVersion: 1
+id: 10c7-bac9-1d02-d9d9-ac2b-6b36-ee0b-f93f
+name: BC_INVCITEM_BC_PLCYPRD_VW_CURT
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+    truncateBefore: true
+  database: SOURCE_DB
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_STAGE
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ee0b-0cae-e759-8c9b-e79f-74a2-0766-b3b2
+          stepCounter: 10c7-bac9-1d02-d9d9-ac2b-6b36-ee0b-f93f
+        config: {}
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_L_BC_INVCITEM_BC_PLCYPRD
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ee0b-0cae-e759-8c9b-e79f-74a2-0766-b3b2
+                stepCounter: 9113-4c9f-4f11-ab9a-2ff1-0e52-f05d-bd4f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6c8a-7e94-54b0-dc9c-7c2c-a90b-107f-0130
+          stepCounter: 10c7-bac9-1d02-d9d9-ac2b-6b36-ee0b-f93f
+        config: {}
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_BC_PLCYPRD
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6c8a-7e94-54b0-dc9c-7c2c-a90b-107f-0130
+                stepCounter: 9113-4c9f-4f11-ab9a-2ff1-0e52-f05d-bd4f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0e63-b96c-c46c-11b3-761c-118c-da27-ef01
+          stepCounter: 10c7-bac9-1d02-d9d9-ac2b-6b36-ee0b-f93f
+        config: {}
+        dataType: char(32)
+        description: ""
+        isBusinessKey: false
+        isChangeTracking: false
+        name: HK_H_BC_INVCITEM
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0e63-b96c-c46c-11b3-761c-118c-da27-ef01
+                stepCounter: 9113-4c9f-4f11-ab9a-2ff1-0e52-f05d-bd4f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+          stepCounter: 10c7-bac9-1d02-d9d9-ac2b-6b36-ee0b-f93f
+        config: {}
+        dataType: varchar2(255)
+        description: Record source
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_RECORD_SOURCE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32cc-c502-cbfb-8d68-7c76-59de-8f38-3891
+                stepCounter: 9113-4c9f-4f11-ab9a-2ff1-0e52-f05d-bd4f
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+          stepCounter: 10c7-bac9-1d02-d9d9-ac2b-6b36-ee0b-f93f
+        config: {}
+        dataType: date
+        description: Date and time the row was loaded in the data vault
+        isBusinessKey: false
+        isChangeTracking: false
+        name: DSS_LOAD_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c562-141b-60ce-3bda-b860-e5a5-a047-65cd
+                stepCounter: 9113-4c9f-4f11-ab9a-2ff1-0e52-f05d-bd4f
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 84b4-d240-1f49-7dcb-61cb-a124-fb9e-cc4b
+          stepCounter: 10c7-bac9-1d02-d9d9-ac2b-6b36-ee0b-f93f
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was updated in the data warehouse.
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_UPDATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7f8-9ad4-75cc-091f-2ac0-f131-6b2f-ffac
+          stepCounter: 10c7-bac9-1d02-d9d9-ac2b-6b36-ee0b-f93f
+        config: {}
+        dataType: date
+        defaultValue: ""
+        description: Date and time the row was created in the data warehouse.
+        hashedColumns: []
+        isSystemCreateDate: false
+        name: DSS_CREATE_TIME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_RDV
+            nodeName: BC_INVCITEM_BC_PLCYPRD_VW_CURR
+        join:
+          joinCondition: FROM {{ref('EDW_RDV','BC_INVCITEM_BC_PLCYPRD_VW_CURR') }} BC_INVCITEM_BC_PLCYPRD_VW_CURR
+        name: BC_INVCITEM_BC_PLCYPRD_VW_CURT
+        noLinkRefs: []
+  name: BC_INVCITEM_BC_PLCYPRD_VW_CURT
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
