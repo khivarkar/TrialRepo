@@ -1,5 +1,20 @@
 fileVersion: 1
 id: "19"
-mappingDefinitions: {}
+mappingDefinitions:
+  EDW_BDV:
+    database: TESTMO_DB
+    schema: TESTMO_SCHEMA
+  EDW_IM:
+    database: TESTMO_DB
+    schema: TESTMO_SCHEMA
+  EDW_RDV:
+    database: TESTMO_DB
+    schema: TESTMO_SCHEMA
+  EDW_STAGE:
+    database: TESTMO_DB
+    schema: TESTMO_SCHEMA
+  SOURCE:
+    database: TESTMO_DB
+    schema: TESTMO_SCHEMA
 name: New Environment
 type: Environment
