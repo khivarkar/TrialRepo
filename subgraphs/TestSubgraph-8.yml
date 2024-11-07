@@ -1,6 +1,5 @@
 fileVersion: 1
 id: "8"
 name: Test Subgraph
-steps:
-  - 034d-33be-d114-f618-3564-1f20-c49c-8a3a
+steps: []
 type: Subgraph
