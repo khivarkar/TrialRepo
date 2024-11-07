@@ -1,6 +1,0 @@
-excludeSelector: ""
-fileVersion: 1
-id: "13"
-includeSelector: "{ location: EDW_STAGE name: DATA_OPERATIONS }"
-name: RANDOMJ
-type: Job

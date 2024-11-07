@@ -1,6 +1,6 @@
 excludeSelector: "{ location: EDW_RDV name: L_BC_ACCT_BC_USR } OR { location: SOURCE name: LOAD_BC_ACCT } OR { location: EDW_STAGE name: STAGE_ACCT_BC }"
 fileVersion: 1
 id: "47"
-includeSelector: "{ location: SOURCE name: LOAD_BC_ACCT } OR { location: EDW_STAGE name: STAGE_ACCT_BC } OR { location: EDW_RDV name: L_BC_ACCT_BC_USR } OR { location: SOURCE name: LOAD_BC_PRODCNTX } OR { location: EDW_STAGE name: STAGE_PRODCNTX } OR { location: EDW_RDV name: L_BC_PRODCNTX } OR { location: EDW_RDV name: H_BC_PRODCNTX } OR { location: EDW_RDV name: S_BC_PRODCNTX }"
+includeSelector: "{ location: EDW_RDV name: S_BC_CHARGE } OR { location: EDW_RDV name: S_BC_CLTRL } OR { location: EDW_RDV name: S_BC_INPRDPMT } OR { location: EDW_IM name: DS_CC_CHECKPAYEE } OR { location: EDW_IM name: DS_CC_MATTER } OR { location: EDW_IM name: DS_CC_MDCLTRMT } OR { location: EDW_IM name: DS_CC_POLICY }"
 name: Demo Job
 type: Job
