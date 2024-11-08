@@ -1,12 +1,15 @@
 fileVersion: 1
-id: 8210f2cb-3556-447e-861c-b4f8d06611f2
-name: STG_AW_LOAD_ADDRESS2
+id: f877164b-37b4-4873-a903-e8fe7d18e2e3
+name: ORDERS
 operation:
   database: ""
   dataset: ""
   deployEnabled: true
-  description: ""
-  locationName: EDW_BDV
+  description: |-
+    Orders are not present for all customers. In fact, one-third of the customers do not have any order in
+    the database. The orders are assigned at random to two-thirds of the customers (see Clause 4: ). The purpose of
+    this is to exercise the capabilities of the DBMS to handle "dead data" when joining two or more tables.
+  locationName: SOURCE
   metadata:
     columns:
       - acceptedValues:
@@ -14,13 +17,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 45c95518-974f-4928-b16e-c3b6da277267
-          stepCounter: 8210f2cb-3556-447e-861c-b4f8d06611f2
+          columnCounter: 6048fb21-d1cb-4794-8ce7-8685b2e1a4fc
+          stepCounter: f877164b-37b4-4873-a903-e8fe7d18e2e3
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
-        description: Primary key for Address records.
-        name: ADDRESSID
+        description: SF*1,500,000 are sparsely populated
+        name: O_ORDERKEY
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -33,70 +36,13 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: b911bfa8-437b-4fb6-9f0a-ba1753eaa166
-          stepCounter: 8210f2cb-3556-447e-861c-b4f8d06611f2
-        config: {}
-        dataType: VARCHAR(60)
-        defaultValue: ""
-        description: First street address line.
-        name: ADDRESSLINE1
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 5361e1cb-792c-43d2-873d-052d770eaf5f
-          stepCounter: 8210f2cb-3556-447e-861c-b4f8d06611f2
-        config: {}
-        dataType: VARCHAR(60)
-        defaultValue: ""
-        description: Second street address line.
-        name: ADDRESSLINE2
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 634f2471-1a15-4a62-acf9-2195621cabdc
-          stepCounter: 8210f2cb-3556-447e-861c-b4f8d06611f2
-        config: {}
-        dataType: VARCHAR(30)
-        defaultValue: ""
-        description: Name of the city.
-        name: CITY
-        nullable: true
-        primaryKey: false
-        sourceColumnReferences:
-          - columnReferences: []
-            transform: ""
-        transform: ""
-        uniqueKey: false
-      - acceptedValues:
-          strictMatch: true
-          values: []
-        appliedColumnTests: {}
-        columnReference:
-          columnCounter: 3567ed10-1b7d-4cd9-bc05-ca56a983e2c2
-          stepCounter: 8210f2cb-3556-447e-861c-b4f8d06611f2
+          columnCounter: a2ab2197-396d-4b51-9692-911ce9738cbc
+          stepCounter: f877164b-37b4-4873-a903-e8fe7d18e2e3
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
-        description: Unique identification number for the state or province. Foreign key to StateProvince table.
-        name: STATEPROVINCEID
+        description: Foreign Key to C_CUSTKEY
+        name: O_CUSTKEY
         nullable: true
         primaryKey: false
         sourceColumnReferences:
@@ -109,14 +55,71 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 2b7132f1-20e8-40a4-bae1-7989b9ace8ad
-          stepCounter: 8210f2cb-3556-447e-861c-b4f8d06611f2
+          columnCounter: fc5e33dc-e3bb-479e-adca-0e57722d4aa9
+          stepCounter: f877164b-37b4-4873-a903-e8fe7d18e2e3
+        config: {}
+        dataType: VARCHAR(1)
+        defaultValue: ""
+        description: ""
+        name: O_ORDERSTATUS
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d7535db4-3785-4bc2-a846-92acd6095b0d
+          stepCounter: f877164b-37b4-4873-a903-e8fe7d18e2e3
+        config: {}
+        dataType: NUMBER(12,2)
+        defaultValue: ""
+        description: ""
+        name: O_TOTALPRICE
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3f88c648-3e2d-47b9-8243-c21daadb5c30
+          stepCounter: f877164b-37b4-4873-a903-e8fe7d18e2e3
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        name: O_ORDERDATE
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b2ccdcd8-1ebe-40f5-8853-8d80afc81b10
+          stepCounter: f877164b-37b4-4873-a903-e8fe7d18e2e3
         config: {}
         dataType: VARCHAR(15)
         defaultValue: ""
-        description: Postal code for the street address.
-        name: POSTALCODE
-        nullable: true
+        description: ""
+        name: O_ORDERPRIORITY
+        nullable: false
         primaryKey: false
         sourceColumnReferences:
           - columnReferences: []
@@ -128,14 +131,14 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 2a3976c8-0620-4b32-b406-bd6558a12bdd
-          stepCounter: 8210f2cb-3556-447e-861c-b4f8d06611f2
+          columnCounter: 36b07487-a4d6-47f1-a7f5-e82d22c6c60a
+          stepCounter: f877164b-37b4-4873-a903-e8fe7d18e2e3
         config: {}
-        dataType: VARCHAR(50)
+        dataType: VARCHAR(15)
         defaultValue: ""
-        description: Latitude and longitude of this address.
-        name: SPATIALLOCATION
-        nullable: true
+        description: ""
+        name: O_CLERK
+        nullable: false
         primaryKey: false
         sourceColumnReferences:
           - columnReferences: []
@@ -147,14 +150,14 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: d3794afb-33b7-4063-95fd-4fb8519c910a
-          stepCounter: 8210f2cb-3556-447e-861c-b4f8d06611f2
+          columnCounter: 801b370e-4999-4d84-9f3b-df886350b6c8
+          stepCounter: f877164b-37b4-4873-a903-e8fe7d18e2e3
         config: {}
-        dataType: VARCHAR(16777216)
+        dataType: NUMBER(38,0)
         defaultValue: ""
-        description: ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.
-        name: ROWGUID
-        nullable: true
+        description: ""
+        name: O_SHIPPRIORITY
+        nullable: false
         primaryKey: false
         sourceColumnReferences:
           - columnReferences: []
@@ -166,14 +169,14 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 870c9edb-4ce3-499e-9a7b-1765c20bb13d
-          stepCounter: 8210f2cb-3556-447e-861c-b4f8d06611f2
+          columnCounter: 6a6809a3-4c38-4071-83ca-8313f4eb23b4
+          stepCounter: f877164b-37b4-4873-a903-e8fe7d18e2e3
         config: {}
-        dataType: VARCHAR(50)
+        dataType: VARCHAR(79)
         defaultValue: ""
-        description: Date and time the record was last updated.
-        name: MODIFIEDDATE
-        nullable: true
+        description: ""
+        name: O_COMMENT
+        nullable: false
         primaryKey: false
         sourceColumnReferences:
           - columnReferences: []
@@ -181,11 +184,11 @@ operation:
         transform: ""
         uniqueKey: false
     join:
-      joinCondition: FROM {{ ref('EDW_BDV', 'STG_AW_LOAD_ADDRESS2') }}
-  name: STG_AW_LOAD_ADDRESS2
+      joinCondition: FROM {{ ref('SOURCE', 'ORDERS') }}
+  name: ORDERS
   schema: ""
   sqlType: Source
-  table: STG_AW_LOAD_ADDRESS2
+  table: ORDERS
   type: sourceInput
   version: 1
 type: Node

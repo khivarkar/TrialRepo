@@ -2,19 +2,19 @@ fileVersion: 1
 id: "20"
 mappingDefinitions:
   EDW_BDV:
-    database: DATAENTREGA_QA
-    schema: TESTMO_SCHEMA
+    database: QA_DEPLOY_PHASES
+    schema: QA_DEPLOY_PHASE
   EDW_IM:
-    database: DATAENTREGA_QA
-    schema: TESTMO_SCHEMA
+    database: QA_DEPLOY_PHASES
+    schema: QA_DEPLOY_PHASE
   EDW_RDV:
-    database: DATAENTREGA_QA
-    schema: TESTMO_SCHEMA
+    database: QA_DEPLOY_PHASES
+    schema: QA_DEPLOY_PHASE
   EDW_STAGE:
-    database: DATAENTREGA_QA
-    schema: TESTMO_SCHEMA
+    database: QA_DEPLOY_PHASES
+    schema: QA_DEPLOY_PHASE
   SOURCE:
-    database: DATAENTREGA_QA
-    schema: TESTMO_SCHEMA
+    database: COALESCE_SAMPLE_DATABASE
+    schema: TPCH_SF001
 name: Test 2
 type: Environment
