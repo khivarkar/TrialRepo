@@ -6,7 +6,7 @@ operation:
   dataset: ""
   deployEnabled: true
   description: ""
-  locationName: ADVENTURE_WORKS
+  locationName: SOURCE
   metadata:
     columns:
       - acceptedValues:
