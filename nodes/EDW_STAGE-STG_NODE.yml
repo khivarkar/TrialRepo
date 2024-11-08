@@ -51,7 +51,7 @@ operation:
   name: STG_NODE
   overrideSQL: false
   schema: ""
-  sqlType: Stage
+  sqlType: View
   type: sql
   version: 1
 type: Node
