@@ -16,5 +16,8 @@ mappingDefinitions:
   SOURCE:
     database: COALESCE_SAMPLE_DATABASE
     schema: TPCH_SF001
+  STG2:
+    database: ""
+    schema: ""
 name: Test 2
 type: Environment
