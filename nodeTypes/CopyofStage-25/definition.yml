@@ -85,5 +85,5 @@ metadata:
         )
         {%- if desiredState.node.description | length > 0 %} COMMENT = '{{ desiredState.node.description | escape }}'{% endif %}
     {% endif %}
-name: Dup_STAGE
+name: Copy of Stage
 type: NodeType
