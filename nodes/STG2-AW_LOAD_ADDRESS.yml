@@ -6,7 +6,7 @@ operation:
   dataset: ""
   deployEnabled: true
   description: ""
-  locationName: ADVENTURE_WORKS
+  locationName: STG2
   metadata:
     columns:
       - acceptedValues:
