@@ -8,6 +8,7 @@ operation:
     preSQL: ""
     testsEnabled: true
     truncateBefore: true
+    warehouse: TRANSFORMING_WH
   database: ""
   deployEnabled: true
   description: |-
@@ -162,7 +163,7 @@ operation:
   name: A_ORDERS
   overrideSQL: false
   schema: ""
-  sqlType: Stage
+  sqlType: "27"
   type: sql
   version: 1
 type: Node

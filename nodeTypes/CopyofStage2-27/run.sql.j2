@@ -1,0 +1,10 @@
+{% if node.materializationType == 'table' %}
+{% if config.warehouse %}
+{{stage('Use Warehouse')}}
+use warehouse "{{config.warehouse}}"
+{% endif %}
+{% if config.preSQL %}
+{{ stage('Pre-SQL') }}
+{{ config.preSQL }}
+{% endif %}
+{% endif %}
