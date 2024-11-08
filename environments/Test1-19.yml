@@ -2,19 +2,19 @@ fileVersion: 1
 id: "19"
 mappingDefinitions:
   EDW_BDV:
-    database: QA_DEPLOY_PHASE2
-    schema: INFORMATION_SCHEMA
+    database: QA_DEPLOY_PHASES
+    schema: QA_DEPLOY_PHASE
   EDW_IM:
-    database: QA_DEPLOY_PHASE2
-    schema: INFORMATION_SCHEMA
+    database: QA_DEPLOY_PHASES
+    schema: QA_DEPLOY_PHASE
   EDW_RDV:
-    database: QA_DEPLOY_PHASE2
-    schema: INFORMATION_SCHEMA
+    database: QA_DEPLOY_PHASES
+    schema: QA_DEPLOY_PHASE
   EDW_STAGE:
-    database: QA_DEPLOY_PHASE2
-    schema: INFORMATION_SCHEMA
+    database: QA_DEPLOY_PHASES
+    schema: QA_DEPLOY_PHASE
   SOURCE:
-    database: QA_DEPLOY_PHASE2
-    schema: INFORMATION_SCHEMA
+    database: COALESCE_SAMPLE_DATABASE
+    schema: TPCH_SF001
 name: Test 1
 type: Environment
