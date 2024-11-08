@@ -1,4 +1,4 @@
-defaultStorageMapping: null
+defaultStorageMapping: EDW_BDV
 fileVersion: 1
 locations:
   - EDW_BDV
