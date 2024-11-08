@@ -16,5 +16,5 @@ mappingDefinitions:
   SOURCE:
     database: DATAENTREGA_QA
     schema: TESTMO_SCHEMA
-name: New Environment
+name: Test 1
 type: Environment
