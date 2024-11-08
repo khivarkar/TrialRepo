@@ -1,0 +1,20 @@
+fileVersion: 1
+id: "20"
+mappingDefinitions:
+  EDW_BDV:
+    database: DATAENTREGA_QA
+    schema: TESTMO_SCHEMA
+  EDW_IM:
+    database: DATAENTREGA_QA
+    schema: TESTMO_SCHEMA
+  EDW_RDV:
+    database: DATAENTREGA_QA
+    schema: TESTMO_SCHEMA
+  EDW_STAGE:
+    database: DATAENTREGA_QA
+    schema: TESTMO_SCHEMA
+  SOURCE:
+    database: ALEX_DOCS
+    schema: PROD_RAW
+name: Test 2
+type: Environment
