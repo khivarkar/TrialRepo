@@ -4,7 +4,7 @@ isDisabled: false
 metadata:
   defaultStorageLocation: null
   error: null
-  nodeMetadataSpec: |-
+  nodeMetadataSpec: |
     capitalized: Copy of Stage
     short: STG
     plural: Stages
@@ -66,24 +66,5 @@ metadata:
                 {%- if not loop.last -%}, {% endif %}
             {% endfor %}
         )
-        {%- if desiredState.node.description | length > 0 %} COMMENT = '{{ desiredState.node.description | escape }}'{% endif %}
-    {% elif currentState is defined and desiredState is not defined %}
-        {{ stage('DROP THING') }}
-        DROP TABLE {{ ref_no_link(currentState.node.location.name, currentState.node.name) }}
-    {% elif currentState is defined and desiredState is defined %}
-        {{ stage('RECREATE THING') }}
-        CREATE OR REPLACE TABLE {{ ref_no_link(desiredState.node.location.name, desiredState.node.name) }}
-        (
-            {% for col in desiredState.columns %}
-                "{{ col.name }}" {{ col.dataType }}
-                {%- if not col.nullable %} NOT NULL
-                    {%- if col.defaultValue | length > 0 %} DEFAULT {{ col.defaultValue }}{% endif %}
-                {% endif %}
-                {%- if col.description | length > 0 %} COMMENT '{{ col.description | escape }}'{% endif %}
-                {%- if not loop.last -%}, {% endif %}
-            {% endfor %}
-        )
-        {%- if desiredState.node.description | length > 0 %} COMMENT = '{{ desiredState.node.description | escape }}'{% endif %}
-    {% endif %}
 name: Copy of Stage
 type: NodeType
