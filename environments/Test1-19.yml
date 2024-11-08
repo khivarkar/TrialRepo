@@ -18,6 +18,6 @@ mappingDefinitions:
     schema: TPCH_SF001
   STG2:
     database: QA_DEPLOY_PHASES2
-    schema: QA_DEPLOY_PHASE_2
+    schema: DEPLOY_PHASE_2
 name: Test 1
 type: Environment
