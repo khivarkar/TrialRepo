@@ -2,11 +2,11 @@ fileVersion: 1
 id: "20"
 mappingDefinitions:
   EDW_BDV:
-    database: CHANDLER_DB
-    schema: INFORMATION_SCHEMA
+    database: DATAENTREGA_QA
+    schema: TESTMO_SCHEMA
   EDW_IM:
-    database: CHRISTINA_PROD_EDW
-    schema: INFORMATION_SCHEMA
+    database: DATAENTREGA_QA
+    schema: TESTMO_SCHEMA
   EDW_RDV:
     database: DATAENTREGA_QA
     schema: TESTMO_SCHEMA
@@ -14,7 +14,7 @@ mappingDefinitions:
     database: DATAENTREGA_QA
     schema: TESTMO_SCHEMA
   SOURCE:
-    database: ALEX_DOCS
-    schema: PROD_RAW
+    database: DATAENTREGA_QA
+    schema: TESTMO_SCHEMA
 name: Test 2
 type: Environment
