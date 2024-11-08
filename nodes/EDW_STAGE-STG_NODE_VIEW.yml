@@ -1,26 +1,23 @@
 fileVersion: 1
-id: d2f45611-6dd6-4f94-96bd-1c529f0ab406
-name: STG_NODE_NEW
+id: 9e427d98-7989-4a6a-a291-7d8220959031
+name: STG_NODE_VIEW
 operation:
   config:
-    insertStrategy: INSERT
-    postSQL: ""
-    preSQL: ""
-    testsEnabled: true
-    truncateBefore: true
+    insertStrategy: UNION
+    selectDistinct: false
   database: ""
-  deployEnabled: false
+  deployEnabled: true
   description: ""
   isMultisource: false
   locationName: EDW_STAGE
-  materializationType: table
+  materializationType: view
   metadata:
     appliedNodeTests: []
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: e8631f97-ab0a-4e5d-8ab6-abcb603d5adc
-          stepCounter: d2f45611-6dd6-4f94-96bd-1c529f0ab406
+          columnCounter: 27cddc42-a924-4ba0-bd30-778c9dcf0048
+          stepCounter: 9e427d98-7989-4a6a-a291-7d8220959031
         config: {}
         dataType: Varchar(25)
         description: ""
@@ -42,12 +39,12 @@ operation:
             nodeName: STG_NODE
         join:
           joinCondition: FROM {{ ref('EDW_STAGE', 'STG_NODE') }} "STG_NODE"
-        name: STG_NODE_NEW
+        name: STG_NODE_VIEW
         noLinkRefs: []
-  name: STG_NODE_NEW
+  name: STG_NODE_VIEW
   overrideSQL: false
   schema: ""
-  sqlType: Stage
+  sqlType: View
   type: sql
   version: 1
 type: Node

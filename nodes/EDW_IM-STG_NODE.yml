@@ -1,0 +1,39 @@
+fileVersion: 1
+id: 01ff3548-9fd3-4de4-8e0b-36dc0f977d1f
+name: STG_NODE
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: EDW_IM
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2c1bae27-4409-4195-819d-0a8112aaa920
+          stepCounter: 01ff3548-9fd3-4de4-8e0b-36dc0f977d1f
+        config: {}
+        dataType: VARCHAR(25)
+        defaultValue: ""
+        description: ""
+        name: Name
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('EDW_IM', 'STG_NODE') }}
+  name: STG_NODE
+  schema: ""
+  sqlType: Source
+  table: STG_NODE
+  type: sourceInput
+  version: 1
+type: Node

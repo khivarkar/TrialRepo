@@ -1,0 +1,191 @@
+fileVersion: 1
+id: e658c1a3-c7b8-4b18-bbdb-d225efa45ce2
+name: AW_LOAD_ADDRESS
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: ADVENTURE_WORKS
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8637894e-8ba1-4b7b-891c-24610f86bb76
+          stepCounter: e658c1a3-c7b8-4b18-bbdb-d225efa45ce2
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: Primary key for Address records.
+        name: ADDRESSID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0232b470-b4bd-4915-8c91-9db09921c693
+          stepCounter: e658c1a3-c7b8-4b18-bbdb-d225efa45ce2
+        config: {}
+        dataType: VARCHAR(60)
+        defaultValue: ""
+        description: First street address line.
+        name: ADDRESSLINE1
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 527e2385-2978-48cb-8d02-ca64a482b584
+          stepCounter: e658c1a3-c7b8-4b18-bbdb-d225efa45ce2
+        config: {}
+        dataType: VARCHAR(60)
+        defaultValue: ""
+        description: Second street address line.
+        name: ADDRESSLINE2
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 41d4787b-d97f-4c1a-9b58-d6fe3fd6dbe1
+          stepCounter: e658c1a3-c7b8-4b18-bbdb-d225efa45ce2
+        config: {}
+        dataType: VARCHAR(30)
+        defaultValue: ""
+        description: Name of the city.
+        name: CITY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 74b3c104-2662-4b77-bef9-2ae92dc897ff
+          stepCounter: e658c1a3-c7b8-4b18-bbdb-d225efa45ce2
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: Unique identification number for the state or province. Foreign key to StateProvince table.
+        name: STATEPROVINCEID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bf726401-bac5-4ec7-a1d9-f03529a83c44
+          stepCounter: e658c1a3-c7b8-4b18-bbdb-d225efa45ce2
+        config: {}
+        dataType: VARCHAR(15)
+        defaultValue: ""
+        description: Postal code for the street address.
+        name: POSTALCODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6575b525-3075-4855-86f1-cba69af41421
+          stepCounter: e658c1a3-c7b8-4b18-bbdb-d225efa45ce2
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: Latitude and longitude of this address.
+        name: SPATIALLOCATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 634436b7-d2de-4b8f-9f57-60c4401ff9ea
+          stepCounter: e658c1a3-c7b8-4b18-bbdb-d225efa45ce2
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.
+        name: ROWGUID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 63f0bdf9-f411-4550-8542-4f712916c280
+          stepCounter: e658c1a3-c7b8-4b18-bbdb-d225efa45ce2
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: Date and time the record was last updated.
+        name: MODIFIEDDATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('ADVENTURE_WORKS', 'AW_LOAD_ADDRESS') }}
+  name: AW_LOAD_ADDRESS
+  schema: ""
+  sqlType: Source
+  table: AW_LOAD_ADDRESS
+  type: sourceInput
+  version: 1
+type: Node
