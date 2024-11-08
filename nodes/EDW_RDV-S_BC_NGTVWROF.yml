@@ -9,7 +9,7 @@ operation:
     testsEnabled: false
     truncateBefore: false
   database: SOURCE_DB
-  deployEnabled: true
+  deployEnabled: false
   description: ""
   isMultisource: false
   locationName: EDW_RDV
