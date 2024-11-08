@@ -1,0 +1,191 @@
+fileVersion: 1
+id: b91045c0-22aa-41cf-ba1a-fbb79e3e9ccb
+name: STG_AW_LOAD_ADDRESS7
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: EDW_BDV
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c7ca0ce5-49fc-48a7-a60a-cb6c95908679
+          stepCounter: b91045c0-22aa-41cf-ba1a-fbb79e3e9ccb
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: Primary key for Address records.
+        name: ADDRESSID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2a0773a2-8da6-453f-8f02-b07fe19b859b
+          stepCounter: b91045c0-22aa-41cf-ba1a-fbb79e3e9ccb
+        config: {}
+        dataType: VARCHAR(60)
+        defaultValue: ""
+        description: First street address line.
+        name: ADDRESSLINE1
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 590532b4-fdfe-48f1-ae17-40979e744596
+          stepCounter: b91045c0-22aa-41cf-ba1a-fbb79e3e9ccb
+        config: {}
+        dataType: VARCHAR(60)
+        defaultValue: ""
+        description: Second street address line.
+        name: ADDRESSLINE2
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2f07c149-e064-4960-8850-f5c35926f019
+          stepCounter: b91045c0-22aa-41cf-ba1a-fbb79e3e9ccb
+        config: {}
+        dataType: VARCHAR(30)
+        defaultValue: ""
+        description: Name of the city.
+        name: CITY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3db8a7db-4cda-4393-9c92-6e64048d5ff8
+          stepCounter: b91045c0-22aa-41cf-ba1a-fbb79e3e9ccb
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: Unique identification number for the state or province. Foreign key to StateProvince table.
+        name: STATEPROVINCEID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ecebb1a3-6ced-464d-8c7c-d1bb580866f0
+          stepCounter: b91045c0-22aa-41cf-ba1a-fbb79e3e9ccb
+        config: {}
+        dataType: VARCHAR(15)
+        defaultValue: ""
+        description: Postal code for the street address.
+        name: POSTALCODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a5ae8392-77d8-498e-ad2b-5a11a475300f
+          stepCounter: b91045c0-22aa-41cf-ba1a-fbb79e3e9ccb
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: Latitude and longitude of this address.
+        name: SPATIALLOCATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d2dcd142-36c8-4def-a163-f1ed46d4b791
+          stepCounter: b91045c0-22aa-41cf-ba1a-fbb79e3e9ccb
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.
+        name: ROWGUID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 27ecf114-4000-4946-b1d0-95438888c455
+          stepCounter: b91045c0-22aa-41cf-ba1a-fbb79e3e9ccb
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: Date and time the record was last updated.
+        name: MODIFIEDDATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('EDW_BDV', 'STG_AW_LOAD_ADDRESS7') }}
+  name: STG_AW_LOAD_ADDRESS7
+  schema: ""
+  sqlType: Source
+  table: STG_AW_LOAD_ADDRESS7
+  type: sourceInput
+  version: 1
+type: Node

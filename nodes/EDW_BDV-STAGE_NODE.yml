@@ -1,0 +1,39 @@
+fileVersion: 1
+id: 6b3e59c8-b2f1-4e71-8016-bc8c8cb07563
+name: STAGE_NODE
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: EDW_BDV
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 94667151-37d6-42ee-b0e4-7dc9f3932c9f
+          stepCounter: 6b3e59c8-b2f1-4e71-8016-bc8c8cb07563
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: Name
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('EDW_BDV', 'STAGE_NODE') }}
+  name: STAGE_NODE
+  schema: ""
+  sqlType: Source
+  table: STAGE_NODE
+  type: sourceInput
+  version: 1
+type: Node

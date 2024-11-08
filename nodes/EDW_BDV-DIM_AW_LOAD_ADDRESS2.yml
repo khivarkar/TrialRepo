@@ -1,0 +1,324 @@
+fileVersion: 1
+id: 075f6e91-aa98-4b01-b331-3e6c1bda21ba
+name: DIM_AW_LOAD_ADDRESS2
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: EDW_BDV
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9187e5fc-d58b-4cb4-81b3-fced3c2b87f3
+          stepCounter: 075f6e91-aa98-4b01-b331-3e6c1bda21ba
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: DIM_AW_LOAD_ADDRESS2_KEY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fd377922-e95c-455d-b4de-660c4da49118
+          stepCounter: 075f6e91-aa98-4b01-b331-3e6c1bda21ba
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: Primary key for Address records.
+        name: ADDRESSID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a28c8b7a-bcb7-4103-a0cb-9888af51691d
+          stepCounter: 075f6e91-aa98-4b01-b331-3e6c1bda21ba
+        config: {}
+        dataType: VARCHAR(60)
+        defaultValue: ""
+        description: First street address line.
+        name: ADDRESSLINE1
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ca95fa1d-44c3-4da7-94b9-83790c033f78
+          stepCounter: 075f6e91-aa98-4b01-b331-3e6c1bda21ba
+        config: {}
+        dataType: VARCHAR(60)
+        defaultValue: ""
+        description: Second street address line.
+        name: ADDRESSLINE2
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: dda255b2-1277-4cd2-81cc-81dfbcc3817e
+          stepCounter: 075f6e91-aa98-4b01-b331-3e6c1bda21ba
+        config: {}
+        dataType: VARCHAR(30)
+        defaultValue: ""
+        description: Name of the city.
+        name: CITY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 88972de4-e89b-4310-a064-6064fa50684a
+          stepCounter: 075f6e91-aa98-4b01-b331-3e6c1bda21ba
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: Unique identification number for the state or province. Foreign key to StateProvince table.
+        name: STATEPROVINCEID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1688a544-4a4f-475b-844f-210667e1c051
+          stepCounter: 075f6e91-aa98-4b01-b331-3e6c1bda21ba
+        config: {}
+        dataType: VARCHAR(15)
+        defaultValue: ""
+        description: Postal code for the street address.
+        name: POSTALCODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b80321ea-c731-4536-b365-c26b14aa7d09
+          stepCounter: 075f6e91-aa98-4b01-b331-3e6c1bda21ba
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: Latitude and longitude of this address.
+        name: SPATIALLOCATION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 94a0c745-a847-40bc-87dc-89b4600ceff4
+          stepCounter: 075f6e91-aa98-4b01-b331-3e6c1bda21ba
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ROWGUIDCOL number uniquely identifying the record. Used to support a merge replication sample.
+        name: ROWGUID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ed4b6539-3bc3-4df1-9547-dabf046f6ba9
+          stepCounter: 075f6e91-aa98-4b01-b331-3e6c1bda21ba
+        config: {}
+        dataType: VARCHAR(50)
+        defaultValue: ""
+        description: Date and time the record was last updated.
+        name: MODIFIEDDATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4ec30069-1f27-40d8-a367-0db8c69fe9bc
+          stepCounter: 075f6e91-aa98-4b01-b331-3e6c1bda21ba
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_VERSION
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b1125318-3930-44ff-a39e-e41ef3b68dd3
+          stepCounter: 075f6e91-aa98-4b01-b331-3e6c1bda21ba
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_CURRENT_FLAG
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 303ca7e6-c11e-4bf3-8806-62a757b50740
+          stepCounter: 075f6e91-aa98-4b01-b331-3e6c1bda21ba
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_START_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9185426f-f48d-47b4-a333-c0e0d3f0d576
+          stepCounter: 075f6e91-aa98-4b01-b331-3e6c1bda21ba
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_END_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: aac055d0-ab9d-496f-8823-cfadafc3fca2
+          stepCounter: 075f6e91-aa98-4b01-b331-3e6c1bda21ba
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f852db1a-dd20-43cd-bde9-d31af1b26f75
+          stepCounter: 075f6e91-aa98-4b01-b331-3e6c1bda21ba
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('EDW_BDV', 'DIM_AW_LOAD_ADDRESS2') }}
+  name: DIM_AW_LOAD_ADDRESS2
+  schema: ""
+  sqlType: Source
+  table: DIM_AW_LOAD_ADDRESS2
+  type: sourceInput
+  version: 1
+type: Node

@@ -2,11 +2,11 @@ fileVersion: 1
 id: "20"
 mappingDefinitions:
   EDW_BDV:
-    database: DATAENTREGA_QA
-    schema: TESTMO_SCHEMA
+    database: CHANDLER_DB
+    schema: INFORMATION_SCHEMA
   EDW_IM:
-    database: DATAENTREGA_QA
-    schema: TESTMO_SCHEMA
+    database: CHRISTINA_PROD_EDW
+    schema: INFORMATION_SCHEMA
   EDW_RDV:
     database: DATAENTREGA_QA
     schema: TESTMO_SCHEMA
