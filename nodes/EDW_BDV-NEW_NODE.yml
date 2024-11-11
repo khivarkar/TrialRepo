@@ -1,0 +1,52 @@
+fileVersion: 1
+id: 31695d1a-fa3a-474f-9b0b-11a155604021
+name: NEW_NODE
+operation:
+  config: {}
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_BDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 980be545-54fa-4376-8e59-09857216c936
+          stepCounter: 31695d1a-fa3a-474f-9b0b-11a155604021
+        config: {}
+        dataType: ""
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: Name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: ""
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: WHERE 1=1
+        name: NEW_NODE
+        noLinkRefs: []
+  name: NEW_NODE
+  overrideSQL: false
+  schema: ""
+  sqlType: "48"
+  type: sql
+  version: 1
+type: Node

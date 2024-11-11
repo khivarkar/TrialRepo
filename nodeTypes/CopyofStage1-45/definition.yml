@@ -1,11 +1,11 @@
 fileVersion: 1
-id: "44"
+id: "45"
 isDisabled: false
 metadata:
   defaultStorageLocation: null
   error: null
   nodeMetadataSpec: |
-    capitalized: Copy of Stage
+    capitalized: Stage
     short: STG
     plural: Stages
     tagColor: '#2EB67D'
@@ -51,12 +51,19 @@ metadata:
         attributeName: preSQL
         type: textBox
         syntax: sql
-        isRequired: true
+        isRequired: false
 
       - displayName: Post-SQL
         attributeName: postSQL
         type: textBox
         syntax: sql
         isRequired: false
-name: Copy of Stage
+
+    systemColumns:
+    - displayName: '{{NODE_NAME}}_KEY'
+      transform: ''
+      dataType: NUMBER
+      placement: beginning
+      attributeName: isSurrogateKeyTest
+name: Copy of Stage1
 type: NodeType
