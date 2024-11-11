@@ -1,13 +1,11 @@
 fileVersion: 1
-id: d49174f4-c697-4d63-bc88-78fac44f826a
-name: STG_ORDERS
+id: 7032730b-605a-46d3-9556-a42219ff006a
+name: FCT_ORDERS
 operation:
   config:
-    insertStrategy: INSERT
     postSQL: ""
     preSQL: ""
     testsEnabled: true
-    truncateBefore: true
   database: ""
   deployEnabled: true
   description: |-
@@ -15,15 +13,15 @@ operation:
     the database. The orders are assigned at random to two-thirds of the customers (see Clause 4: ). The purpose of
     this is to exercise the capabilities of the DBMS to handle "dead data" when joining two or more tables.
   isMultisource: false
-  locationName: STG2
+  locationName: EDW_BDV
   materializationType: table
   metadata:
     appliedNodeTests: []
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: af2f76bd-aa17-4cea-9a4a-be829512dc8a
-          stepCounter: d49174f4-c697-4d63-bc88-78fac44f826a
+          columnCounter: f34cbdde-3cd7-4797-aca7-96b06d1652de
+          stepCounter: 7032730b-605a-46d3-9556-a42219ff006a
         config: {}
         dataType: NUMBER(38,0)
         description: SF*1,500,000 are sparsely populated
@@ -36,8 +34,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 14a53dbc-e6fa-46d3-8660-12c7ee32690d
-          stepCounter: d49174f4-c697-4d63-bc88-78fac44f826a
+          columnCounter: 534c67e6-d7f3-428f-ac30-7c09e5c526ab
+          stepCounter: 7032730b-605a-46d3-9556-a42219ff006a
         config: {}
         dataType: NUMBER(38,0)
         description: Foreign Key to C_CUSTKEY
@@ -50,8 +48,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: c80d08f7-4572-41ed-ab83-9fcd7ffa574f
-          stepCounter: d49174f4-c697-4d63-bc88-78fac44f826a
+          columnCounter: 68bb5f0b-4064-4b7b-babb-d69d96456d2c
+          stepCounter: 7032730b-605a-46d3-9556-a42219ff006a
         config: {}
         dataType: VARCHAR(1)
         description: ""
@@ -64,8 +62,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 8c936040-4926-44df-92b4-f4c8daa0736f
-          stepCounter: d49174f4-c697-4d63-bc88-78fac44f826a
+          columnCounter: 6c574a65-aae7-47af-a872-042e05efc8b9
+          stepCounter: 7032730b-605a-46d3-9556-a42219ff006a
         config: {}
         dataType: NUMBER(12,2)
         description: ""
@@ -78,8 +76,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: ec5be8b4-b0ca-4b29-919a-afdc41a94a17
-          stepCounter: d49174f4-c697-4d63-bc88-78fac44f826a
+          columnCounter: d28678fc-de60-4f50-b6cf-c06f09ced101
+          stepCounter: 7032730b-605a-46d3-9556-a42219ff006a
         config: {}
         dataType: DATE
         description: ""
@@ -92,8 +90,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: f894d099-8a59-4f1e-a118-c01b7cb696a9
-          stepCounter: d49174f4-c697-4d63-bc88-78fac44f826a
+          columnCounter: 2580704b-0872-4eb5-a198-127ee4d4e7b4
+          stepCounter: 7032730b-605a-46d3-9556-a42219ff006a
         config: {}
         dataType: VARCHAR(15)
         description: ""
@@ -106,8 +104,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 3bfc11a0-dba5-45db-aa04-2cd4a175cf3e
-          stepCounter: d49174f4-c697-4d63-bc88-78fac44f826a
+          columnCounter: 7c465c6a-bf95-4405-b2d0-e86193e0eb34
+          stepCounter: 7032730b-605a-46d3-9556-a42219ff006a
         config: {}
         dataType: VARCHAR(15)
         description: ""
@@ -120,8 +118,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: f4b88a0a-0bcd-44db-b132-b4be7358ce16
-          stepCounter: d49174f4-c697-4d63-bc88-78fac44f826a
+          columnCounter: 3618dff9-feef-4e13-a9ae-9fc1cc158d31
+          stepCounter: 7032730b-605a-46d3-9556-a42219ff006a
         config: {}
         dataType: NUMBER(38,0)
         description: ""
@@ -134,8 +132,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: eec7a8b4-2fd6-4598-a16b-a989228da537
-          stepCounter: d49174f4-c697-4d63-bc88-78fac44f826a
+          columnCounter: 0ba28cfc-5740-4f13-acda-0256702a3cad
+          stepCounter: 7032730b-605a-46d3-9556-a42219ff006a
         config: {}
         dataType: VARCHAR(79)
         description: ""
@@ -146,6 +144,40 @@ operation:
               - columnCounter: 6a6809a3-4c38-4071-83ca-8313f4eb23b4
                 stepCounter: f877164b-37b4-4873-a903-e8fe7d18e2e3
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fa2f4dc5-3437-4b0f-a161-7df51d3fb692
+          stepCounter: 7032730b-605a-46d3-9556-a42219ff006a
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: db374e56-2cad-47cb-ad86-61839a865dce
+          stepCounter: 7032730b-605a-46d3-9556-a42219ff006a
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
@@ -157,12 +189,12 @@ operation:
             nodeName: ORDERS
         join:
           joinCondition: FROM {{ ref('SOURCE', 'ORDERS') }} "ORDERS"
-        name: STG_ORDERS
+        name: FCT_ORDERS
         noLinkRefs: []
-  name: STG_ORDERS
+  name: FCT_ORDERS
   overrideSQL: false
   schema: ""
-  sqlType: "26"
+  sqlType: Fact
   type: sql
   version: 1
 type: Node
