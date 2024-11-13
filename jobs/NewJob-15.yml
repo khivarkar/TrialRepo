@@ -1,6 +1,6 @@
 excludeSelector: ""
 fileVersion: 1
 id: "15"
-includeSelector: "{ location: EDW_BDV name: Stage_ORDERS }"
+includeSelector: "{ location: EDW_BDV name: Stage_ORDERS } OR { location: SOURCE name: ORDERS } OR { location: SOURCE name: SUPPLIER } OR { location: EDW_BDV name: STG_ORDERS }"
 name: New Job
 type: Job
