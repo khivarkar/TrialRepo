@@ -1,11 +1,11 @@
 fileVersion: 1
-id: "45"
+id: "52"
 isDisabled: false
 metadata:
   defaultStorageLocation: null
   error: null
   nodeMetadataSpec: |
-    capitalized: Stage
+    capitalized: Copy of Stage
     short: STG
     plural: Stages
     tagColor: '#2EB67D'
@@ -18,6 +18,7 @@ metadata:
         options:
         - table
         - view
+
         isRequired: true
 
       - type: multisourceToggle
@@ -34,13 +35,14 @@ metadata:
         - "INSERT"
         - "UNION"
         - "UNION ALL"
+        - "this is custom"
         isRequired: true
         enableIf: "{% if node.isMultisource %} true {% else %} false {% endif %}"
 
       - displayName: Truncate Before
         attributeName: truncateBefore
         type: toggleButton
-        default: true
+        default: TRUE
 
       - displayName: Enable Tests
         attributeName: testsEnabled
@@ -51,19 +53,12 @@ metadata:
         attributeName: preSQL
         type: textBox
         syntax: sql
-        isRequired: false
+        isRequired: FALSE
 
       - displayName: Post-SQL
         attributeName: postSQL
         type: textBox
         syntax: sql
         isRequired: false
-
-    systemColumns:
-    - displayName: '{{NODE_NAME}}_KEY'
-      transform: ''
-      dataType: NUMBER
-      placement: beginning
-      attributeName: isSurrogateKeyTest
-name: Copy of Stage1
+name: KH_STAGE_A
 type: NodeType

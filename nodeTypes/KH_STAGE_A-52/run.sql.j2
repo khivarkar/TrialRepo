@@ -16,11 +16,10 @@
 		{% if config.truncateBefore %}
 	
 			{{ stage('Truncate Stage Table') }}
-			TRUNCATE IF EXISTS {{ ref_no_link(node.location.name, node.name) }}	
-
+			TRUNCATE IF EXISTS {{ ref_no_link(node.location.name, node.name) }}
+	
 		{% endif %}
-
-		{{ stage ('This should show up') }}
+	
 	
 		{% if config.insertStrategy in ['UNION', 'UNION ALL'] %}
 			{{ stage( config.insertStrategy + ' Sources' | string ) }}
@@ -61,7 +60,7 @@
 			{% endif %}
 	
 		{% endfor %}
-	
+		{{ stage ("This should show up") }}
 	{% if config.postSQL %}
 		{{ stage('Post-SQL') }}
 		{{ config.postSQL }}

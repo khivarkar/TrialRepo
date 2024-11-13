@@ -1,6 +1,6 @@
 excludeSelector: ""
 fileVersion: 1
 id: "15"
-includeSelector: ""
+includeSelector: "{ location: EDW_BDV name: Stage_ORDERS }"
 name: New Job
 type: Job

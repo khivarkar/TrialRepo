@@ -2,6 +2,8 @@
 	
 	{{ node.override.create.script }}
 
+    {{ stage ("This should show up") }}
+
 {% elif node.materializationType == 'table' %}
 	{{ stage('Create Stage Table') }}
 

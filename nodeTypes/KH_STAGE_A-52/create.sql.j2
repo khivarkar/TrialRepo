@@ -5,7 +5,6 @@
 {% elif node.materializationType == 'table' %}
 	{{ stage('Create Stage Table') }}
 
-
 	CREATE OR REPLACE TABLE {{ ref_no_link(node.location.name, node.name) }}
 	(
 		{% for col in columns %}
@@ -17,9 +16,9 @@
 			{%- if not loop.last -%}, {% endif %}
 		{% endfor %}
 	)
-    {{ stage ('This should show up') }}
-    'test'
 	{%- if node.description | length > 0 %} COMMENT = '{{ node.description | escape }}'{% endif %}
+
+    {{ stage ("This should show up") }}
 
 {% elif node.materializationType == 'view' %}
     {{ stage('Create Stage View') }}
@@ -53,4 +52,3 @@
     {% endfor %}
 
 {% endif %}
-
