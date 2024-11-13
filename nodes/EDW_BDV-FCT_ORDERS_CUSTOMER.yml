@@ -1,0 +1,169 @@
+fileVersion: 1
+id: f60cec3a-5e89-4fec-9db1-87d80684aa75
+name: FCT_ORDERS_CUSTOMER
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_BDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3078c362-8ccc-487b-8a68-3c5fa5ab509b
+          stepCounter: f60cec3a-5e89-4fec-9db1-87d80684aa75
+        config: {}
+        dataType: DATE
+        description: ""
+        name: O_ORDERDATE
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 501343cb-6503-4c9d-b898-a3208404b924
+                stepCounter: 5615f432-5307-473e-9057-49c75bc86f74
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d54ee78a-1894-49aa-a063-21d17fd128e9
+          stepCounter: f60cec3a-5e89-4fec-9db1-87d80684aa75
+        config: {}
+        dataType: VARCHAR(15)
+        description: ""
+        name: O_ORDERPRIORITY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 06d971fb-8c46-494d-8be4-390dbe66fa9e
+                stepCounter: 5615f432-5307-473e-9057-49c75bc86f74
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 73643a7a-f5a9-49f7-9ec0-32c4807aca5b
+          stepCounter: f60cec3a-5e89-4fec-9db1-87d80684aa75
+        config: {}
+        dataType: VARCHAR(15)
+        description: ""
+        name: O_CLERK
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e3e35337-eb53-4145-87dd-f313a55b4bc7
+                stepCounter: 5615f432-5307-473e-9057-49c75bc86f74
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4d414152-0a6a-4955-a492-b866f5e8a4c0
+          stepCounter: f60cec3a-5e89-4fec-9db1-87d80684aa75
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: O_SHIPPRIORITY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 43864aad-a56c-4652-a82b-fb6a013a80a4
+                stepCounter: 5615f432-5307-473e-9057-49c75bc86f74
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 718dacbf-9edf-4eb9-b41b-5994e9470800
+          stepCounter: f60cec3a-5e89-4fec-9db1-87d80684aa75
+        config: {}
+        dataType: VARCHAR(79)
+        description: ""
+        name: O_COMMENT
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a375226c-13e4-43c9-a1bf-178b5ae46693
+                stepCounter: 5615f432-5307-473e-9057-49c75bc86f74
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5b3ba1f2-7a7c-4ce0-8857-b5b03b116703
+          stepCounter: f60cec3a-5e89-4fec-9db1-87d80684aa75
+        config: {}
+        dataType: NUMBER(38,0)
+        description: SF*150,000 are populated
+        name: C_CUSTKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aebbdbf9-252c-49ce-9ee3-e68c3eeddf6e
+                stepCounter: 5615f432-5307-473e-9057-49c75bc86f74
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1509756f-90b7-40ee-9124-c9f87a258e9d
+          stepCounter: f60cec3a-5e89-4fec-9db1-87d80684aa75
+        config: {}
+        dataType: VARCHAR(25)
+        description: ""
+        name: C_NAME
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f5184830-c71f-477d-a0c0-b09884cb8079
+                stepCounter: 5615f432-5307-473e-9057-49c75bc86f74
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bc7e4e93-1e79-4c56-b769-550f1707359d
+          stepCounter: f60cec3a-5e89-4fec-9db1-87d80684aa75
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: SYSTEM_CREATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8f833394-35ee-4854-8270-cf4f20006d2f
+          stepCounter: f60cec3a-5e89-4fec-9db1-87d80684aa75
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: SYSTEM_UPDATE_DATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_BDV
+            nodeName: STG_ORDERS_CUSTOMER
+        join:
+          joinCondition: FROM {{ ref('EDW_BDV', 'STG_ORDERS_CUSTOMER') }} "STG_ORDERS_CUSTOMER"
+        name: FCT_ORDERS_CUSTOMER
+        noLinkRefs: []
+  name: FCT_ORDERS_CUSTOMER
+  overrideSQL: false
+  schema: ""
+  sqlType: Fact
+  type: sql
+  version: 1
+type: Node

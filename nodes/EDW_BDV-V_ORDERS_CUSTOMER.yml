@@ -1,0 +1,92 @@
+fileVersion: 1
+id: a15bdb16-a428-4e0b-a483-f341b1084741
+name: V_ORDERS_CUSTOMER
+operation:
+  config:
+    insertStrategy: UNION
+    selectDistinct: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_BDV
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 38c28b4f-d5d7-4483-8075-aa3af4d78625
+          stepCounter: a15bdb16-a428-4e0b-a483-f341b1084741
+        config: {}
+        dataType: NUMBER(38,0)
+        description: SF*150,000 are populated
+        name: C_CUSTKEY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5b3ba1f2-7a7c-4ce0-8857-b5b03b116703
+                stepCounter: f60cec3a-5e89-4fec-9db1-87d80684aa75
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b5f33c74-0c66-4dd6-80c5-8d6eb419d010
+          stepCounter: a15bdb16-a428-4e0b-a483-f341b1084741
+        config: {}
+        dataType: VARCHAR(15)
+        description: ""
+        name: O_CLERK
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 73643a7a-f5a9-49f7-9ec0-32c4807aca5b
+                stepCounter: f60cec3a-5e89-4fec-9db1-87d80684aa75
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 58456715-effa-4f82-8f63-cfa2386930cd
+          stepCounter: a15bdb16-a428-4e0b-a483-f341b1084741
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: O_SHIPPRIORITY
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4d414152-0a6a-4955-a492-b866f5e8a4c0
+                stepCounter: f60cec3a-5e89-4fec-9db1-87d80684aa75
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f48bedb1-db90-4798-92f3-1adf88246c6b
+          stepCounter: a15bdb16-a428-4e0b-a483-f341b1084741
+        config: {}
+        dataType: VARCHAR(79)
+        description: ""
+        name: O_COMMENT
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 718dacbf-9edf-4eb9-b41b-5994e9470800
+                stepCounter: f60cec3a-5e89-4fec-9db1-87d80684aa75
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: EDW_BDV
+            nodeName: FCT_ORDERS_CUSTOMER
+        join:
+          joinCondition: FROM {{ ref('EDW_BDV', 'FCT_ORDERS_CUSTOMER') }} "FCT_ORDERS_CUSTOMER"
+        name: V_ORDERS_CUSTOMER
+        noLinkRefs: []
+  name: V_ORDERS_CUSTOMER
+  overrideSQL: false
+  schema: ""
+  sqlType: View
+  type: sql
+  version: 1
+type: Node

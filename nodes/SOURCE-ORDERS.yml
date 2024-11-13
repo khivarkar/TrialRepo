@@ -1,5 +1,5 @@
 fileVersion: 1
-id: e9a40b21-e3bc-4a0f-929e-38ac9d8619bb
+id: 2b676daa-7afa-4f1f-8be8-9e5a2aebe04e
 name: ORDERS
 operation:
   database: ""
@@ -9,7 +9,7 @@ operation:
     Orders are not present for all customers. In fact, one-third of the customers do not have any order in
     the database. The orders are assigned at random to two-thirds of the customers (see Clause 4: ). The purpose of
     this is to exercise the capabilities of the DBMS to handle "dead data" when joining two or more tables.
-  locationName: STG2
+  locationName: SOURCE
   metadata:
     columns:
       - acceptedValues:
@@ -17,8 +17,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: b555242c-6257-4c8c-878c-036ce4dcb722
-          stepCounter: e9a40b21-e3bc-4a0f-929e-38ac9d8619bb
+          columnCounter: 46c6896b-6b4b-442e-934e-30ad7f5b7e88
+          stepCounter: 2b676daa-7afa-4f1f-8be8-9e5a2aebe04e
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
@@ -36,8 +36,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: c540b918-8aae-4810-af11-9a8d7500f5b1
-          stepCounter: e9a40b21-e3bc-4a0f-929e-38ac9d8619bb
+          columnCounter: bf18e372-c658-4698-bc41-7225f764268d
+          stepCounter: 2b676daa-7afa-4f1f-8be8-9e5a2aebe04e
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
@@ -55,8 +55,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 245becc2-4746-496f-a928-8985aac42e22
-          stepCounter: e9a40b21-e3bc-4a0f-929e-38ac9d8619bb
+          columnCounter: 8409bc83-43bb-43df-863d-4e25e78266a5
+          stepCounter: 2b676daa-7afa-4f1f-8be8-9e5a2aebe04e
         config: {}
         dataType: VARCHAR(1)
         defaultValue: ""
@@ -74,8 +74,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 8d7ad6c6-9a52-475f-a1f5-9f21313a119f
-          stepCounter: e9a40b21-e3bc-4a0f-929e-38ac9d8619bb
+          columnCounter: 9ee4f3b9-0f13-46a1-a94c-d0ffba6f64c4
+          stepCounter: 2b676daa-7afa-4f1f-8be8-9e5a2aebe04e
         config: {}
         dataType: NUMBER(12,2)
         defaultValue: ""
@@ -93,8 +93,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 5b433180-adf3-47c5-a970-b03337bae13f
-          stepCounter: e9a40b21-e3bc-4a0f-929e-38ac9d8619bb
+          columnCounter: 4362b557-e540-4b5b-b748-938cc3edbe68
+          stepCounter: 2b676daa-7afa-4f1f-8be8-9e5a2aebe04e
         config: {}
         dataType: DATE
         defaultValue: ""
@@ -112,8 +112,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 8cf1a624-199f-421b-a0e9-cf1ffc53b521
-          stepCounter: e9a40b21-e3bc-4a0f-929e-38ac9d8619bb
+          columnCounter: 43999cbe-2c08-4b91-939c-5386cb169894
+          stepCounter: 2b676daa-7afa-4f1f-8be8-9e5a2aebe04e
         config: {}
         dataType: VARCHAR(15)
         defaultValue: ""
@@ -131,8 +131,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 36f63dc8-08bc-4d40-9505-9ec4eda9ed13
-          stepCounter: e9a40b21-e3bc-4a0f-929e-38ac9d8619bb
+          columnCounter: a9cafa04-dbb3-486b-8ec2-476f4a47a6e8
+          stepCounter: 2b676daa-7afa-4f1f-8be8-9e5a2aebe04e
         config: {}
         dataType: VARCHAR(15)
         defaultValue: ""
@@ -150,8 +150,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 9e45a2eb-39df-4f6d-a146-202a3d47ad51
-          stepCounter: e9a40b21-e3bc-4a0f-929e-38ac9d8619bb
+          columnCounter: 8b91dc40-1cc4-4a79-bf13-10bda3289581
+          stepCounter: 2b676daa-7afa-4f1f-8be8-9e5a2aebe04e
         config: {}
         dataType: NUMBER(38,0)
         defaultValue: ""
@@ -169,8 +169,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 77d62371-99c5-43c9-adce-8f8a9b320366
-          stepCounter: e9a40b21-e3bc-4a0f-929e-38ac9d8619bb
+          columnCounter: 8a190366-fed1-4209-ad6a-569e783dbc0c
+          stepCounter: 2b676daa-7afa-4f1f-8be8-9e5a2aebe04e
         config: {}
         dataType: VARCHAR(79)
         defaultValue: ""
@@ -184,7 +184,7 @@ operation:
         transform: ""
         uniqueKey: false
     join:
-      joinCondition: FROM {{ ref('STG2', 'ORDERS') }}
+      joinCondition: FROM {{ ref('SOURCE', 'ORDERS') }}
   name: ORDERS
   schema: ""
   sqlType: Source
