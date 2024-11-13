@@ -1,8 +1,5 @@
 fileVersion: 1
 id: "11"
 name: Round 2
-steps:
-  - e2392e19-6f15-4449-8a72-deb591b977bd
-  - eb7b742f-c643-4095-8373-35fac423c4f1
-  - f742ad3e-c054-46e8-adba-83726bc8e217
+steps: []
 type: Subgraph
