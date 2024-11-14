@@ -30,7 +30,7 @@ operation:
           - columnReferences:
               - columnCounter: e62eafe4-08d3-465c-bea7-17c66c2b71af
                 stepCounter: d0deafa0-264d-4213-b7fd-bbbe32b6cc6d
-            transform: ""
+            transform: "1"
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
