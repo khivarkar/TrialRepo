@@ -5,5 +5,7 @@ locations:
   - EDW_IM
   - EDW_RDV
   - EDW_STAGE
+  - JSON
   - SOURCE
   - STG2
+  - XML

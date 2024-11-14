@@ -1,0 +1,39 @@
+fileVersion: 1
+id: b78508a1-91f9-4317-9562-c8eb8e30679d
+name: JSON_SAMPLE
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ab1f1bf5-bb82-470e-a801-b5d4db4a3f61
+          stepCounter: b78508a1-91f9-4317-9562-c8eb8e30679d
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: SRC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'JSON_SAMPLE') }}
+  name: JSON_SAMPLE
+  schema: ""
+  sqlType: Source
+  table: JSON_SAMPLE
+  type: sourceInput
+  version: 1
+type: Node

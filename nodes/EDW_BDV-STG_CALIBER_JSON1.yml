@@ -1,0 +1,54 @@
+fileVersion: 1
+id: 0f862bb6-4b6a-4bc2-8d70-b20ff08a7ecf
+name: STG_CALIBER_JSON1
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_BDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d2b1d32c-ce34-4161-a82b-b5cf19f1fe0f
+          stepCounter: 0f862bb6-4b6a-4bc2-8d70-b20ff08a7ecf
+        config: {}
+        dataType: VARIANT
+        description: ""
+        name: SRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5b12cd01-ae69-4d6d-8c3d-67f7c5d5df5b
+                stepCounter: 69861ae7-6898-402f-8af8-aa5eef0fda96
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          CALIBER_JSON: 69861ae7-6898-402f-8af8-aa5eef0fda96
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: FROM {{ ref_no_link('XML', 'CALIBER_JSON') }} "CALIBER_JSON"
+        name: STG_CALIBER_JSON1
+        noLinkRefs:
+          - locationName: XML
+            nodeName: CALIBER_JSON
+  name: STG_CALIBER_JSON1
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

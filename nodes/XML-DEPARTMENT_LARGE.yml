@@ -1,0 +1,39 @@
+fileVersion: 1
+id: c68f3465-dcb4-4135-a893-b7765c9bd047
+name: DEPARTMENT_LARGE
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 068bd13c-ea80-42ee-aca4-03992bf64ae8
+          stepCounter: c68f3465-dcb4-4135-a893-b7765c9bd047
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: SRC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'DEPARTMENT_LARGE') }}
+  name: DEPARTMENT_LARGE
+  schema: ""
+  sqlType: Source
+  table: DEPARTMENT_LARGE
+  type: sourceInput
+  version: 1
+type: Node

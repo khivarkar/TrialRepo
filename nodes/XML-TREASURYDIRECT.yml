@@ -1,0 +1,39 @@
+fileVersion: 1
+id: 7f215d0a-7da3-4d75-aa1b-a65ed9f66650
+name: TREASURYDIRECT
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b538e2af-97b4-4fcd-bcd7-2e0ce7b268e2
+          stepCounter: 7f215d0a-7da3-4d75-aa1b-a65ed9f66650
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: SRC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'TREASURYDIRECT') }}
+  name: TREASURYDIRECT
+  schema: ""
+  sqlType: Source
+  table: TREASURYDIRECT
+  type: sourceInput
+  version: 1
+type: Node

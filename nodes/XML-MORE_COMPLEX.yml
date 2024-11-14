@@ -1,0 +1,73 @@
+fileVersion: 1
+id: 8a373efb-1492-4bb5-b2ca-e4bed11338b4
+name: MORE_COMPLEX
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: |-
+    <catalog issue="spring" date="2015-04-15">
+        <book id="bk101">
+            <title>Some Great Book</title>
+            <genre>Great Books</genre>
+            <author>Jon Smith</author>
+            <publish_date>2001-12-28</publish_date>
+            <price>23.39</price>
+            <description>This is a great book!</description>
+        </book>
+        <book id="bk102">
+            <title>Some SHIT XML Book</title>
+            <genre>text</genre>
+            <author>doug b</author>
+            <publish_date>2008-12-28</publish_date>
+            <price>232.39</price>
+            <description>This is a shit xml book!</description>
+        </book>
+        <cd id="cd101">
+            <title>Sad Music</title>
+            <genre>Sad</genre>
+            <artist>Emo Jones</artist>
+            <publish_date>2010-11-23</publish_date>
+            <price>15.25</price>
+            <description>This music is so sad!</description>
+        </cd>
+        <map id="map101">
+            <title>Good CD</title>
+            <location>North America</location>
+            <author>Joey Bagadonuts</author>
+            <publish_date>2013-02-02</publish_date>
+            <price>102.95</price>
+            <description>Trail map of North America</description>
+        </map>
+    </catalog>
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3b503dd9-4388-4707-9ad9-8a8d279099aa
+          stepCounter: 8a373efb-1492-4bb5-b2ca-e4bed11338b4
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: SRC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'MORE_COMPLEX') }}
+  name: MORE_COMPLEX
+  schema: ""
+  sqlType: Source
+  table: MORE_COMPLEX
+  type: sourceInput
+  version: 1
+type: Node

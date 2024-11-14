@@ -1,0 +1,39 @@
+fileVersion: 1
+id: 7444b693-68f5-4574-8ff3-69c91b5b5318
+name: SIMPLE_MULTIPLE_ELEMENTS_AND_MULTIPLE_ROWS
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0920f39c-8921-4edf-ad88-d792b2c05db1
+          stepCounter: 7444b693-68f5-4574-8ff3-69c91b5b5318
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: SRC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'SIMPLE_MULTIPLE_ELEMENTS_AND_MULTIPLE_ROWS') }}
+  name: SIMPLE_MULTIPLE_ELEMENTS_AND_MULTIPLE_ROWS
+  schema: ""
+  sqlType: Source
+  table: SIMPLE_MULTIPLE_ELEMENTS_AND_MULTIPLE_ROWS
+  type: sourceInput
+  version: 1
+type: Node

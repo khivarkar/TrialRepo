@@ -1,0 +1,39 @@
+fileVersion: 1
+id: f9ece5ef-4a30-4d95-b768-dcf5b919bc69
+name: CALIBER_XML
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c2cf4108-05a2-487d-8922-ff77fabc02e4
+          stepCounter: f9ece5ef-4a30-4d95-b768-dcf5b919bc69
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: SRC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'CALIBER_XML') }}
+  name: CALIBER_XML
+  schema: ""
+  sqlType: Source
+  table: CALIBER_XML
+  type: sourceInput
+  version: 1
+type: Node

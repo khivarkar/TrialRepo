@@ -7,7 +7,7 @@ metadata:
   nodeMetadataSpec: |-
     capitalized: 'My Node Name'                      # Common Name (string, required)
     short: 'MNN'                                     # Node prefix. A '_' delimiter will be added automatically. (string, required)
-    plural: 'My Node Names'                          # plural name of common name (string, required)
+    plural: 'My Node Names'                          # plural name of 
     tagColor: '#FF5A5F'                              # Node color. CSS colors or hex colors (string, required)
     deployStrategy: default              # Deployment strategy - see separate article for details.
 
@@ -21,8 +21,7 @@ metadata:
       items:                                         # This will be followed by all your config items/UI elements for the given group (array, required)
 
                                                      ## Core UI Elements ##
-      - type: businessKeyColumns                     # Selector for business key columns
-        displayName: 'Business Key'                  # displayName for type businessKeyColumns (cannot be modified by user) 
+      - type: businessKeyColumns                     # Selector for business odified by user) 
         attributeName: 'isBusinessKey'               # attributeName for type businessKeyColumns (cannot be modified by user) 
         isRequired: false                            # Require input from user for this config element (boolean, defaults false)
         enableIf: 'true'                             # If true, display this element, else hide this element. 

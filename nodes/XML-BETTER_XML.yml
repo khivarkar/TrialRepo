@@ -1,0 +1,39 @@
+fileVersion: 1
+id: e75ba90f-0210-46e0-bb0a-74ade7b00681
+name: BETTER_XML
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ddd08409-3a64-4c22-956b-e4de36f9c590
+          stepCounter: e75ba90f-0210-46e0-bb0a-74ade7b00681
+        config: {}
+        dataType: OBJECT
+        defaultValue: ""
+        description: ""
+        name: SRC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'BETTER_XML') }}
+  name: BETTER_XML
+  schema: ""
+  sqlType: Source
+  table: BETTER_XML
+  type: sourceInput
+  version: 1
+type: Node

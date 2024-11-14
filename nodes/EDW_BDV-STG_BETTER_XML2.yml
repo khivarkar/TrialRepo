@@ -1,0 +1,53 @@
+fileVersion: 1
+id: febc4a05-1279-4ef6-9f21-19e741a6f02e
+name: STG_BETTER_XML2
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_BDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9e65f967-0168-417e-b505-4a663f896c52
+          stepCounter: febc4a05-1279-4ef6-9f21-19e741a6f02e
+        config: {}
+        dataType: OBJECT
+        description: ""
+        name: SRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ddd08409-3a64-4c22-956b-e4de36f9c590
+                stepCounter: e75ba90f-0210-46e0-bb0a-74ade7b00681
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: XML
+            nodeName: BETTER_XML
+        join:
+          joinCondition: FROM {{ ref('XML', 'BETTER_XML') }} "BETTER_XML"
+        name: STG_BETTER_XML2
+        noLinkRefs: []
+  name: STG_BETTER_XML2
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

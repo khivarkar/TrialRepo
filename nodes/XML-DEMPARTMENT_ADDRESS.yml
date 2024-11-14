@@ -1,0 +1,39 @@
+fileVersion: 1
+id: 91eab135-7f94-4a58-8e05-ff7670d18548
+name: DEMPARTMENT_ADDRESS
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3617645f-9520-4206-915a-400531147eea
+          stepCounter: 91eab135-7f94-4a58-8e05-ff7670d18548
+        config: {}
+        dataType: OBJECT
+        defaultValue: ""
+        description: ""
+        name: SRC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'DEMPARTMENT_ADDRESS') }}
+  name: DEMPARTMENT_ADDRESS
+  schema: ""
+  sqlType: Source
+  table: DEMPARTMENT_ADDRESS
+  type: sourceInput
+  version: 1
+type: Node

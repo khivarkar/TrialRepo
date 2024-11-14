@@ -1,0 +1,77 @@
+fileVersion: 1
+id: 333bdfe0-ab52-4f2d-996a-37d74a8862de
+name: TEST_SUITE_DATA
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c3068998-6070-4e88-91ac-28d1024280ff
+          stepCounter: 333bdfe0-ab52-4f2d-996a-37d74a8862de
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: COL1
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c65719bc-cb47-44e2-98cb-2cf3c6915117
+          stepCounter: 333bdfe0-ab52-4f2d-996a-37d74a8862de
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: COL2
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 85ad02c9-eac2-4cd9-81e3-6a046fd07636
+          stepCounter: 333bdfe0-ab52-4f2d-996a-37d74a8862de
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: COL3
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'TEST_SUITE_DATA') }}
+  name: TEST_SUITE_DATA
+  schema: ""
+  sqlType: Source
+  table: TEST_SUITE_DATA
+  type: sourceInput
+  version: 1
+type: Node

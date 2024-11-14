@@ -1,0 +1,39 @@
+fileVersion: 1
+id: 2d3704dd-4913-4005-a1ef-8a11a7206fcb
+name: EXT_COMICS
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 10f75b18-7907-4f67-b6b3-c056328a0984
+          stepCounter: 2d3704dd-4913-4005-a1ef-8a11a7206fcb
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: The value of this row
+        name: VALUE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'EXT_COMICS') }}
+  name: EXT_COMICS
+  schema: ""
+  sqlType: Source
+  table: EXT_COMICS
+  type: sourceInput
+  version: 1
+type: Node

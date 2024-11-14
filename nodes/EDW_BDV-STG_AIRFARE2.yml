@@ -1,0 +1,53 @@
+fileVersion: 1
+id: 04595f2e-f691-424c-aa7d-5bc40b9aaa66
+name: STG_AIRFARE2
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_BDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ad34b561-72ba-4011-95c7-2a8cf0f16f47
+          stepCounter: 04595f2e-f691-424c-aa7d-5bc40b9aaa66
+        config: {}
+        dataType: VARIANT
+        description: ""
+        name: XML_COL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e62eafe4-08d3-465c-bea7-17c66c2b71af
+                stepCounter: d0deafa0-264d-4213-b7fd-bbbe32b6cc6d
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: XML
+            nodeName: AIRFARE
+        join:
+          joinCondition: FROM {{ ref('XML', 'AIRFARE') }} "AIRFARE"
+        name: STG_AIRFARE2
+        noLinkRefs: []
+  name: STG_AIRFARE2
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,53 @@
+fileVersion: 1
+id: d9c17379-e4e8-4a84-9784-368e5fac6103
+name: STG_CALLIBER_XML1
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_BDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ca9b5d84-4a7f-46e5-aede-d88f2b826d85
+          stepCounter: d9c17379-e4e8-4a84-9784-368e5fac6103
+        config: {}
+        dataType: VARIANT
+        description: ""
+        name: SRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f1ed5ca4-19bf-4544-8275-ef8e61710f02
+                stepCounter: 0a2caf61-cf84-4b92-9e34-debe750a2685
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: XML
+            nodeName: CALLIBER_XML
+        join:
+          joinCondition: FROM {{ ref('XML', 'CALLIBER_XML') }} "CALLIBER_XML"
+        name: STG_CALLIBER_XML1
+        noLinkRefs: []
+  name: STG_CALLIBER_XML1
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

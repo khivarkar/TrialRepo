@@ -1,0 +1,53 @@
+fileVersion: 1
+id: 6e5c16d6-d4c0-4744-873f-e538badfee0d
+name: STG_CALIBER_XML
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_BDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2df04171-5fcd-444a-936d-8c8d8c7f419f
+          stepCounter: 6e5c16d6-d4c0-4744-873f-e538badfee0d
+        config: {}
+        dataType: VARIANT
+        description: ""
+        name: SRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c2cf4108-05a2-487d-8922-ff77fabc02e4
+                stepCounter: f9ece5ef-4a30-4d95-b768-dcf5b919bc69
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: XML
+            nodeName: CALIBER_XML
+        join:
+          joinCondition: FROM {{ ref('XML', 'CALIBER_XML') }} "CALIBER_XML"
+        name: STG_CALIBER_XML
+        noLinkRefs: []
+  name: STG_CALIBER_XML
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

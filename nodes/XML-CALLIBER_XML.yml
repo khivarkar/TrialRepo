@@ -1,0 +1,39 @@
+fileVersion: 1
+id: 0a2caf61-cf84-4b92-9e34-debe750a2685
+name: CALLIBER_XML
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f1ed5ca4-19bf-4544-8275-ef8e61710f02
+          stepCounter: 0a2caf61-cf84-4b92-9e34-debe750a2685
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: SRC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'CALLIBER_XML') }}
+  name: CALLIBER_XML
+  schema: ""
+  sqlType: Source
+  table: CALLIBER_XML
+  type: sourceInput
+  version: 1
+type: Node

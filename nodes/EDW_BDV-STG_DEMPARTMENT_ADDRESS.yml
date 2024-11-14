@@ -1,0 +1,53 @@
+fileVersion: 1
+id: b3c2ee43-c401-4a8f-9357-e5dd9d7ac248
+name: STG_DEMPARTMENT_ADDRESS
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_BDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e1663e00-9120-48e5-8147-7c69fbb18ad0
+          stepCounter: b3c2ee43-c401-4a8f-9357-e5dd9d7ac248
+        config: {}
+        dataType: OBJECT
+        description: ""
+        name: SRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3617645f-9520-4206-915a-400531147eea
+                stepCounter: 91eab135-7f94-4a58-8e05-ff7670d18548
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: XML
+            nodeName: DEMPARTMENT_ADDRESS
+        join:
+          joinCondition: FROM {{ ref('XML', 'DEMPARTMENT_ADDRESS') }} "DEMPARTMENT_ADDRESS"
+        name: STG_DEMPARTMENT_ADDRESS
+        noLinkRefs: []
+  name: STG_DEMPARTMENT_ADDRESS
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

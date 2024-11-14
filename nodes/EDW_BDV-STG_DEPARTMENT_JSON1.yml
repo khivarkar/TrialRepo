@@ -1,0 +1,53 @@
+fileVersion: 1
+id: c2a7a48b-ae77-4134-bea7-ae9ee60556bf
+name: STG_DEPARTMENT_JSON1
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_BDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ee122043-cf76-4c7c-937d-5c7062b5dfbe
+          stepCounter: c2a7a48b-ae77-4134-bea7-ae9ee60556bf
+        config: {}
+        dataType: VARIANT
+        description: ""
+        name: SRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8bca8f37-c386-47c8-abd7-f606427f39fe
+                stepCounter: 71a57e75-16e3-4b32-979f-e85852ec7d01
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: XML
+            nodeName: DEPARTMENT_JSON
+        join:
+          joinCondition: FROM {{ ref('XML', 'DEPARTMENT_JSON') }} "DEPARTMENT_JSON"
+        name: STG_DEPARTMENT_JSON1
+        noLinkRefs: []
+  name: STG_DEPARTMENT_JSON1
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

@@ -1,0 +1,39 @@
+fileVersion: 1
+id: 721feeb6-3937-4349-901e-bb23dc6f6359
+name: ENVISTA_EX1_JSON
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ac058b3c-13ec-4f87-acab-70b6e9cc4486
+          stepCounter: 721feeb6-3937-4349-901e-bb23dc6f6359
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: SRC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'ENVISTA_EX1_JSON') }}
+  name: ENVISTA_EX1_JSON
+  schema: ""
+  sqlType: Source
+  table: ENVISTA_EX1_JSON
+  type: sourceInput
+  version: 1
+type: Node

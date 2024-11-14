@@ -1,0 +1,39 @@
+fileVersion: 1
+id: ef412adf-6a21-457e-bb20-1bf373471622
+name: SIMPTST
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76c45297-ca77-459a-a241-fbcd9e55f364
+          stepCounter: ef412adf-6a21-457e-bb20-1bf373471622
+        config: {}
+        dataType: OBJECT
+        defaultValue: ""
+        description: ""
+        name: SRC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'SIMPTST') }}
+  name: SIMPTST
+  schema: ""
+  sqlType: Source
+  table: SIMPTST
+  type: sourceInput
+  version: 1
+type: Node

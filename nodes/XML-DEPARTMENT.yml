@@ -1,0 +1,39 @@
+fileVersion: 1
+id: 0dbda38c-0528-46d5-ab45-d19d9d455364
+name: DEPARTMENT
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 91b201af-b485-4f26-b5aa-fbe588a64fd2
+          stepCounter: 0dbda38c-0528-46d5-ab45-d19d9d455364
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: SRC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'DEPARTMENT') }}
+  name: DEPARTMENT
+  schema: ""
+  sqlType: Source
+  table: DEPARTMENT
+  type: sourceInput
+  version: 1
+type: Node

@@ -1,0 +1,39 @@
+fileVersion: 1
+id: d0deafa0-264d-4213-b7fd-bbbe32b6cc6d
+name: AIRFARE
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e62eafe4-08d3-465c-bea7-17c66c2b71af
+          stepCounter: d0deafa0-264d-4213-b7fd-bbbe32b6cc6d
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: XML_COL
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'AIRFARE') }}
+  name: AIRFARE
+  schema: ""
+  sqlType: Source
+  table: AIRFARE
+  type: sourceInput
+  version: 1
+type: Node

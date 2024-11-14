@@ -1,0 +1,39 @@
+fileVersion: 1
+id: 24fd7dda-d54e-4f22-a025-5502fcd11a7b
+name: ENVISTA_EX3
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eebc8627-166c-404b-9f3a-68546aa29a7a
+          stepCounter: 24fd7dda-d54e-4f22-a025-5502fcd11a7b
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: SRC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'ENVISTA_EX3') }}
+  name: ENVISTA_EX3
+  schema: ""
+  sqlType: Source
+  table: ENVISTA_EX3
+  type: sourceInput
+  version: 1
+type: Node

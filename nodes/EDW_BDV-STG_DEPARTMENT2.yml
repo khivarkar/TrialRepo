@@ -1,0 +1,53 @@
+fileVersion: 1
+id: 74b133aa-3765-4f53-9c06-886cf36869ff
+name: STG_DEPARTMENT2
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_BDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7f0ca49b-0270-4db4-bcdb-5365a86cef34
+          stepCounter: 74b133aa-3765-4f53-9c06-886cf36869ff
+        config: {}
+        dataType: VARIANT
+        description: ""
+        name: SRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 91b201af-b485-4f26-b5aa-fbe588a64fd2
+                stepCounter: 0dbda38c-0528-46d5-ab45-d19d9d455364
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: XML
+            nodeName: DEPARTMENT
+        join:
+          joinCondition: FROM {{ ref('XML', 'DEPARTMENT') }} "DEPARTMENT"
+        name: STG_DEPARTMENT2
+        noLinkRefs: []
+  name: STG_DEPARTMENT2
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

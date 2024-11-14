@@ -1,6 +1,6 @@
 fileVersion: 1
-id: ba7ccdcd-ca90-494f-9ac5-fca758f367ac
-name: STG_CUSTOMER
+id: 263b67a2-faa1-4efc-ab20-f6fd7e94c456
+name: STG_CUSTOMER2
 operation:
   config:
     insertStrategy: INSERT
@@ -19,8 +19,8 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: b60219df-08fb-4eab-88b2-4ebebe35d83d
-          stepCounter: ba7ccdcd-ca90-494f-9ac5-fca758f367ac
+          columnCounter: 061e9f1e-73dc-4ffd-961d-d3fffea20b59
+          stepCounter: 263b67a2-faa1-4efc-ab20-f6fd7e94c456
         config: {}
         dataType: NUMBER(38,0)
         description: SF*150,000 are populated
@@ -33,8 +33,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 08916332-64ea-4fc0-874d-6392d97ae673
-          stepCounter: ba7ccdcd-ca90-494f-9ac5-fca758f367ac
+          columnCounter: 950eafe6-8623-4dd0-9f27-19f816698e2d
+          stepCounter: 263b67a2-faa1-4efc-ab20-f6fd7e94c456
         config: {}
         dataType: VARCHAR(25)
         description: ""
@@ -47,8 +47,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 5479d490-fa1a-4055-a3cf-fcfb56d066c3
-          stepCounter: ba7ccdcd-ca90-494f-9ac5-fca758f367ac
+          columnCounter: 904002ea-47a8-4b7a-84aa-31b910b29d6a
+          stepCounter: 263b67a2-faa1-4efc-ab20-f6fd7e94c456
         config: {}
         dataType: VARCHAR(40)
         description: ""
@@ -61,8 +61,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: de1dab0e-3d77-4fd2-b478-4b47ab40b5c4
-          stepCounter: ba7ccdcd-ca90-494f-9ac5-fca758f367ac
+          columnCounter: aedbd373-217a-458b-a6d9-0f9de59a63e6
+          stepCounter: 263b67a2-faa1-4efc-ab20-f6fd7e94c456
         config: {}
         dataType: NUMBER(38,0)
         description: Foreign Key to N_NATIONKEY
@@ -75,8 +75,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: e3e3e129-f3b0-4ba9-819c-efe92ee35b19
-          stepCounter: ba7ccdcd-ca90-494f-9ac5-fca758f367ac
+          columnCounter: 9ae9ec87-58a6-49d5-9121-05aab1d99453
+          stepCounter: 263b67a2-faa1-4efc-ab20-f6fd7e94c456
         config: {}
         dataType: VARCHAR(15)
         description: ""
@@ -89,8 +89,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 80cf8d3e-04d8-4ae2-ace0-c39531a4d5a2
-          stepCounter: ba7ccdcd-ca90-494f-9ac5-fca758f367ac
+          columnCounter: f436bba7-14ce-4ebf-ba97-063139c23421
+          stepCounter: 263b67a2-faa1-4efc-ab20-f6fd7e94c456
         config: {}
         dataType: NUMBER(12,2)
         description: ""
@@ -103,8 +103,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: c6a39e68-5b5a-425c-aa11-a46f6a6ca8d9
-          stepCounter: ba7ccdcd-ca90-494f-9ac5-fca758f367ac
+          columnCounter: 4fd41164-b20d-4c8c-ac77-b7e561353864
+          stepCounter: 263b67a2-faa1-4efc-ab20-f6fd7e94c456
         config: {}
         dataType: VARCHAR(10)
         description: ""
@@ -117,8 +117,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 117332d7-30bb-4def-8366-21bbeeb2afb9
-          stepCounter: ba7ccdcd-ca90-494f-9ac5-fca758f367ac
+          columnCounter: 76e75368-455b-4a6f-b587-5c0517ff55db
+          stepCounter: 263b67a2-faa1-4efc-ab20-f6fd7e94c456
         config: {}
         dataType: VARCHAR(117)
         description: ""
@@ -140,9 +140,9 @@ operation:
             nodeName: CUSTOMER
         join:
           joinCondition: FROM {{ ref('SOURCE', 'CUSTOMER') }} "CUSTOMER"
-        name: STG_CUSTOMER
+        name: STG_CUSTOMER2
         noLinkRefs: []
-  name: STG_CUSTOMER
+  name: STG_CUSTOMER2
   overrideSQL: false
   schema: ""
   sqlType: Stage

@@ -1,0 +1,39 @@
+fileVersion: 1
+id: c4232f41-608a-44a0-ac15-a78ed0b26104
+name: DEPARTMENT_LARGE_JSON
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 300f8d69-1a85-4195-82e7-c88313baf49e
+          stepCounter: c4232f41-608a-44a0-ac15-a78ed0b26104
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: SRC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'DEPARTMENT_LARGE_JSON') }}
+  name: DEPARTMENT_LARGE_JSON
+  schema: ""
+  sqlType: Source
+  table: DEPARTMENT_LARGE_JSON
+  type: sourceInput
+  version: 1
+type: Node

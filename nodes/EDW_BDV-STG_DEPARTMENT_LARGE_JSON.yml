@@ -1,0 +1,53 @@
+fileVersion: 1
+id: 3f19afef-35cb-4e4e-b971-1a6bf02ad6d4
+name: STG_DEPARTMENT_LARGE_JSON
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: EDW_BDV
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5e0ddc9a-3255-4fd0-849d-a2508e1eac0e
+          stepCounter: 3f19afef-35cb-4e4e-b971-1a6bf02ad6d4
+        config: {}
+        dataType: VARIANT
+        description: ""
+        name: SRC
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 300f8d69-1a85-4195-82e7-c88313baf49e
+                stepCounter: c4232f41-608a-44a0-ac15-a78ed0b26104
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: XML
+            nodeName: DEPARTMENT_LARGE_JSON
+        join:
+          joinCondition: FROM {{ ref('XML', 'DEPARTMENT_LARGE_JSON') }} "DEPARTMENT_LARGE_JSON"
+        name: STG_DEPARTMENT_LARGE_JSON
+        noLinkRefs: []
+  name: STG_DEPARTMENT_LARGE_JSON
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

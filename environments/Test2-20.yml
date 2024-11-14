@@ -13,10 +13,16 @@ mappingDefinitions:
   EDW_STAGE:
     database: QA_DEPLOY_PHASES
     schema: QA_DEPLOY_PHASE
+  JSON:
+    database: ""
+    schema: ""
   SOURCE:
     database: COALESCE_SAMPLE_DATABASE
     schema: TPCH_SF001
   STG2:
+    database: ""
+    schema: ""
+  XML:
     database: ""
     schema: ""
 name: Test 2

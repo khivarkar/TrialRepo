@@ -1,0 +1,39 @@
+fileVersion: 1
+id: 797b0d99-dbcb-4707-8bc0-4cbe0c1a6612
+name: NOTE
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4961c079-fa89-47bc-9021-29a00bdc77ab
+          stepCounter: 797b0d99-dbcb-4707-8bc0-4cbe0c1a6612
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: XML_COL
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'NOTE') }}
+  name: NOTE
+  schema: ""
+  sqlType: Source
+  table: NOTE
+  type: sourceInput
+  version: 1
+type: Node

@@ -1,0 +1,39 @@
+fileVersion: 1
+id: 935baf43-c5bd-452e-8117-feca6e66a92a
+name: NOTE_JSON
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e7759449-7d2f-4241-9853-9c91be2780bb
+          stepCounter: 935baf43-c5bd-452e-8117-feca6e66a92a
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: SRC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'NOTE_JSON') }}
+  name: NOTE_JSON
+  schema: ""
+  sqlType: Source
+  table: NOTE_JSON
+  type: sourceInput
+  version: 1
+type: Node

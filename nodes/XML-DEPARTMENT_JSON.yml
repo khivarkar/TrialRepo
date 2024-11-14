@@ -1,0 +1,39 @@
+fileVersion: 1
+id: 71a57e75-16e3-4b32-979f-e85852ec7d01
+name: DEPARTMENT_JSON
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8bca8f37-c386-47c8-abd7-f606427f39fe
+          stepCounter: 71a57e75-16e3-4b32-979f-e85852ec7d01
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: SRC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'DEPARTMENT_JSON') }}
+  name: DEPARTMENT_JSON
+  schema: ""
+  sqlType: Source
+  table: DEPARTMENT_JSON
+  type: sourceInput
+  version: 1
+type: Node

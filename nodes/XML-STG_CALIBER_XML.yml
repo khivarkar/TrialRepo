@@ -1,0 +1,1445 @@
+fileVersion: 1
+id: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+name: STG_CALIBER_XML
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a8bb1563-d0ac-435b-be45-52411ed3af87
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: SRC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b612fee-ab68-41f8-bc1c-1bf2d9b22aeb
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_xmlns
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3bed97d8-8cd6-42a9-bec6-393830681f33
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_TrackingInfo_MessageID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e2ca5925-34ae-4d96-ad5d-360a274ffd19
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_TrackingInfo_CorrelationID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 45f3f625-c830-43bb-a51a-394cf4f1e0cc
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_TrackingInfo_CreateDateTime
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3fcc9260-47bd-40b2-a42f-a6d69ae809e2
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_TrackingInfo_PartnerID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 35e80262-7916-4f38-babd-bffb26fb8315
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_RoutingInfo_MessageVersion
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 838ec604-dbff-446c-aa42-f0e5b3e23c53
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_RoutingInfo_MessageDefinition
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e8afdfdd-c755-4856-a83b-00e1cef1fdf1
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_RoutingInfo_MessageDirection
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 53fdf444-f08e-4c0e-8eb5-848b82fcac3c
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_xmlns
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 57aecfe3-e664-4fec-82c2-ca3294ea7537
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_xmlns
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8f7dc78f-570d-44c4-828f-4a51bfc849a6
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_Status
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8cd36729-52c7-4cc5-b843-ebac5f98c13c
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_companyName
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3d65b96f-fe0a-4b8f-ae54-30ebd70c72f5
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_reportName
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 61875c1d-8abd-4ad6-a6e0-4e51c2351a18
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_createdDateTime
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 96411377-478d-44c5-8ded-fb0d0c9aea8a
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_parameters_geographyReportViewParameter_displayName
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7a1e7f25-d12e-4f7c-a7af-d5f6c1a41876
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_parameters_geographyReportViewParameter_valueName
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3a62ab7f-9ef5-40a6-8d38-ae9c83bf158a
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_parameters_asOfDateReportViewParameter_displayName
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f09689f1-845c-468e-b6d9-ab0645dfb6ec
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_parameters_asOfDateReportViewParameter_asOfDateType
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9c13b651-154b-42ca-b680-fe93ec08d014
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_parameters_asOfDateReportViewParameter_date
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1779bcb7-f55c-4289-be62-bb3a2a5f3c78
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_parameters_totalLossReportViewParameter_displayName
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b29cb283-875f-497a-b62d-26a27871df2e
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_parameters_totalLossReportViewParameter_flag
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 26de987b-fad2-4a36-8da8-def45d6278c8
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_parameters_serviceWriterReportViewParameter_displayName
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 46b7ccb3-8dd6-46a9-bfec-26e0ba085f49
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_parameters_serviceWriterReportViewParameter_list
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 27106bec-aa8c-4b83-a459-a065c1560757
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_parameters_carrierReportViewParameter_displayName
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ef4540d1-17cc-46f7-88ae-1a6c186200b6
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_parameters_carrierReportViewParameter_carrierName
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e0749116-8069-45d5-8604-5d12c1b07ef6
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_parameters_carrierReportViewParameter_includeSecondaryInsCompanies
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 78b0251f-f3fb-42a6-9fcd-c92515d91367
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_parameters_referrerReportViewParameter_displayName
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f93782a8-a51c-47e3-a72e-383bf24d95ea
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_parameters_referrerReportViewParameter_value
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 78301a8e-de49-457b-a5c2-4a888135d797
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_parameters_repairPlanReportViewParameter_displayName
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a7d2667-a480-4ccb-b30b-7093c3a9a4c5
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_parameters_repairPlanReportViewParameter_repairPlanName
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fced4aac-ae40-459f-8bec-f1968823bf2e
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_parameters_vehicleMakeReportViewParameter_displayName
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cab5a850-cfe4-4cdc-b981-7788b6486de3
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_parameters_vehicleMakeReportViewParameter_vehicleMakeName
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8eda48ce-80f6-44a8-900a-306309f55456
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_parameters_customerCustomField1ReportViewParameter_displayName
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2671347f-95a5-4357-bd6e-431d22468d40
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_parameters_customerCustomField1ReportViewParameter_customFieldID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ccf3e501-2fe6-47ab-8917-7d338616a483
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_parameters_customerCustomField2ReportViewParameter_displayName
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 91cdd089-515e-4c97-a5c4-44c3ffb474c4
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_header_parameters_customerCustomField2ReportViewParameter_customFieldID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 731fb22a-d515-463c-a8bf-11d58e311e74
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_row_index
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 446926b5-8aa1-492d-aad3-38806d4d12e1
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_workfile_id
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 987c7c1e-688f-44e3-8ef5-c725bb04ad85
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_repair_facility_name
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fbb09b20-505b-4901-9956-65fdf4cb6c9c
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_repair_facility_number
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1ecfa052-190b-46b1-9a7e-85c271a24184
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_franchise_id
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: dca536d4-1b3c-44ad-870d-00178bd36543
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_repair_order_info
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6ab81dca-3a54-4e5d-b844-2a903011337d
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_repair_order_number
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cadcbeff-3f92-428b-83e8-13e077b73c97
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_owner_postal_code
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 79f3ab91-1aa0-445d-b1fd-504d8427eba9
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_owner_name
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 949779dc-20ae-451a-88e5-cb7551269ae2
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_owner_primary_phone
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 64729628-34e5-466e-a78e-4a344a05f80f
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_vehicle_year_make_model
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e9d2bb04-0094-4c74-a6fe-adb9a19e0aa0
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_vehicle_make_name
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4d1e0a5a-e303-41c7-a85b-d42ff5fb4cf5
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_account_type_name
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 57676a85-d29f-4b8f-af88-d54094c14df7
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_account_name
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5b127880-7aaa-4f5d-8064-621ab75b992b
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_sales_amount
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bc09e8fc-3283-4721-a584-1b92cb02bdf4
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_sales_hours
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b52fe71b-51c4-4058-bf2f-e182a5e9cafc
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_cost_amount
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: baf8abbb-c118-479d-907a-1cf425706f94
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_cost_hours
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 62e14488-57d6-47cb-89df-2d7d05a0f261
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_gross_profit_amount
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0e4e4207-7482-4e6b-a5f1-98ca05a85312
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_gross_profit_percent
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 89da7a02-22df-4c8f-95ef-f62d1162b7ea
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_target_gross_profit_amount
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9f2183e2-9c93-4357-afe6-986ce6517e61
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_target_gross_profit_percent
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2c658f3e-6778-4dba-bba0-64633b4167af
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_is_total_loss
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5a301410-b5b1-40c0-86cb-45a6cff52ecf
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_service_writer_display_name
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e9ef1dec-e417-4d99-945a-92c9e583946b
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_carrier_name
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1f60d849-8758-41e7-b69f-2eb47f1d0b21
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_master_carrier_name
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1e12c9d4-7a1f-4751-8478-f2a8be228c99
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_primary_referral_name
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 42f78904-d3ae-4d82-8aa6-df93189a1391
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_repair_plan_name
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9a6a94ba-75f6-4090-945c-76c84adbf437
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_primary_poi
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a42c5fba-1523-459b-8aed-24c78e030371
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_sales_rate_amount
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2954f0b5-442b-4d23-87c3-e74a4be1e0c9
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_cost_rate_amount
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c7dd42ab-e59b-475e-a5ad-5a851cac7d73
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_created_datetime
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 14618176-eb7a-4cf8-a60f-8194679bc49b
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_primary_referral_note
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fe9a021b-ea87-4ed2-9752-1648b10075fb
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_customer_custom_field_name_1
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f2357a8f-5222-49fa-9378-5901c3cabc0c
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_customer_custom_field_name_2
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3dc94f14-5216-4655-8969-386931a5ecac
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_sales_item_name
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a5344132-bda0-495a-a191-8e7f7be57865
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_cogs_account_name
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 34c91025-cd4a-49a3-b95f-cd7c382b495c
+          stepCounter: 186d3a91-e2e1-4bbb-8c81-b3bd5df92ac5
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: PartnerMessageEnvelope_Payload_ResponseList_MT10403Response_reportResponse_data_repairOrder_cogs_item_name
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'STG_CALIBER_XML') }}
+  name: STG_CALIBER_XML
+  schema: ""
+  sqlType: Source
+  table: STG_CALIBER_XML
+  type: sourceInput
+  version: 1
+type: Node

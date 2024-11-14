@@ -1,0 +1,39 @@
+fileVersion: 1
+id: 86a18556-ed5a-4f1a-a774-7d0bd86e9a98
+name: NOTE_XML
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6e30011e-81d7-4af4-9dd2-4d5fc8877393
+          stepCounter: 86a18556-ed5a-4f1a-a774-7d0bd86e9a98
+        config: {}
+        dataType: OBJECT
+        defaultValue: ""
+        description: ""
+        name: SRC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'NOTE_XML') }}
+  name: NOTE_XML
+  schema: ""
+  sqlType: Source
+  table: NOTE_XML
+  type: sourceInput
+  version: 1
+type: Node

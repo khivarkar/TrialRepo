@@ -1,0 +1,39 @@
+fileVersion: 1
+id: 69861ae7-6898-402f-8af8-aa5eef0fda96
+name: CALIBER_JSON
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5b12cd01-ae69-4d6d-8c3d-67f7c5d5df5b
+          stepCounter: 69861ae7-6898-402f-8af8-aa5eef0fda96
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: SRC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'CALIBER_JSON') }}
+  name: CALIBER_JSON
+  schema: ""
+  sqlType: Source
+  table: CALIBER_JSON
+  type: sourceInput
+  version: 1
+type: Node

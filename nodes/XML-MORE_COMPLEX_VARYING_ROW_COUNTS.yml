@@ -1,0 +1,39 @@
+fileVersion: 1
+id: 0d3866d0-c13b-46e1-b889-52f01bac1eda
+name: MORE_COMPLEX_VARYING_ROW_COUNTS
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 98826c28-30f7-4d3c-bbf9-eae7c0ab3685
+          stepCounter: 0d3866d0-c13b-46e1-b889-52f01bac1eda
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: SRC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'MORE_COMPLEX_VARYING_ROW_COUNTS') }}
+  name: MORE_COMPLEX_VARYING_ROW_COUNTS
+  schema: ""
+  sqlType: Source
+  table: MORE_COMPLEX_VARYING_ROW_COUNTS
+  type: sourceInput
+  version: 1
+type: Node

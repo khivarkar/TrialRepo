@@ -1,0 +1,39 @@
+fileVersion: 1
+id: dad3669e-31b7-4815-b05a-35d49fdd3ae2
+name: EXT_NODE
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 77e02d1c-4df8-4c77-bd4d-e13918d1e9f5
+          stepCounter: dad3669e-31b7-4815-b05a-35d49fdd3ae2
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: The value of this row
+        name: VALUE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'EXT_NODE') }}
+  name: EXT_NODE
+  schema: ""
+  sqlType: Source
+  table: EXT_NODE
+  type: sourceInput
+  version: 1
+type: Node

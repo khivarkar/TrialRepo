@@ -1,0 +1,39 @@
+fileVersion: 1
+id: c6c606e1-dcb1-4376-a14b-c5c9b8681864
+name: SIMPLE_MULTIPLE_ELEMENTS
+operation:
+  database: ""
+  dataset: ""
+  deployEnabled: true
+  description: ""
+  locationName: XML
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 64a4ee90-6809-467f-bf11-99d0de42901d
+          stepCounter: c6c606e1-dcb1-4376-a14b-c5c9b8681864
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: SRC
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+    join:
+      joinCondition: FROM {{ ref('XML', 'SIMPLE_MULTIPLE_ELEMENTS') }}
+  name: SIMPLE_MULTIPLE_ELEMENTS
+  schema: ""
+  sqlType: Source
+  table: SIMPLE_MULTIPLE_ELEMENTS
+  type: sourceInput
+  version: 1
+type: Node
